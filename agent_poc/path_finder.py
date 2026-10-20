@@ -129,16 +129,21 @@ class PathFinderAgent(Agent):
         return graph
 
     def best_chain(self, task, start):
-        """Most trustworthy chain: maximise the product of link confidences (Dijkstra on -log)."""
+        """Most trustworthy chain: maximise the product of all confidences on the path, including
+        how well the last robot sees the target (Dijkstra on -log, with the target as a final node)."""
         graph = self.neighbours(task)
         queue, seen = [(0.0, start, [])], set()
         while queue:
             cost, robot, hops = heapq.heappop(queue)
+            if robot == "TARGET":
+                return hops, cost          # the whole path, including how well the last robot sees the target
             if robot in seen:
                 continue
             seen.add(robot)
             if robot in task.target_hits:
-                return hops + [(robot, task.target_hits[robot][0], task.target_hits[robot][1])], cost
+                obj, conf = task.target_hits[robot]
+                if conf > 0:
+                    heapq.heappush(queue, (cost - math.log(conf), "TARGET", hops + [(robot, obj, conf)]))
             for nxt, conf, landmark in graph[robot]:
                 if nxt not in seen and conf > 0:
                     heapq.heappush(queue, (cost - math.log(conf), nxt, hops + [(nxt, landmark, conf)]))
@@ -165,7 +170,7 @@ class PathFinderAgent(Agent):
             return
         robots = [task.position] + [r for r, _, _ in chain[:-1]]
         self.think(f"Most trustworthy chain: {' -> '.join(robots)} -> target "
-                   f"(overall confidence {math.exp(-cost) * chain[-1][2]:.2f})")
+                                      f"(overall confidence {math.exp(-cost):.2f})")
         bfs = self.fewest_hops(task, task.position)
         if bfs and bfs != robots:
             self.think(f"(Fewest-hops search would have picked {' -> '.join(bfs)} instead.)")

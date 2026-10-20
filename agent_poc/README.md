@@ -42,4 +42,5 @@ machines later (swap `MessageBus` for ROS 2 topics).
 - Raise both stop-sign confidences (robot_A's and robot_C's) to 0.9 and see the path finder switch to the shortcut.
 - Add a robot_E that also sees the target, and see which one is chosen.
   - Tried but even if the confidence score of seeing the target is manipulated, the path-finder chooses the robot that is linked first, which is a problem. This is a greedy approach where the path is decided with the maximum similarity score for every hop and I want it to see the whole path before deciding so as to avoid any surprises along the way.
+  - Fix: The path finder must score the complete route, including how well the final robot sees the target, before choosing. An earlier version stopped at the first robot that saw the target and ignored that confidence. Fixed by treating the target as the route’s final node.
 - Remove the bench from robot_D's scene and check that `no_route_found` is sent.
