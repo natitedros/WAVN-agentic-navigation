@@ -26,11 +26,7 @@ SCENES = {
         {"description": "a wooden bench under a tree", "confidence": 0.90},
     ],
     "robot_D": [
-        {"description": "a wooden bench under a tree", "confidence": 0.80},
+        {"description": "a wooden bench under a tree", "confidence": 0.85},
         {"description": TARGET, "confidence": 0.92},
     ],
-    "robot_E": [
-            {"description": "a wooden bench under a tree", "confidence": 0.85},
-            {"description": TARGET, "confidence": 0.92},
-        ],
 }

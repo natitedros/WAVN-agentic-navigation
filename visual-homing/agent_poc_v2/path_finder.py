@@ -14,11 +14,20 @@ import math
 from collections import deque
 
 from comms import Agent
-from matching import similarity
+from matching import key_words, object_similarity, similarity
 
 MATCH_MIN = 0.3          # below this, two descriptions are not the same thing
 TARGET_MIN = 0.5         # how close a description must be to the target description
 AMBIGUITY_MARGIN = 0.1   # two candidates closer than this = ask a question
+
+
+def same_kind(obj_a, obj_b):
+    """Real detections carry Grounding DINO's label ("a column", "a doorway").
+    Two objects can only be the same landmark if their labels share a word.
+    Objects without labels (the made-up scene) are always allowed."""
+    if obj_a.get("label") and obj_b.get("label"):
+        return bool(key_words(obj_a["label"]) & key_words(obj_b["label"]))
+    return True
 
 
 class Task:
@@ -26,6 +35,7 @@ class Task:
         self.task_id = task_id
         self.requester = requester
         self.target = target
+        self.target_label = None   # what kind of object the target is, if the requester knows
         self.waiting_for = set()   # robots we still expect a report from
         self.reports = {}          # robot -> list of objects it sees
         self.links = []            # (robot_x, obj_x, robot_y, obj_y, confidence)
@@ -43,10 +53,13 @@ class PathFinderAgent(Agent):
     # 1. A robot asks for help --------------------------------------------------------
     def on_homing_request(self, msg):
         task = Task(msg.task_id, msg.sender, msg.payload["target_description"])
+        task.target_label = msg.payload.get("target_label")
         self.tasks[msg.task_id] = task
         task.waiting_for = set(self.robots)
         self.think(f"{msg.sender} wants to reach \"{task.target}\". Asking all {len(self.robots)} robots what they see.")
-        self.send("observation_request", "all", {"target_description": task.target}, task_id=task.task_id)
+        self.send("observation_request", "all",
+                  {"target_description": task.target, "target_label": task.target_label},
+                  task_id=task.task_id)
 
     def on_observation_report(self, msg):
         task = self.tasks[msg.task_id]
@@ -58,12 +71,15 @@ class PathFinderAgent(Agent):
     # 2 + 3. Find the target and link robots through shared landmarks -----------------
     def build_graph(self, task):
         self.think("All reports in. Looking for the target and for shared landmarks.")
-        for robot, objects in task.reports.items():
-            for obj in objects:
-                score = similarity(obj["description"], task.target)
-                if score >= TARGET_MIN:
-                    task.target_hits[robot] = (obj, score * obj["confidence"])
-                    self.think(f"{robot} sees the target: \"{obj['description']}\" (match {score:.2f})")
+        if task.target_label:
+            self.ask_about_target(task)          # confirm the target by asking
+        else:
+            for robot, objects in task.reports.items():   # no label given: compare words
+                for obj in objects:
+                    score = similarity(obj["description"], task.target)
+                    if score >= TARGET_MIN:
+                        task.target_hits[robot] = (obj, score * obj["confidence"])
+                        self.think(f"{robot} sees the target: \"{obj['description']}\" (match {score:.2f})")
 
         names = sorted(task.reports)
         for i, x in enumerate(names):
@@ -73,9 +89,27 @@ class PathFinderAgent(Agent):
         if not task.questions:
             self.plan_route(task)
 
+    def ask_about_target(self, task):
+        """Every robot that saw something of the target's kind is asked whether it is the target."""
+        kind = {"label": task.target_label}
+        for robot, objects in task.reports.items():
+            candidates = [o for o in objects if same_kind(o, kind)]
+            if not candidates:
+                continue
+            self.think(f"{robot} saw {len(candidates)} object(s) of the target's kind ({task.target_label}). "
+                       f"Asking {robot} whether one of them is the target.")
+            q = self.send("clarification_question", robot,
+                          {"about_object_ids": [o["object_id"] for o in candidates],
+                           "query": task.target,
+                           "question": f"Is one of these \"{task.target}\"?",
+                           "purpose": "target"},
+                          task_id=task.task_id)
+            task.questions[q.message_id] = {"kind": "target", "robot": robot, "options": candidates}
+
     def link_pair(self, task, x, y):
-        pairs = [(ox, oy, similarity(ox["description"], oy["description"]))
-                 for ox in task.reports[x] for oy in task.reports[y]]
+        pairs = [(ox, oy, object_similarity(ox, oy))
+                 for ox in task.reports[x] for oy in task.reports[y]
+                 if same_kind(ox, oy)]
         pairs = [p for p in pairs if p[2] >= MATCH_MIN]
         unsure = set()
 
@@ -92,7 +126,8 @@ class PathFinderAgent(Agent):
                                    "query": obj["description"],
                                    "question": f"Which of these is \"{obj['description']}\"?"},
                                   task_id=task.task_id)
-                    task.questions[q.message_id] = (asker, obj, other, options)
+                    task.questions[q.message_id] = {"kind": "link", "asker": asker, "obj": obj,
+                                                    "other": other, "options": options}
                     unsure.update(id(p) for p in cands)
 
         # Everything else: accept a pair if each is the other's best match
@@ -108,15 +143,27 @@ class PathFinderAgent(Agent):
 
     def on_clarification_answer(self, msg):
         task = self.tasks[msg.task_id]
-        asker, obj, other, options = task.questions.pop(msg.reply_to)
+        q = task.questions.pop(msg.reply_to)
         picked = msg.payload["selected_object_id"]
-        if picked:
-            chosen = next(o for o in options if o["object_id"] == picked)
-            conf = msg.payload["confidence"] * min(obj["confidence"], chosen["confidence"])
-            task.links.append((asker, obj, other, chosen, conf))
-            self.think(f"{other} says {picked}. Link {asker} <-> {other}: \"{obj['description']}\" (confidence {conf:.2f})")
+        chosen = next((o for o in q["options"] if o["object_id"] == picked), None)
+
+        if q["kind"] == "target":
+            if chosen:
+                conf = msg.payload["confidence"] * chosen["confidence"]
+                task.target_hits[q["robot"]] = (chosen, conf)
+                self.think(f"{q['robot']} confirms {picked} is the target: \"{chosen['description']}\" "
+                           f"(confidence {conf:.2f})")
+            else:
+                self.think(f"{q['robot']} says none of its candidates is the target.")
         else:
-            self.think(f"{other} could not confirm any of them. No link.")
+            if chosen:
+                conf = msg.payload["confidence"] * min(q["obj"]["confidence"], chosen["confidence"])
+                task.links.append((q["asker"], q["obj"], q["other"], chosen, conf))
+                self.think(f"{q['other']} says {picked}. Link {q['asker']} <-> {q['other']}: "
+                           f"\"{q['obj']['description']}\" (confidence {conf:.2f})")
+            else:
+                self.think(f"{q['other']} could not confirm any of them. No link.")
+
         if not task.questions:
             self.plan_route(task)
 
@@ -170,7 +217,7 @@ class PathFinderAgent(Agent):
             return
         robots = [task.position] + [r for r, _, _ in chain[:-1]]
         self.think(f"Most trustworthy chain: {' -> '.join(robots)} -> target "
-                                      f"(overall confidence {math.exp(-cost):.2f})")
+                   f"(overall confidence {math.exp(-cost):.2f})")
         bfs = self.fewest_hops(task, task.position)
         if bfs and bfs != robots:
             self.think(f"(Fewest-hops search would have picked {' -> '.join(bfs)} instead.)")

@@ -18,8 +18,9 @@ class FakePerceiver:
         self.robot = robot
         self.scene = scene   # list of dicts: description, confidence, facts
 
-    def detect(self):
+    def detect(self, extra_prompts=()):
         # Real version: Grounding DINO finds objects, BLIP-2 describes each crop.
+        # (extra_prompts is only used by the real version.)
         return [{"object_id": f"{self.robot[-1]}-obj-{i}",
                  "description": o["description"],
                  "confidence": o["confidence"]}
@@ -59,14 +60,19 @@ class RobotAgent(Agent):
         self.navigator = navigator
 
     # --- this robot asks for help -------------------------------------------------
-    def request_homing(self, target_description, task_id):
-        self.send("homing_request", "path_finder",
-                  {"target_description": target_description}, task_id=task_id)
+    def request_homing(self, target_description, task_id, target_label=None):
+        # target_label: what kind of object the target is ("a relief carving"), if known
+        payload = {"target_description": target_description}
+        if target_label:
+            payload["target_label"] = target_label
+        self.send("homing_request", "path_finder", payload, task_id=task_id)
 
     # --- perception agent: answering the path finder ------------------------------
     def on_observation_request(self, msg):
-        self.send("observation_report", "path_finder",
-                  {"objects": self.perceiver.detect()},
+        # Also look for the target's kind, so the target itself gets detected
+        label = msg.payload.get("target_label")
+        objects = self.perceiver.detect(extra_prompts=[label] if label else [])
+        self.send("observation_report", "path_finder", {"objects": objects},
                   task_id=msg.task_id, reply_to=msg.message_id)
 
     def on_clarification_question(self, msg):
