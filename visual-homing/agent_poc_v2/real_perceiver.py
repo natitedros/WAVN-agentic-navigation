@@ -39,10 +39,11 @@ def clean_label(raw, prompts):
 
 def short_answer(text, label, max_words=4):
     """Keep only the informative words of a BLIP-2 answer ("It's white." -> "white")."""
-    text = re.sub(r"['’]s\b", "", text.lower())       # "it's" -> "it" (it was leaving a stray "s")
+    text = re.sub(r"['’]s\b", "", text.lower())
     label_words = set(re.findall(r"[a-z]+", label.lower()))
-    words = [w for w in re.findall(r"[a-z]+", text)
-             if len(w) > 1 and w not in FILLER and w not in label_words]
+    words = [w for w in re.findall(r"[a-z]+", text) if len(w) > 1 and w not in FILLER]
+    informative = [w for w in words if w not in label_words]
+    words = informative or words      # "concrete" for a concrete block is a real answer
     return " ".join(words[:max_words]) or None
 
 def overlap(a, b):
@@ -69,7 +70,7 @@ def detect_one_prompt_at_a_time(img, prompts, threshold):
 
 class RealPerceiver:
     def __init__(self, robot, image_path, prompts, padding=0.15, min_size=32,
-                 threshold=0.35, save_crops_to=None):
+                 threshold=0.45, save_crops_to=None):
         self.robot = robot
         self.image_path = image_path
         self.prompts = list(prompts)    # object names Grounding DINO always looks for

@@ -19,6 +19,7 @@ from matching import key_words, object_similarity, similarity
 MATCH_MIN = 0.3          # below this, two descriptions are not the same thing
 TARGET_MIN = 0.5         # how close a description must be to the target description
 AMBIGUITY_MARGIN = 0.1   # two candidates closer than this = ask a question
+ANSWER_MIN = 0.4
 
 
 def same_kind(obj_a, obj_b):
@@ -145,6 +146,8 @@ class PathFinderAgent(Agent):
         task = self.tasks[msg.task_id]
         q = task.questions.pop(msg.reply_to)
         picked = msg.payload["selected_object_id"]
+        if msg.payload.get("confidence", 0) < ANSWER_MIN:
+            picked = None
         chosen = next((o for o in q["options"] if o["object_id"] == picked), None)
 
         if q["kind"] == "target":

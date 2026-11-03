@@ -22,7 +22,7 @@ from scenario_real import PHOTO_FOLDER, PROMPTS, ROBOT_PHOTOS, TARGET, TARGET_LA
 
 # How close two descriptions must be. Start with the defaults, look at the printed
 # descriptions, then tune. Lowering them finds more links but also more false ones.
-path_finder.MATCH_MIN = 0.3    # share of fields (color, material, nearby) that must agree
+path_finder.MATCH_MIN = 1.0    # share of fields (color, material, nearby) that must agree
 path_finder.TARGET_MIN = 0.5   # only used when no TARGET_LABEL is given
 
 SAVE_CROPS_TO = "debug_crops"   # crops are saved here so you can check what each robot saw
