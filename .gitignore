@@ -3,3 +3,4 @@ __pycache__/
 *$py.class
 Datasets/
 weights/
+debug_crops/

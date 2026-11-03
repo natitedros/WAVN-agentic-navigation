@@ -20,7 +20,7 @@ import model_clients
 QUESTIONS = {
     "color": "What color is the {label}?",
     "material": "What is the {label} made of?",
-    "nearby": "What is next to the {label}?",
+    # "nearby": "What is next to the {label}?",
 }
 FILLER = {"it", "its", "is", "are", "the", "a", "an", "this", "that", "made", "of", "next", "to",
           "there", "they", "and", "in", "on", "with", "color", "colour", "unknown", "nothing"}
@@ -38,11 +38,34 @@ def clean_label(raw, prompts):
 
 
 def short_answer(text, label, max_words=4):
-    """Keep only the informative words of a BLIP-2 answer ("The column is white." -> "white")."""
+    """Keep only the informative words of a BLIP-2 answer ("It's white." -> "white")."""
+    text = re.sub(r"['’]s\b", "", text.lower())       # "it's" -> "it" (it was leaving a stray "s")
     label_words = set(re.findall(r"[a-z]+", label.lower()))
-    words = [w for w in re.findall(r"[a-z]+", text.lower()) if w not in FILLER and w not in label_words]
+    words = [w for w in re.findall(r"[a-z]+", text)
+             if len(w) > 1 and w not in FILLER and w not in label_words]
     return " ".join(words[:max_words]) or None
 
+def overlap(a, b):
+    """How much two boxes overlap: 0 = not at all, 1 = the same box."""
+    x0, y0 = max(a[0], b[0]), max(a[1], b[1])
+    x1, y1 = min(a[2], b[2]), min(a[3], b[3])
+    inter = max(0, x1 - x0) * max(0, y1 - y0)
+    area = lambda r: (r[2] - r[0]) * (r[3] - r[1])
+    return inter / (area(a) + area(b) - inter + 1e-9)
+
+
+def detect_one_prompt_at_a_time(img, prompts, threshold):
+    """Run Grounding DINO once per prompt, so prompts can't steal each other's labels."""
+    found = []
+    for p in prompts:
+        for d in model_clients.detect(img, [p], threshold=threshold):
+            d["label"] = p
+            found.append(d)
+    kept = []                                    # same box under two names -> keep the higher score
+    for d in sorted(found, key=lambda d: -d["score"]):
+        if all(overlap(d["box"], k["box"]) < 0.6 for k in kept):
+            kept.append(d)
+    return kept
 
 class RealPerceiver:
     def __init__(self, robot, image_path, prompts, padding=0.15, min_size=32,
@@ -66,8 +89,8 @@ class RealPerceiver:
         # The target's kind (from the homing request) is added to the usual list
         prompts = self.prompts + [p for p in extra_prompts if p and p not in self.prompts]
         img = Image.open(self.image_path).convert("RGB")
-        detections = model_clients.detect(img, prompts, threshold=self.threshold)
-
+        detections = detect_one_prompt_at_a_time(img, prompts, self.threshold)
+        
         objects = []
         for d in sorted(detections, key=lambda d: -d["score"]):
             x0, y0, x1, y1 = d["box"]
@@ -90,8 +113,8 @@ class RealPerceiver:
             description = f"{attributes['color'] or ''} {label}".strip()
             if attributes["material"]:
                 description += f" made of {attributes['material']}"
-            if attributes["nearby"]:
-                description += f" next to {attributes['nearby']}"
+            # if attributes["nearby"]:
+            #     description += f" next to {attributes['nearby']}"
 
             objects.append({
                 "object_id": object_id,

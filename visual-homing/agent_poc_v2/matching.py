@@ -39,5 +39,5 @@ def object_similarity(obj_a: dict, obj_b: dict) -> float:
                 compared += 1
                 agreed += bool(key_words(fields_a[name]) & key_words(fields_b[name]))
         if compared:
-            return agreed / compared
+            return agreed / len(fields_a)   # an unanswered field counts as "not agreeing"
     return similarity(obj_a["description"], obj_b["description"])

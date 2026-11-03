@@ -22,7 +22,7 @@ from scenario_real import PHOTO_FOLDER, PROMPTS, ROBOT_PHOTOS, TARGET, TARGET_LA
 
 # How close two descriptions must be. Start with the defaults, look at the printed
 # descriptions, then tune. Lowering them finds more links but also more false ones.
-path_finder.MATCH_MIN = 0.5    # share of fields (color, material, nearby) that must agree
+path_finder.MATCH_MIN = 0.3    # share of fields (color, material, nearby) that must agree
 path_finder.TARGET_MIN = 0.5   # only used when no TARGET_LABEL is given
 
 SAVE_CROPS_TO = "debug_crops"   # crops are saved here so you can check what each robot saw
@@ -49,6 +49,14 @@ def main():
                 print(f"    {o['object_id']}  [{o['label']} {o['confidence']:.2f}]  {o['attributes']}")
     print(f"\nCrops saved in {SAVE_CROPS_TO}/")
 
+    route = next((m for m in reversed(bus.log) if m.type == "route_instruction"), None)
+    print("\nFinal route:")
+    if route is None:
+        print("  none found")
+    else:
+        for h in route.payload["hops"]:
+            print(f"  hop {h['hop']}: go to {h['landmark_id']}, seen by {h['via_robot']}: "
+                  f"\"{h['landmark_description']}\"")
 
 if __name__ == "__main__":
     main()

@@ -17,38 +17,32 @@ ROBOT_PHOTOS = {
     "robot_D": "robot_D.png",
 }
 
-# # Object names Grounding DINO looks for: things that appear in your environment
-# PROMPTS = [
-#     "light pole",
-#     "stadium floodlight",
-#     "black wall",
-#     "padded wall",
-#     "metal fence",
-#     "hurdle",
-#     "concrete block",
-#     "metal grate",
-#     "wooden board on stand",
-#     "weight sled",
-#     "batting cage",
-#     "netting",
-#     "pitching machine",
-#     "hedge",
-#     "tree",
-#     "clock tower",
-#     "bleachers",
-#     "scoreboard",
-#     "goal post",
-#     "small goal frame",
-#     "shed",
-#     "artificial turf",
-# ]
+# Object names Grounding DINO looks for: things that appear in your environment
+PROMPTS = [
+    "light pole",
+    "stadium floodlight",
+    "padded wall",
+    "metal fence",
+    "hurdle",
+    "concrete block",
+    "metal grate",
+    "wooden board on stand",
+    "weight sled",
+    "batting cage",
+    "netting",
+    "pitching machine",
+    "hedge",
+    "sled",
+    "scoreboard",
+]
 
-# TARGET = "orange and black circular target mounted on a black wall"
+TARGET_LABEL = "circular target"
+TARGET = "orange and black circular target on black wall"
 # Object names Grounding DINO always looks for. Keep them distinct: no two names that
 # share a word ("statue" and "lion statue"), or Grounding DINO merges them.
-PROMPTS = ["a column", "a brick wall", "a statue", "an arch", "a staircase", "a tree", "a rock"]
+# PROMPTS = ["a column", "a brick wall", "a statue", "an arch", "a staircase", "a tree", "a rock"]
 
-# What kind of object the target is (added to every robot's PROMPTS for this request),
-# and a short description of it in the same plain words.
-TARGET_LABEL = "a relief carving"
-TARGET = "a golden relief carving of a woman"
+# # What kind of object the target is (added to every robot's PROMPTS for this request),
+# # and a short description of it in the same plain words.
+# TARGET_LABEL = "a relief carving"
+# TARGET = "a golden relief carving of a woman"
