@@ -1,0 +1,42 @@
+robot_A asks for: "orange and black circular target on black wall"
+
+  msg-001      robot_A -> path_finder homing_request         target="orange and black circular target on black wall"
+                [path_finder] robot_A wants to reach "orange and black circular target on black wall". Asking all 2 robots what they see.
+  msg-002  path_finder -> all         observation_request    
+  msg-003      robot_A -> path_finder observation_report     "gray padded wall made of polyester", "gray light pole made of metal", "green yellow tree made of wood", "black small goal frame made of metal", "yellow tree made of wood", "white light pole made of metal", "green tree made of wood", "black metal fence made of steel"
+  msg-004      robot_B -> path_finder observation_report     "orange circular target made of plastic", "gray concrete block made of concrete", "green hedge made of plants", "black padded wall made of metal", "green tree made of wood", "yellow light pole made of metal", "red white small goal frame made of metal"
+                [path_finder] All reports in. Looking for the target and for shared landmarks.
+                [path_finder] robot_B saw 1 object(s) of the target's kind (circular target). Asking robot_B whether one of them is the target.
+                [path_finder] "green tree made of wood" (robot_B) matches 2 objects in robot_A equally well (1.00 vs 1.00). Asking robot_A to clarify.
+  msg-005  path_finder -> robot_B     clarification_question Is one of these "orange and black circular target on black wall"?  options=['B-obj-1']
+  msg-006  path_finder -> robot_A     clarification_question Which of these is "green tree made of wood"?  options=['A-obj-3', 'A-obj-7']
+  msg-007      robot_B -> path_finder clarification_answer   picked=B-obj-1 (0.74)
+                [path_finder] robot_B confirms B-obj-1 is the target: "orange circular target made of plastic" (confidence 0.55)
+  msg-008      robot_A -> path_finder clarification_answer   picked=A-obj-3 (0.53)
+                [path_finder] robot_A could not confirm any of them. No link.
+                [path_finder] No chain of shared landmarks reaches the target.
+  msg-009  path_finder -> robot_A     no_route_found         
+
+What each robot reported:
+  robot_A:
+    A-obj-1  [padded wall 0.73]  {'color': 'gray', 'material': 'polyester'}
+    A-obj-2  [light pole 0.61]  {'color': 'gray', 'material': 'metal'}
+    A-obj-3  [tree 0.60]  {'color': 'green yellow', 'material': 'wood'}
+    A-obj-4  [small goal frame 0.53]  {'color': 'black', 'material': 'metal'}
+    A-obj-5  [tree 0.52]  {'color': 'yellow', 'material': 'wood'}
+    A-obj-6  [light pole 0.51]  {'color': 'white', 'material': 'metal'}
+    A-obj-7  [tree 0.51]  {'color': 'green', 'material': 'wood'}
+    A-obj-8  [metal fence 0.46]  {'color': 'black', 'material': 'steel'}
+  robot_B:
+    B-obj-1  [circular target 0.75]  {'color': 'orange', 'material': 'plastic'}
+    B-obj-2  [concrete block 0.74]  {'color': 'gray', 'material': 'concrete'}
+    B-obj-3  [hedge 0.56]  {'color': 'green', 'material': 'plants'}
+    B-obj-4  [padded wall 0.56]  {'color': 'black', 'material': 'metal'}
+    B-obj-5  [tree 0.56]  {'color': 'green', 'material': 'wood'}
+    B-obj-6  [light pole 0.52]  {'color': 'yellow', 'material': 'metal'}
+    B-obj-7  [small goal frame 0.47]  {'color': 'red white', 'material': 'metal'}
+
+Crops saved in debug_crops/
+
+Final route:
+  none found

@@ -8,38 +8,38 @@ meters apart (robot_A = frame 100, robot_B = frame 160, robot_C = frame 220, ...
 TARGET should describe something visible ONLY in the last robot's photo, in words close to
 how BLIP-2 would describe it.
 """
-PHOTO_FOLDER = "photos_pair1"     # relative to agent_poc/, or an absolute path
+PHOTO_FOLDER = "photos"     # relative to agent_poc/, or an absolute path
 
 ROBOT_PHOTOS = {
-    "robot_A": "robot_A.jpg",
-    "robot_B": "robot_B.jpg",
-    # "robot_C": "robot_C.png",
-    # "robot_D": "robot_D.png",
+    "robot_A": "robot_A.png",
+    "robot_B": "robot_B.png",
+    "robot_C": "robot_C.png",
+    "robot_D": "robot_D.png",
 }
 
 # Object names Grounding DINO looks for: things that appear in your environment
 
 # 4 coffey field images
-# PROMPTS = [
-#     "light pole",
-#     "stadium floodlight",
-#     "padded wall",
-#     "metal fence",
-#     "hurdle",
-#     "concrete block",
-#     "metal grate",
-#     "wooden board on stand",
-#     "weight sled",
-#     "batting cage",
-#     "netting",
-#     "pitching machine",
-#     "hedge",
-#     "sled",
-#     "scoreboard",
-# ]
+PROMPTS = [
+    "light pole",
+    "stadium floodlight",
+    "padded wall",
+    "metal fence",
+    "hurdle",
+    "concrete block",
+    "metal grate",
+    "wooden board on stand",
+    "weight sled",
+    "batting cage",
+    "netting",
+    "pitching machine",
+    "hedge",
+    "sled",
+    "scoreboard",
+]
 
 # 2 coffey field images
-PROMPTS = ["light pole", "concrete block", "hurdle", "padded wall", "metal fence", "hedge", "tree", "small goal frame"]
+# PROMPTS = ["light pole", "concrete block", "hurdle", "padded wall", "metal fence", "hedge", "tree", "small goal frame"]
 
 TARGET_LABEL = "circular target"
 TARGET = "orange and black circular target on black wall"

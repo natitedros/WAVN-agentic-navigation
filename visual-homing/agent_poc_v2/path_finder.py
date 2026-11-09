@@ -13,23 +13,32 @@ import heapq
 import math
 from collections import deque
 
+from sympy import ask
+
 from comms import Agent
 from matching import key_words, object_similarity, similarity
 
+LINK_MIN = 0.25 
 MATCH_MIN = 0.3          # below this, two descriptions are not the same thing
 TARGET_MIN = 0.5         # how close a description must be to the target description
 AMBIGUITY_MARGIN = 0.1   # two candidates closer than this = ask a question
 ANSWER_MIN = 0.7
 
 
-def same_kind(obj_a, obj_b):
-    """Real detections carry Grounding DINO's label ("a column", "a doorway").
-    Two objects can only be the same landmark if their labels share a word.
-    Objects without labels (the made-up scene) are always allowed."""
-    if obj_a.get("label") and obj_b.get("label"):
-        return bool(key_words(obj_a["label"]) & key_words(obj_b["label"]))
-    return True
+def same_kind(a, b):
+    """Same kind of object only if the main noun (last word of the label) matches.
+    'metal fence' vs 'metal grate' -> False, 'light pole' vs 'pole' -> True."""
+    label_a = a["label"] if isinstance(a, dict) else a
+    label_b = b["label"] if isinstance(b, dict) else b
+    return label_a.lower().split()[-1] == label_b.lower().split()[-1]
 
+
+def uniqueness(obj, objects_a, objects_b):
+    """1.0 if each robot sees only one object of this kind; 1/4 if one robot sees four.
+    The more look-alikes, the less a single match proves."""
+    n_a = sum(same_kind(obj, o) for o in objects_a)
+    n_b = sum(same_kind(obj, o) for o in objects_b)
+    return 1.0 / max(n_a, n_b, 1)
 
 class Task:
     def __init__(self, task_id, requester, target):
@@ -119,6 +128,8 @@ class PathFinderAgent(Agent):
             for obj in task.reports[asker]:
                 cands = sorted((p for p in pairs if p[side] is obj), key=lambda p: -p[2])
                 if len(cands) >= 2 and cands[0][2] - cands[1][2] < AMBIGUITY_MARGIN:
+                    if cands[0][2] * uniqueness(obj, task.reports[x], task.reports[y]) < LINK_MIN:
+                        continue      # even a perfect answer couldn't make this link strong enough
                     options = [p[1 - side] for p in cands]
                     self.think(f"\"{obj['description']}\" ({asker}) matches {len(options)} objects in {other} "
                                f"equally well ({cands[0][2]:.2f} vs {cands[1][2]:.2f}). Asking {other} to clarify.")
@@ -139,9 +150,15 @@ class PathFinderAgent(Agent):
             best_for_y = max((p for p in pairs if p[1] is oy), key=lambda p: p[2])
             if best_for_x[1] is oy and best_for_y[0] is ox:
                 conf = score * min(ox["confidence"], oy["confidence"])
+                u = uniqueness(ox, task.reports[x], task.reports[y])
+                conf *= u
+                if conf < LINK_MIN:
+                    self.think(f"Skipping {x} <-> {y}: \"{ox['label']}\" is too common "
+                            f"(x{u:.2f}, confidence {conf:.2f})")
+                    continue
                 task.links.append((x, ox, y, oy, conf))
                 self.think(f"Link {x} <-> {y}: \"{ox['description']}\" = \"{oy['description']}\" (confidence {conf:.2f})")
-
+    
     def on_clarification_answer(self, msg):
         task = self.tasks[msg.task_id]
         q = task.questions.pop(msg.reply_to)
@@ -161,9 +178,15 @@ class PathFinderAgent(Agent):
         else:
             if chosen:
                 conf = msg.payload["confidence"] * min(q["obj"]["confidence"], chosen["confidence"])
-                task.links.append((q["asker"], q["obj"], q["other"], chosen, conf))
-                self.think(f"{q['other']} says {picked}. Link {q['asker']} <-> {q['other']}: "
+                u = uniqueness(q["obj"], task.reports[q["asker"]], task.reports[q["other"]])
+                conf *= u
+                if conf >= LINK_MIN:
+                    task.links.append((q["asker"], q["obj"], q["other"], chosen, conf))
+                    self.think(f"{q['other']} says {picked}. Link {q['asker']} <-> {q['other']}: "
                            f"\"{q['obj']['description']}\" (confidence {conf:.2f})")
+                else:
+                    self.think(f"{q['other']} picked one, but \"{q['obj']['label']}\" is too common "
+                           f"(x{u:.2f}, confidence {conf:.2f}). No link.")
             else:
                 self.think(f"{q['other']} could not confirm any of them. No link.")
 
