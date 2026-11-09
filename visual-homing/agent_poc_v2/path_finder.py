@@ -19,7 +19,7 @@ from matching import key_words, object_similarity, similarity
 MATCH_MIN = 0.3          # below this, two descriptions are not the same thing
 TARGET_MIN = 0.5         # how close a description must be to the target description
 AMBIGUITY_MARGIN = 0.1   # two candidates closer than this = ask a question
-ANSWER_MIN = 0.4
+ANSWER_MIN = 0.7
 
 
 def same_kind(obj_a, obj_b):

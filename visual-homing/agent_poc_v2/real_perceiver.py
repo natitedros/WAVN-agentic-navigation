@@ -25,7 +25,15 @@ QUESTIONS = {
 FILLER = {"it", "its", "is", "are", "the", "a", "an", "this", "that", "made", "of", "next", "to",
           "there", "they", "and", "in", "on", "with", "color", "colour", "unknown", "nothing"}
 
+COLOR_WORDS = {"black", "white", "gray", "grey", "silver", "red", "orange", "yellow",
+               "green", "blue", "purple", "pink", "brown", "tan", "beige", "gold"}
 
+def only_colors(answer):
+    """Keep only real colour words: "light pole" -> None, "shade brown" -> "brown"."""
+    if not answer:
+        return None
+    words = ["gray" if w == "grey" else w for w in answer.split() if w in COLOR_WORDS]
+    return " ".join(words) or None
 def clean_label(raw, prompts):
     """Grounding DINO sometimes merges prompts ("column drum pedestal"). Pick the prompt that fits best."""
     raw_words = set(re.findall(r"[a-z]+", raw.lower()))
@@ -110,6 +118,8 @@ class RealPerceiver:
             for name, question in QUESTIONS.items():
                 reply = model_clients.describe(crop, question=question.format(label=label))
                 attributes[name] = short_answer(reply["text"], label)
+                if name == "color":
+                    attributes[name] = only_colors(attributes[name])
 
             description = f"{attributes['color'] or ''} {label}".strip()
             if attributes["material"]:

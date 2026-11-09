@@ -1,0 +1,43 @@
+ANSWER_MIN = 0.7
+
+
+robot_A asks for: "orange and black circular target on black wall"
+
+  msg-001      robot_A -> path_finder homing_request         target="orange and black circular target on black wall"
+                [path_finder] robot_A wants to reach "orange and black circular target on black wall". Asking all 2 robots what they see.
+  msg-002  path_finder -> all         observation_request    
+  msg-003      robot_A -> path_finder observation_report     "gray concrete block made of concrete", "gray light pole made of concrete", "green hedge made of buxus sempervirens", "white small goal frame made of wood", "gray metal fence made of steel"
+  msg-004      robot_B -> path_finder observation_report     "orange circular target made of plastic", "gray concrete block made of concrete", "green hedge made of plants", "black padded wall made of metal", "green tree made of wood", "yellow light pole made of metal", "red white small goal frame made of metal"
+                [path_finder] All reports in. Looking for the target and for shared landmarks.
+                [path_finder] robot_B saw 1 object(s) of the target's kind (circular target). Asking robot_B whether one of them is the target.
+                [path_finder] Link robot_A <-> robot_B: "gray concrete block made of concrete" = "gray concrete block made of concrete" (confidence 0.74)
+  msg-005  path_finder -> robot_B     clarification_question Is one of these "orange and black circular target on black wall"?  options=['B-obj-1']
+  msg-006      robot_B -> path_finder clarification_answer   picked=B-obj-1 (0.74)
+                [path_finder] robot_B confirms B-obj-1 is the target: "orange circular target made of plastic" (confidence 0.55)
+                [path_finder] Most trustworthy chain: robot_A -> robot_B -> target (overall confidence 0.41)
+  msg-007  path_finder -> robot_A     route_instruction      robot_B:"gray concrete block made of concrete" -> robot_B:"orange circular target made of plastic"
+  msg-008      robot_A -> path_finder progress_update        hop 1: reached
+  msg-009      robot_A -> path_finder progress_update        hop 2: reached
+                [path_finder] robot_A reached the target. Task done.
+
+What each robot reported:
+  robot_A:
+    A-obj-1  [concrete block 0.82]  {'color': 'gray', 'material': 'concrete'}
+    A-obj-2  [light pole 0.72]  {'color': 'gray', 'material': 'concrete'}
+    A-obj-3  [hedge 0.67]  {'color': 'green', 'material': 'buxus sempervirens'}
+    A-obj-4  [small goal frame 0.65]  {'color': 'white', 'material': 'wood'}
+    A-obj-5  [metal fence 0.64]  {'color': 'gray', 'material': 'steel'}
+  robot_B:
+    B-obj-1  [circular target 0.75]  {'color': 'orange', 'material': 'plastic'}
+    B-obj-2  [concrete block 0.74]  {'color': 'gray', 'material': 'concrete'}
+    B-obj-3  [hedge 0.56]  {'color': 'green', 'material': 'plants'}
+    B-obj-4  [padded wall 0.56]  {'color': 'black', 'material': 'metal'}
+    B-obj-5  [tree 0.56]  {'color': 'green', 'material': 'wood'}
+    B-obj-6  [light pole 0.52]  {'color': 'yellow', 'material': 'metal'}
+    B-obj-7  [small goal frame 0.47]  {'color': 'red white', 'material': 'metal'}
+
+Crops saved in debug_crops/
+
+Final route:
+  hop 1: go to B-obj-2, seen by robot_B: "gray concrete block made of concrete"
+  hop 2: go to B-obj-1, seen by robot_B: "orange circular target made of plastic"
