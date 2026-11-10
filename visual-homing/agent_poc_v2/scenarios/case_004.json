@@ -1,0 +1,30 @@
+{
+ "kind": "positive",
+ "expected": "route",
+ "robots": {
+  "robot_f0484": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000484_lcam_front.png",
+  "robot_f0225": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000225_lcam_front.png",
+  "robot_f0650": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000650_lcam_front.png",
+  "robot_f0438": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000438_lcam_front.png"
+ },
+ "frames": {
+  "robot_f0484": 484,
+  "robot_f0225": 225,
+  "robot_f0650": 650,
+  "robot_f0438": 438
+ },
+ "requester": "robot_f0484",
+ "target_uid": "obj-124",
+ "target_label": "tree",
+ "target_description": "tree",
+ "target_xyz": [
+  -34.03,
+  -0.33,
+  1.97
+ ],
+ "true_chain": [
+  "robot_f0484",
+  "robot_f0650"
+ ],
+ "case_id": "case_004"
+}

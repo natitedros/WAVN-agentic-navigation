@@ -1,0 +1,28 @@
+{
+ "kind": "positive",
+ "expected": "route",
+ "robots": {
+  "robot_f0507": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000507_lcam_front.png",
+  "robot_f0062": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000062_lcam_front.png",
+  "robot_f0468": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000468_lcam_front.png"
+ },
+ "frames": {
+  "robot_f0507": 507,
+  "robot_f0062": 62,
+  "robot_f0468": 468
+ },
+ "requester": "robot_f0507",
+ "target_uid": "obj-72",
+ "target_label": "fountain",
+ "target_description": "fountain",
+ "target_xyz": [
+  -22.19,
+  -1.14,
+  1.74
+ ],
+ "true_chain": [
+  "robot_f0507",
+  "robot_f0468"
+ ],
+ "case_id": "case_001"
+}

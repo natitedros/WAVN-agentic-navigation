@@ -1,0 +1,20 @@
+  msg-051  robot_f0609 -> path_finder homing_request         target="fountain"
+                [path_finder] robot_f0609 wants to reach "fountain". Asking all 5 robots what they see.
+  msg-052  path_finder -> all         observation_request    
+  msg-053  robot_f0609 -> path_finder observation_report     "beige building made of stone", "black statue made of bronze", "gray pillar made of stone"
+  msg-054  robot_f0514 -> path_finder observation_report     "brown lion statue made of bronze", "black statue made of bronze", "brown column made of wood", "gray column made of stone", "brown building made of stone"
+  msg-055  robot_f0484 -> path_finder observation_report     "brown pedestal made of bronze", "brown beige building made of stone", "brown column made of stone", "gray column made of stone", "brown column made of stone", "black lion statue made of bronze", "gray statue made of bronze"
+  msg-056  robot_f0438 -> path_finder observation_report     "gray building made of stone"
+  msg-057  robot_f0150 -> path_finder observation_report     "gray statue made of bronze", "gray column made of stone", "gray building made of wood"
+                [path_finder] All reports in. Looking for the target and for shared landmarks.
+                [path_finder] Link robot_f0150 <-> robot_f0484: "gray statue made of bronze" = "gray statue made of bronze" (confidence 0.26)
+                [path_finder] Skipping robot_f0150 <-> robot_f0484: "column" is too common (x0.33, confidence 0.17)
+                [path_finder] Link robot_f0150 <-> robot_f0514: "gray column made of stone" = "gray column made of stone" (confidence 0.26)
+                [path_finder] Link robot_f0484 <-> robot_f0514: "brown beige building made of stone" = "brown building made of stone" (confidence 0.53)
+                [path_finder] Skipping robot_f0484 <-> robot_f0514: "column" is too common (x0.33, confidence 0.19)
+                [path_finder] Link robot_f0484 <-> robot_f0514: "black lion statue made of bronze" = "black statue made of bronze" (confidence 0.26)
+                [path_finder] Link robot_f0484 <-> robot_f0609: "brown beige building made of stone" = "beige building made of stone" (confidence 0.66)
+                [path_finder] Link robot_f0484 <-> robot_f0609: "black lion statue made of bronze" = "black statue made of bronze" (confidence 0.26)
+                [path_finder] Link robot_f0514 <-> robot_f0609: "black statue made of bronze" = "black statue made of bronze" (confidence 0.40)
+                [path_finder] No chain of shared landmarks reaches the target.
+  msg-058  path_finder -> robot_f0609 no_route_found         

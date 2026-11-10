@@ -21,7 +21,7 @@ class FakePerceiver:
     def detect(self, extra_prompts=()):
         # Real version: Grounding DINO finds objects, BLIP-2 describes each crop.
         # (extra_prompts is only used by the real version.)
-        return [{"object_id": f"{self.robot[-1]}-obj-{i}",
+        return [{"object_id": f"{self.robot.split('_')[-1]}-obj-{i}",
                  "description": o["description"],
                  "confidence": o["confidence"]}
                 for i, o in enumerate(self.scene, start=1)]
@@ -31,7 +31,7 @@ class FakePerceiver:
         wanted = key_words(query)
         scores = {}
         for i, o in enumerate(self.scene, start=1):
-            oid = f"{self.robot[-1]}-obj-{i}"
+            oid = f"{self.robot.split('_')[-1]}-obj-{i}"
             if oid in object_ids:
                 known = key_words(o["description"]) | key_words(" ".join(o.get("facts", [])))
                 scores[oid] = len(wanted & known) / len(wanted)

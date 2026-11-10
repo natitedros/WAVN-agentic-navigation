@@ -1,0 +1,29 @@
+  msg-080  robot_f0529 -> path_finder homing_request         target="fountain"
+                [path_finder] robot_f0529 wants to reach "fountain". Asking all 6 robots what they see.
+  msg-081  path_finder -> all         observation_request    
+  msg-082  robot_f0529 -> path_finder observation_report     "gray fountain made of stone", "brown column made of stone"
+  msg-083  robot_f0484 -> path_finder observation_report     "brown pedestal made of bronze", "brown beige building made of stone", "brown column made of stone", "gray column made of stone", "brown column made of stone", "black lion statue made of bronze", "gray statue made of bronze"
+  msg-084  robot_f0244 -> path_finder observation_report     "gray building made of stone", "brown arch made of stone", "brown column made of stone", "black white lion statue made of marble", "black column made of stone", "black white lion statue made of bronze", "gray building made of concrete steel"
+  msg-085  robot_f0062 -> path_finder observation_report     "black column made of concrete", "black column made of bronze", "black column made of stone", "black lion statue made of bronze", "gray staircase made of stone"
+  msg-086  robot_f0521 -> path_finder observation_report     "gray statue made of bronze", "gray stone wall made of stone", "black pedestal made of wood"
+  msg-087  robot_f0514 -> path_finder observation_report     "brown lion statue made of bronze", "black statue made of bronze", "brown column made of wood", "gray column made of stone", "brown building made of stone"
+                [path_finder] All reports in. Looking for the target and for shared landmarks.
+                [path_finder] robot_f0529 saw 1 object(s) of the target's kind (fountain). Asking robot_f0529 whether one of them is the target.
+                [path_finder] Skipping robot_f0062 <-> robot_f0244: "column" is too common (x0.33, confidence 0.17)
+                [path_finder] Skipping robot_f0062 <-> robot_f0244: "lion statue" is too common (x0.50, confidence 0.24)
+                [path_finder] Skipping robot_f0062 <-> robot_f0484: "lion statue" is too common (x0.50, confidence 0.24)
+                [path_finder] Skipping robot_f0062 <-> robot_f0514: "lion statue" is too common (x0.50, confidence 0.24)
+                [path_finder] Skipping robot_f0244 <-> robot_f0484: "column" is too common (x0.33, confidence 0.19)
+                [path_finder] Link robot_f0244 <-> robot_f0484: "black white lion statue made of bronze" = "black lion statue made of bronze" (confidence 0.25)
+                [path_finder] Link robot_f0244 <-> robot_f0514: "black white lion statue made of bronze" = "black statue made of bronze" (confidence 0.25)
+                [path_finder] Skipping robot_f0244 <-> robot_f0529: "column" is too common (x0.50, confidence 0.25)
+                [path_finder] Link robot_f0484 <-> robot_f0514: "brown beige building made of stone" = "brown building made of stone" (confidence 0.53)
+                [path_finder] Skipping robot_f0484 <-> robot_f0514: "column" is too common (x0.33, confidence 0.19)
+                [path_finder] Link robot_f0484 <-> robot_f0514: "black lion statue made of bronze" = "black statue made of bronze" (confidence 0.26)
+                [path_finder] Link robot_f0484 <-> robot_f0521: "gray statue made of bronze" = "gray statue made of bronze" (confidence 0.26)
+                [path_finder] Skipping robot_f0484 <-> robot_f0529: "column" is too common (x0.33, confidence 0.16)
+  msg-088  path_finder -> robot_f0529 clarification_question Is one of these "fountain"?  options=['9-obj-1']
+  msg-089  robot_f0529 -> path_finder clarification_answer   picked=None (0.00)
+                [path_finder] robot_f0529 says none of its candidates is the target.
+                [path_finder] No chain of shared landmarks reaches the target.
+  msg-090  path_finder -> robot_f0529 no_route_found         

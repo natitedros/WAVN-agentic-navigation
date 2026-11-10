@@ -22,7 +22,7 @@ LINK_MIN = 0.25
 MATCH_MIN = 0.3          # below this, two descriptions are not the same thing
 TARGET_MIN = 0.5         # how close a description must be to the target description
 AMBIGUITY_MARGIN = 0.1   # two candidates closer than this = ask a question
-ANSWER_MIN = 0.7
+ANSWER_MIN = 0.5
 
 
 def same_kind(a, b):

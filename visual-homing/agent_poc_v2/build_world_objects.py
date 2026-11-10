@@ -24,13 +24,13 @@ import numpy as np
 from PIL import Image
 
 import model_clients
-from real_perceiver import clean_label
+from real_perceiver import clean_label, detect_one_prompt_at_a_time
 
 # ---------------- settings: edit these ----------------
 TRAJ_DIR = "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000"  # folder holding image_lcam_front/
 MAX_FRAMES = 700          # only look at the first N frames (None = all)
 SPACING_M = 2.0           # keep one frame every this many metres
-THRESHOLD = 0.35          # Grounding DINO score cut-off
+THRESHOLD = 0.45          # Grounding DINO score cut-off (same as RealPerceiver)
 MAX_DEPTH_M = 40.0        # ignore objects further than this (depth gets unreliable, sky is huge)
 SAME_OBJECT_M = 1.5       # two detections of the same kind closer than this = same physical object
 PROMPTS = ["column", "statue", "arch", "stone wall", "staircase", "pedestal",
@@ -41,6 +41,16 @@ CX = CY = 320.0
 OUT_FILE = "world_objects.json"
 # ------------------------------------------------------
 
+SAME_OBJECT_BY_KIND = {"building": 8.0, "wall": 6.0, "staircase": 6.0}   # big things: the box centre moves with viewpoint
+
+
+def same_object_m(label):
+    return SAME_OBJECT_BY_KIND.get(label.lower().split()[-1], SAME_OBJECT_M)
+
+
+def find_pngs(traj_dir, folder_name):
+    """All PNGs inside any folder called folder_name (copes with image_lcam_front/image_lcam_front/)."""
+    return glob.glob(os.path.join(traj_dir, "**", folder_name, "*.png"), recursive=True)
 
 def frame_number(path):
     return int(re.match(r"(\d+)", os.path.basename(path)).group(1))
@@ -123,7 +133,7 @@ def main():
             continue
         img = Image.open(path).convert("RGB")
         depth = load_depth(depth_files[n])
-        found = model_clients.detect(img, PROMPTS, threshold=THRESHOLD)
+        found = detect_one_prompt_at_a_time(img, PROMPTS, THRESHOLD)
         kept_here = 0
         for d in found:
             label = clean_label(d["label"], PROMPTS)
@@ -146,7 +156,7 @@ def main():
         p = np.array(d["world_xyz"])
         match = None
         for o in objects:
-            if main_noun(o["label"]) == main_noun(d["label"]) and np.linalg.norm(p - o["xyz"]) < SAME_OBJECT_M:
+            if main_noun(o["label"]) == main_noun(d["label"]) and np.linalg.norm(p - o["xyz"]) < same_object_m(d["label"]):
                 match = o
                 break
         if match is None:
@@ -171,7 +181,7 @@ def main():
     out = {
         "traj_dir": TRAJ_DIR,
         "settings": {"spacing_m": SPACING_M, "threshold": THRESHOLD, "same_object_m": SAME_OBJECT_M,
-                     "prompts": PROMPTS},
+                     "same_object_by_kind": SAME_OBJECT_BY_KIND, "prompts": PROMPTS},
         "frames": [{"frame": frame_number(p), "image": p,
                     "position": [round(float(v), 2) for v in poses[frame_number(p), :3]]} for p in frames],
         "objects": [{"uid": o["uid"], "label": o["label"], "xyz": [round(float(v), 2) for v in o["xyz"]],

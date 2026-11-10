@@ -105,7 +105,7 @@ class RealPerceiver:
             x0, y0, x1, y1 = d["box"]
             if (x1 - x0) < self.min_size or (y1 - y0) < self.min_size:
                 continue
-            object_id = f"{self.robot[-1]}-obj-{len(objects) + 1}"
+            object_id = f"{self.robot.split('_')[-1]}-obj-{len(objects) + 1}"
             label = clean_label(d["label"], prompts)
             crop = self._crop(img, d["box"])
             self.crops[object_id] = crop

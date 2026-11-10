@@ -1,0 +1,33 @@
+{
+ "kind": "positive",
+ "expected": "route",
+ "robots": {
+  "robot_f0286": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000286_lcam_front.png",
+  "robot_f0225": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000225_lcam_front.png",
+  "robot_f0254": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000254_lcam_front.png",
+  "robot_f0244": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000244_lcam_front.png",
+  "robot_f0276": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000276_lcam_front.png"
+ },
+ "frames": {
+  "robot_f0286": 286,
+  "robot_f0225": 225,
+  "robot_f0254": 254,
+  "robot_f0244": 244,
+  "robot_f0276": 276
+ },
+ "requester": "robot_f0286",
+ "target_uid": "obj-25",
+ "target_label": "tree",
+ "target_description": "tree",
+ "target_xyz": [
+  -8.52,
+  -24.73,
+  2.52
+ ],
+ "true_chain": [
+  "robot_f0286",
+  "robot_f0254",
+  "robot_f0244"
+ ],
+ "case_id": "case_018"
+}

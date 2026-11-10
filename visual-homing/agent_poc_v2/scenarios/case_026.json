@@ -1,0 +1,27 @@
+{
+ "kind": "negative",
+ "expected": "no_route",
+ "robots": {
+  "robot_f0194": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000194_lcam_front.png",
+  "robot_f0345": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000345_lcam_front.png",
+  "robot_f0394": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000394_lcam_front.png",
+  "robot_f0650": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000650_lcam_front.png"
+ },
+ "frames": {
+  "robot_f0194": 194,
+  "robot_f0345": 345,
+  "robot_f0394": 394,
+  "robot_f0650": 650
+ },
+ "requester": "robot_f0194",
+ "target_uid": "obj-90",
+ "target_label": "fountain",
+ "target_description": "fountain",
+ "target_xyz": [
+  -0.53,
+  -10.28,
+  -0.1
+ ],
+ "true_chain": null,
+ "case_id": "case_026"
+}

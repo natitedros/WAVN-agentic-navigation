@@ -1,0 +1,14 @@
+  msg-137  robot_f0386 -> path_finder homing_request         target="fountain"
+                [path_finder] robot_f0386 wants to reach "fountain". Asking all 4 robots what they see.
+  msg-138  path_finder -> all         observation_request    
+  msg-139  robot_f0386 -> path_finder observation_report     "brown building made of wood", "gray arch made of stone", "gray pillar made of stone", "brown staircase made of wood"
+  msg-140  robot_f0367 -> path_finder observation_report     "black statue made of bronze", "brown statue made of bronze", "brown doorway made of wood", "gray arch made of stone", "gray column made of stone"
+  msg-141  robot_f0394 -> path_finder observation_report     "gray building made of stone", "brown arch made of stone", "gray pedestal made of concrete"
+  msg-142  robot_f0254 -> path_finder observation_report     "gray building made of stone", "brown arch made of stone", "gray column made of stone", "black white column made of wood", "black column made of wood"
+                [path_finder] All reports in. Looking for the target and for shared landmarks.
+                [path_finder] Skipping robot_f0254 <-> robot_f0367: "column" is too common (x0.33, confidence 0.15)
+                [path_finder] Link robot_f0254 <-> robot_f0394: "gray building made of stone" = "gray building made of stone" (confidence 0.67)
+                [path_finder] Link robot_f0254 <-> robot_f0394: "brown arch made of stone" = "brown arch made of stone" (confidence 0.57)
+                [path_finder] Link robot_f0367 <-> robot_f0386: "gray arch made of stone" = "gray arch made of stone" (confidence 0.53)
+                [path_finder] No chain of shared landmarks reaches the target.
+  msg-143  path_finder -> robot_f0386 no_route_found         

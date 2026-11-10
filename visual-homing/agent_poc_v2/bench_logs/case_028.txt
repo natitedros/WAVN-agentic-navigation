@@ -1,0 +1,14 @@
+  msg-231  robot_f0094 -> path_finder homing_request         target="fountain"
+                [path_finder] robot_f0094 wants to reach "fountain". Asking all 4 robots what they see.
+  msg-232  path_finder -> all         observation_request    
+  msg-233  robot_f0094 -> path_finder observation_report     "black statue made of bronze", "gray column made of concrete", "black statue made of bronze", "gray staircase made of stone", "gray pedestal made of stone", "black column made of metal"
+  msg-234  robot_f0475 -> path_finder observation_report     "gray column made of stone", "gray column made of stone", "gray column made of stone", "gray column made of stone", "gray building made of stone", "gray statue made of bronze", "gray staircase made of stone"
+  msg-235  robot_f0386 -> path_finder observation_report     "brown building made of wood", "gray arch made of stone", "gray pillar made of stone", "brown staircase made of wood"
+  msg-236  robot_f0062 -> path_finder observation_report     "black column made of concrete", "black column made of bronze", "black column made of stone", "black lion statue made of bronze", "gray staircase made of stone"
+                [path_finder] All reports in. Looking for the target and for shared landmarks.
+                [path_finder] Skipping robot_f0062 <-> robot_f0094: "lion statue" is too common (x0.50, confidence 0.24)
+                [path_finder] Link robot_f0062 <-> robot_f0094: "gray staircase made of stone" = "gray staircase made of stone" (confidence 0.49)
+                [path_finder] Link robot_f0062 <-> robot_f0475: "gray staircase made of stone" = "gray staircase made of stone" (confidence 0.49)
+                [path_finder] Link robot_f0094 <-> robot_f0475: "gray staircase made of stone" = "gray staircase made of stone" (confidence 0.49)
+                [path_finder] No chain of shared landmarks reaches the target.
+  msg-237  path_finder -> robot_f0094 no_route_found         

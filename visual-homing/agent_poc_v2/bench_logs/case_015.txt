@@ -1,0 +1,17 @@
+  msg-119  robot_f0498 -> path_finder homing_request         target="tree"
+                [path_finder] robot_f0498 wants to reach "tree". Asking all 4 robots what they see.
+  msg-120  path_finder -> all         observation_request    
+  msg-121  robot_f0498 -> path_finder observation_report     "gray statue made of bronze", "gold statue made of stone", "gray black fountain made of concrete", "gray column made of stone", "gray building made of stone", "brown column made of stone"
+  msg-122  robot_f0529 -> path_finder observation_report     "gray fountain made of stone", "brown column made of stone"
+  msg-123  robot_f0626 -> path_finder observation_report     "brown building made of stone", "gray statue made of bronze", "brown column made of stone", "gray staircase made of stone"
+  msg-124  robot_f0650 -> path_finder observation_report     "gray building made of stone", "gray column made of stone", "brown lion statue made of bronze", "gray brown staircase made of stone"
+                [path_finder] All reports in. Looking for the target and for shared landmarks.
+                [path_finder] Skipping robot_f0498 <-> robot_f0529: "column" is too common (x0.50, confidence 0.25)
+                [path_finder] Link robot_f0498 <-> robot_f0626: "gray statue made of bronze" = "gray statue made of bronze" (confidence 0.34)
+                [path_finder] Link robot_f0498 <-> robot_f0626: "brown column made of stone" = "brown column made of stone" (confidence 0.27)
+                [path_finder] Link robot_f0498 <-> robot_f0650: "gray column made of stone" = "gray column made of stone" (confidence 0.29)
+                [path_finder] Link robot_f0498 <-> robot_f0650: "gray building made of stone" = "gray building made of stone" (confidence 0.59)
+                [path_finder] Link robot_f0529 <-> robot_f0626: "brown column made of stone" = "brown column made of stone" (confidence 0.49)
+                [path_finder] Link robot_f0626 <-> robot_f0650: "gray staircase made of stone" = "gray brown staircase made of stone" (confidence 0.46)
+                [path_finder] No chain of shared landmarks reaches the target.
+  msg-125  path_finder -> robot_f0498 no_route_found         

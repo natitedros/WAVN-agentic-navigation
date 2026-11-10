@@ -1,0 +1,18 @@
+  msg-112  robot_f0475 -> path_finder homing_request         target="tree"
+                [path_finder] robot_f0475 wants to reach "tree". Asking all 4 robots what they see.
+  msg-113  path_finder -> all         observation_request    
+  msg-114  robot_f0475 -> path_finder observation_report     "gray column made of stone", "gray column made of stone", "gray column made of stone", "gray column made of stone", "gray building made of stone", "gray statue made of bronze", "gray staircase made of stone"
+  msg-115  robot_f0626 -> path_finder observation_report     "brown building made of stone", "gray statue made of bronze", "brown column made of stone", "gray staircase made of stone"
+  msg-116  robot_f0650 -> path_finder observation_report     "gray building made of stone", "gray column made of stone", "brown lion statue made of bronze", "gray brown staircase made of stone"
+  msg-117  robot_f0265 -> path_finder observation_report     "gray building made of wood", "gray column made of stone", "black column made of stone", "gray column made of stone", "black white lion statue made of bronze", "gray column made of stone", "gray stone wall made of stone"
+                [path_finder] All reports in. Looking for the target and for shared landmarks.
+                [path_finder] Skipping robot_f0265 <-> robot_f0475: "column" is too common (x0.25, confidence 0.15)
+                [path_finder] Skipping robot_f0265 <-> robot_f0650: "column" is too common (x0.25, confidence 0.15)
+                [path_finder] Link robot_f0475 <-> robot_f0626: "gray statue made of bronze" = "gray statue made of bronze" (confidence 0.59)
+                [path_finder] Link robot_f0475 <-> robot_f0626: "gray staircase made of stone" = "gray staircase made of stone" (confidence 0.53)
+                [path_finder] Skipping robot_f0475 <-> robot_f0650: "column" is too common (x0.25, confidence 0.15)
+                [path_finder] Link robot_f0475 <-> robot_f0650: "gray building made of stone" = "gray building made of stone" (confidence 0.59)
+                [path_finder] Link robot_f0475 <-> robot_f0650: "gray staircase made of stone" = "gray brown staircase made of stone" (confidence 0.46)
+                [path_finder] Link robot_f0626 <-> robot_f0650: "gray staircase made of stone" = "gray brown staircase made of stone" (confidence 0.46)
+                [path_finder] No chain of shared landmarks reaches the target.
+  msg-118  path_finder -> robot_f0475 no_route_found         

@@ -1,0 +1,18 @@
+  msg-189  robot_f0650 -> path_finder homing_request         target="fountain"
+                [path_finder] robot_f0650 wants to reach "fountain". Asking all 4 robots what they see.
+  msg-190  path_finder -> all         observation_request    
+  msg-191  robot_f0650 -> path_finder observation_report     "gray building made of stone", "gray column made of stone", "brown lion statue made of bronze", "gray brown staircase made of stone"
+  msg-192  robot_f0345 -> path_finder observation_report     "gray building made of stone"
+  msg-193  robot_f0626 -> path_finder observation_report     "brown building made of stone", "gray statue made of bronze", "brown column made of stone", "gray staircase made of stone"
+  msg-194  robot_f0360 -> path_finder observation_report     "gray fountain made of stone", "black statue made of bronze", "gray building made of stone"
+                [path_finder] All reports in. Looking for the target and for shared landmarks.
+                [path_finder] robot_f0360 saw 1 object(s) of the target's kind (fountain). Asking robot_f0360 whether one of them is the target.
+                [path_finder] Link robot_f0345 <-> robot_f0360: "gray building made of stone" = "gray building made of stone" (confidence 0.49)
+                [path_finder] Link robot_f0345 <-> robot_f0650: "gray building made of stone" = "gray building made of stone" (confidence 0.66)
+                [path_finder] Link robot_f0360 <-> robot_f0650: "gray building made of stone" = "gray building made of stone" (confidence 0.49)
+                [path_finder] Link robot_f0626 <-> robot_f0650: "gray staircase made of stone" = "gray brown staircase made of stone" (confidence 0.46)
+  msg-195  path_finder -> robot_f0360 clarification_question Is one of these "fountain"?  options=['0-obj-1']
+  msg-196  robot_f0360 -> path_finder clarification_answer   picked=0-obj-1 (0.59)
+                [path_finder] robot_f0360 says none of its candidates is the target.
+                [path_finder] No chain of shared landmarks reaches the target.
+  msg-197  path_finder -> robot_f0650 no_route_found         

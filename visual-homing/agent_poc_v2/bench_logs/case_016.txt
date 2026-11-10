@@ -1,0 +1,27 @@
+  msg-126  robot_f0225 -> path_finder homing_request         target="tree"
+                [path_finder] robot_f0225 wants to reach "tree". Asking all 6 robots what they see.
+  msg-127  path_finder -> all         observation_request    
+  msg-128  robot_f0225 -> path_finder observation_report     "black statue made of bronze", "gray pedestal made of stone", "gray column made of stone", "gray building made of stone"
+  msg-129  robot_f0176 -> path_finder observation_report     "gray doorway made of stone", "green tree made of wood"
+  msg-130  robot_f0210 -> path_finder observation_report     "black statue made of bronze", "gray building made of stone", "gray pedestal made of stone", "gray pillar made of stone", "gray staircase made of stone"
+  msg-131  robot_f0498 -> path_finder observation_report     "gray statue made of bronze", "gold statue made of stone", "gray black fountain made of concrete", "gray column made of stone", "gray building made of stone", "brown column made of stone"
+  msg-132  robot_f0062 -> path_finder observation_report     "black column made of concrete", "black column made of bronze", "black column made of stone", "black lion statue made of bronze", "gray staircase made of stone"
+  msg-133  robot_f0303 -> path_finder observation_report     "gray column made of stone", "black column made of wood", "brown lion statue made of bronze", "purple lion statue made of bronze"
+                [path_finder] All reports in. Looking for the target and for shared landmarks.
+                [path_finder] robot_f0176 saw 1 object(s) of the target's kind (tree). Asking robot_f0176 whether one of them is the target.
+                [path_finder] Link robot_f0062 <-> robot_f0210: "black lion statue made of bronze" = "black statue made of bronze" (confidence 0.49)
+                [path_finder] Link robot_f0062 <-> robot_f0210: "gray staircase made of stone" = "gray staircase made of stone" (confidence 0.48)
+                [path_finder] Link robot_f0062 <-> robot_f0225: "black lion statue made of bronze" = "black statue made of bronze" (confidence 0.49)
+                [path_finder] Link robot_f0210 <-> robot_f0225: "black statue made of bronze" = "black statue made of bronze" (confidence 0.90)
+                [path_finder] Link robot_f0210 <-> robot_f0225: "gray building made of stone" = "gray building made of stone" (confidence 0.59)
+                [path_finder] Link robot_f0210 <-> robot_f0225: "gray pedestal made of stone" = "gray pedestal made of stone" (confidence 0.55)
+                [path_finder] Link robot_f0210 <-> robot_f0498: "gray building made of stone" = "gray building made of stone" (confidence 0.59)
+                [path_finder] Link robot_f0225 <-> robot_f0303: "gray column made of stone" = "gray column made of stone" (confidence 0.32)
+                [path_finder] Link robot_f0225 <-> robot_f0498: "gray column made of stone" = "gray column made of stone" (confidence 0.32)
+                [path_finder] Link robot_f0225 <-> robot_f0498: "gray building made of stone" = "gray building made of stone" (confidence 0.59)
+                [path_finder] Link robot_f0303 <-> robot_f0498: "gray column made of stone" = "gray column made of stone" (confidence 0.32)
+  msg-134  path_finder -> robot_f0176 clarification_question Is one of these "tree"?  options=['6-obj-2']
+  msg-135  robot_f0176 -> path_finder clarification_answer   picked=None (0.00)
+                [path_finder] robot_f0176 says none of its candidates is the target.
+                [path_finder] No chain of shared landmarks reaches the target.
+  msg-136  path_finder -> robot_f0225 no_route_found         

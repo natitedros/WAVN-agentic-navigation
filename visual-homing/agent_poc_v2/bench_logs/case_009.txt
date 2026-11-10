@@ -1,0 +1,35 @@
+  msg-065  robot_f0367 -> path_finder homing_request         target="fountain"
+                [path_finder] robot_f0367 wants to reach "fountain". Asking all 6 robots what they see.
+  msg-066  path_finder -> all         observation_request    
+  msg-067  robot_f0367 -> path_finder observation_report     "black statue made of bronze", "brown statue made of bronze", "brown doorway made of wood", "gray arch made of stone", "gray column made of stone"
+  msg-068  robot_f0311 -> path_finder observation_report     "gold black lion statue made of bronze", "brown gold fountain made of stone", "gray lion statue made of bronze", "gray stone wall made of brick"
+  msg-069  robot_f0030 -> path_finder observation_report     "black lion statue made of bronze", "black column made of metal", "gray building made of stone"
+  msg-070  robot_f0265 -> path_finder observation_report     "gray building made of wood", "gray column made of stone", "black column made of stone", "gray column made of stone", "black white lion statue made of bronze", "gray column made of stone", "gray stone wall made of stone"
+  msg-071  robot_f0320 -> path_finder observation_report     "brown gold fountain made of bronze", "brown black lion statue made of bronze", "gray statue made of stone"
+  msg-072  robot_f0329 -> path_finder observation_report     "gold statue made of bronze"
+                [path_finder] All reports in. Looking for the target and for shared landmarks.
+                [path_finder] robot_f0311 saw 1 object(s) of the target's kind (fountain). Asking robot_f0311 whether one of them is the target.
+                [path_finder] robot_f0320 saw 1 object(s) of the target's kind (fountain). Asking robot_f0320 whether one of them is the target.
+                [path_finder] Link robot_f0030 <-> robot_f0265: "black lion statue made of bronze" = "black white lion statue made of bronze" (confidence 0.56)
+                [path_finder] Link robot_f0030 <-> robot_f0311: "black lion statue made of bronze" = "gold black lion statue made of bronze" (confidence 0.32)
+                [path_finder] Link robot_f0030 <-> robot_f0320: "black lion statue made of bronze" = "brown black lion statue made of bronze" (confidence 0.30)
+                [path_finder] Link robot_f0030 <-> robot_f0367: "black lion statue made of bronze" = "black statue made of bronze" (confidence 0.30)
+                [path_finder] Link robot_f0265 <-> robot_f0311: "black white lion statue made of bronze" = "gold black lion statue made of bronze" (confidence 0.28)
+                [path_finder] Link robot_f0265 <-> robot_f0320: "black white lion statue made of bronze" = "brown black lion statue made of bronze" (confidence 0.28)
+                [path_finder] Skipping robot_f0265 <-> robot_f0367: "column" is too common (x0.25, confidence 0.12)
+                [path_finder] Link robot_f0265 <-> robot_f0367: "black white lion statue made of bronze" = "black statue made of bronze" (confidence 0.28)
+                [path_finder] Link robot_f0311 <-> robot_f0320: "gold black lion statue made of bronze" = "brown black lion statue made of bronze" (confidence 0.30)
+                [path_finder] Link robot_f0311 <-> robot_f0329: "gold black lion statue made of bronze" = "gold statue made of bronze" (confidence 0.32)
+                [path_finder] Link robot_f0311 <-> robot_f0367: "gold black lion statue made of bronze" = "black statue made of bronze" (confidence 0.30)
+                [path_finder] "brown black lion statue made of bronze" (robot_f0320) matches 2 objects in robot_f0367 equally well (1.00 vs 1.00). Asking robot_f0367 to clarify.
+  msg-073  path_finder -> robot_f0311 clarification_question Is one of these "fountain"?  options=['1-obj-2']
+  msg-074  path_finder -> robot_f0320 clarification_question Is one of these "fountain"?  options=['0-obj-1']
+  msg-075  path_finder -> robot_f0367 clarification_question Which of these is "brown black lion statue made of bronze"?  options=['7-obj-1', '7-obj-2']
+  msg-076  robot_f0311 -> path_finder clarification_answer   picked=1-obj-2 (0.56)
+                [path_finder] robot_f0311 says none of its candidates is the target.
+  msg-077  robot_f0320 -> path_finder clarification_answer   picked=0-obj-1 (0.63)
+                [path_finder] robot_f0320 says none of its candidates is the target.
+  msg-078  robot_f0367 -> path_finder clarification_answer   picked=7-obj-2 (0.76)
+                [path_finder] robot_f0367 picked one, but "lion statue" is too common (x0.50, confidence 0.22). No link.
+                [path_finder] No chain of shared landmarks reaches the target.
+  msg-079  path_finder -> robot_f0367 no_route_found         

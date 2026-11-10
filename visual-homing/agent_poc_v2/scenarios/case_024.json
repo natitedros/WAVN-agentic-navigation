@@ -1,0 +1,27 @@
+{
+ "kind": "negative",
+ "expected": "no_route",
+ "robots": {
+  "robot_f0475": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000475_lcam_front.png",
+  "robot_f0539": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000539_lcam_front.png",
+  "robot_f0000": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000000_lcam_front.png",
+  "robot_f0666": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000666_lcam_front.png"
+ },
+ "frames": {
+  "robot_f0475": 475,
+  "robot_f0539": 539,
+  "robot_f0000": 0,
+  "robot_f0666": 666
+ },
+ "requester": "robot_f0475",
+ "target_uid": "obj-76",
+ "target_label": "bench",
+ "target_description": "bench",
+ "target_xyz": [
+  11.82,
+  -34.2,
+  2.01
+ ],
+ "true_chain": null,
+ "case_id": "case_024"
+}

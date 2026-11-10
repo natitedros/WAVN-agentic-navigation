@@ -1,0 +1,18 @@
+  msg-154  robot_f0514 -> path_finder homing_request         target="fountain"
+                [path_finder] robot_f0514 wants to reach "fountain". Asking all 3 robots what they see.
+  msg-155  path_finder -> all         observation_request    
+  msg-156  robot_f0514 -> path_finder observation_report     "brown lion statue made of bronze", "black statue made of bronze", "brown column made of wood", "gray column made of stone", "brown building made of stone"
+  msg-157  robot_f0276 -> path_finder observation_report     "gray column made of stone", "brown building made of wood", "gray column made of stone", "gray staircase made of stone", "gray statue made of bronze"
+  msg-158  robot_f0484 -> path_finder observation_report     "brown pedestal made of bronze", "brown beige building made of stone", "brown column made of stone", "gray column made of stone", "brown column made of stone", "black lion statue made of bronze", "gray statue made of bronze"
+                [path_finder] All reports in. Looking for the target and for shared landmarks.
+                [path_finder] Skipping robot_f0276 <-> robot_f0484: "column" is too common (x0.33, confidence 0.19)
+                [path_finder] Link robot_f0276 <-> robot_f0484: "gray statue made of bronze" = "gray statue made of bronze" (confidence 0.25)
+                [path_finder] "gray column made of stone" (robot_f0514) matches 2 objects in robot_f0276 equally well (1.00 vs 1.00). Asking robot_f0276 to clarify.
+                [path_finder] Link robot_f0484 <-> robot_f0514: "brown beige building made of stone" = "brown building made of stone" (confidence 0.53)
+                [path_finder] Skipping robot_f0484 <-> robot_f0514: "column" is too common (x0.33, confidence 0.19)
+                [path_finder] Link robot_f0484 <-> robot_f0514: "black lion statue made of bronze" = "black statue made of bronze" (confidence 0.26)
+  msg-159  path_finder -> robot_f0276 clarification_question Which of these is "gray column made of stone"?  options=['6-obj-1', '6-obj-3']
+  msg-160  robot_f0276 -> path_finder clarification_answer   picked=6-obj-1 (0.92)
+                [path_finder] robot_f0276 says 6-obj-1. Link robot_f0514 <-> robot_f0276: "gray column made of stone" (confidence 0.31)
+                [path_finder] No chain of shared landmarks reaches the target.
+  msg-161  path_finder -> robot_f0514 no_route_found         

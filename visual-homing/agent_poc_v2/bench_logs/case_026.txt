@@ -1,0 +1,17 @@
+  msg-215  robot_f0194 -> path_finder homing_request         target="fountain"
+                [path_finder] robot_f0194 wants to reach "fountain". Asking all 4 robots what they see.
+  msg-216  path_finder -> all         observation_request    
+  msg-217  robot_f0194 -> path_finder observation_report     "statue made of bronze", "brown column made of stone", "gray pillar made of stone", "blue fountain made of stone"
+  msg-218  robot_f0345 -> path_finder observation_report     "gray building made of stone"
+  msg-219  robot_f0394 -> path_finder observation_report     "gray building made of stone", "brown arch made of stone", "gray pedestal made of concrete"
+  msg-220  robot_f0650 -> path_finder observation_report     "gray building made of stone", "gray column made of stone", "brown lion statue made of bronze", "gray brown staircase made of stone"
+                [path_finder] All reports in. Looking for the target and for shared landmarks.
+                [path_finder] robot_f0194 saw 1 object(s) of the target's kind (fountain). Asking robot_f0194 whether one of them is the target.
+                [path_finder] Link robot_f0345 <-> robot_f0394: "gray building made of stone" = "gray building made of stone" (confidence 0.66)
+                [path_finder] Link robot_f0345 <-> robot_f0650: "gray building made of stone" = "gray building made of stone" (confidence 0.66)
+                [path_finder] Link robot_f0394 <-> robot_f0650: "gray building made of stone" = "gray building made of stone" (confidence 0.67)
+  msg-221  path_finder -> robot_f0194 clarification_question Is one of these "fountain"?  options=['4-obj-4']
+  msg-222  robot_f0194 -> path_finder clarification_answer   picked=None (0.00)
+                [path_finder] robot_f0194 says none of its candidates is the target.
+                [path_finder] No chain of shared landmarks reaches the target.
+  msg-223  path_finder -> robot_f0194 no_route_found         

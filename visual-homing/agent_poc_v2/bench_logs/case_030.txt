@@ -1,0 +1,16 @@
+  msg-251  robot_f0386 -> path_finder homing_request         target="tree"
+                [path_finder] robot_f0386 wants to reach "tree". Asking all 4 robots what they see.
+  msg-252  path_finder -> all         observation_request    
+  msg-253  robot_f0386 -> path_finder observation_report     "brown building made of wood", "gray arch made of stone", "gray pillar made of stone", "brown staircase made of wood"
+  msg-254  robot_f0514 -> path_finder observation_report     "brown lion statue made of bronze", "black statue made of bronze", "brown column made of wood", "gray column made of stone", "brown building made of stone"
+  msg-255  robot_f0276 -> path_finder observation_report     "gray column made of stone", "brown building made of wood", "gray column made of stone", "gray staircase made of stone", "gray statue made of bronze"
+  msg-256  robot_f0244 -> path_finder observation_report     "gray building made of stone", "brown arch made of stone", "brown column made of stone", "black white lion statue made of marble", "black column made of stone", "black white lion statue made of bronze", "gray building made of concrete steel"
+                [path_finder] All reports in. Looking for the target and for shared landmarks.
+                [path_finder] Link robot_f0244 <-> robot_f0514: "black white lion statue made of bronze" = "black statue made of bronze" (confidence 0.25)
+                [path_finder] Link robot_f0276 <-> robot_f0386: "brown building made of wood" = "brown building made of wood" (confidence 0.66)
+                [path_finder] "gray column made of stone" (robot_f0514) matches 2 objects in robot_f0276 equally well (1.00 vs 1.00). Asking robot_f0276 to clarify.
+  msg-257  path_finder -> robot_f0276 clarification_question Which of these is "gray column made of stone"?  options=['6-obj-1', '6-obj-3']
+  msg-258  robot_f0276 -> path_finder clarification_answer   picked=6-obj-1 (0.92)
+                [path_finder] robot_f0276 says 6-obj-1. Link robot_f0514 <-> robot_f0276: "gray column made of stone" (confidence 0.31)
+                [path_finder] No chain of shared landmarks reaches the target.
+  msg-259  path_finder -> robot_f0386 no_route_found         

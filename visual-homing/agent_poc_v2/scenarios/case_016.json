@@ -1,0 +1,36 @@
+{
+ "kind": "positive",
+ "expected": "route",
+ "robots": {
+  "robot_f0225": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000225_lcam_front.png",
+  "robot_f0176": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000176_lcam_front.png",
+  "robot_f0210": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000210_lcam_front.png",
+  "robot_f0498": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000498_lcam_front.png",
+  "robot_f0062": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000062_lcam_front.png",
+  "robot_f0303": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000303_lcam_front.png"
+ },
+ "frames": {
+  "robot_f0225": 225,
+  "robot_f0176": 176,
+  "robot_f0210": 210,
+  "robot_f0498": 498,
+  "robot_f0062": 62,
+  "robot_f0303": 303
+ },
+ "requester": "robot_f0225",
+ "target_uid": "obj-77",
+ "target_label": "tree",
+ "target_description": "tree",
+ "target_xyz": [
+  -17.15,
+  -33.51,
+  1.48
+ ],
+ "true_chain": [
+  "robot_f0225",
+  "robot_f0210",
+  "robot_f0176",
+  "robot_f0062"
+ ],
+ "case_id": "case_016"
+}

@@ -1,0 +1,36 @@
+{
+ "kind": "positive",
+ "expected": "route",
+ "robots": {
+  "robot_f0529": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000529_lcam_front.png",
+  "robot_f0484": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000484_lcam_front.png",
+  "robot_f0244": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000244_lcam_front.png",
+  "robot_f0062": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000062_lcam_front.png",
+  "robot_f0521": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000521_lcam_front.png",
+  "robot_f0514": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000514_lcam_front.png"
+ },
+ "frames": {
+  "robot_f0529": 529,
+  "robot_f0484": 484,
+  "robot_f0244": 244,
+  "robot_f0062": 62,
+  "robot_f0521": 521,
+  "robot_f0514": 514
+ },
+ "requester": "robot_f0529",
+ "target_uid": "obj-72",
+ "target_label": "fountain",
+ "target_description": "fountain",
+ "target_xyz": [
+  -22.19,
+  -1.14,
+  1.74
+ ],
+ "true_chain": [
+  "robot_f0529",
+  "robot_f0521",
+  "robot_f0514",
+  "robot_f0484"
+ ],
+ "case_id": "case_010"
+}

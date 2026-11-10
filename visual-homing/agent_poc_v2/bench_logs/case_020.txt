@@ -1,0 +1,12 @@
+  msg-162  robot_f0609 -> path_finder homing_request         target="tree"
+                [path_finder] robot_f0609 wants to reach "tree". Asking all 3 robots what they see.
+  msg-163  path_finder -> all         observation_request    
+  msg-164  robot_f0609 -> path_finder observation_report     "beige building made of stone", "black statue made of bronze", "gray pillar made of stone"
+  msg-165  robot_f0225 -> path_finder observation_report     "black statue made of bronze", "gray pedestal made of stone", "gray column made of stone", "gray building made of stone"
+  msg-166  robot_f0650 -> path_finder observation_report     "gray building made of stone", "gray column made of stone", "brown lion statue made of bronze", "gray brown staircase made of stone"
+                [path_finder] All reports in. Looking for the target and for shared landmarks.
+                [path_finder] Link robot_f0225 <-> robot_f0609: "black statue made of bronze" = "black statue made of bronze" (confidence 0.79)
+                [path_finder] Link robot_f0225 <-> robot_f0650: "gray column made of stone" = "gray column made of stone" (confidence 0.59)
+                [path_finder] Link robot_f0225 <-> robot_f0650: "gray building made of stone" = "gray building made of stone" (confidence 0.59)
+                [path_finder] No chain of shared landmarks reaches the target.
+  msg-167  path_finder -> robot_f0609 no_route_found         

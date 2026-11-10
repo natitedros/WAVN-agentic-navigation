@@ -31,7 +31,7 @@ from path_finder import PathFinderAgent
 from real_perceiver import RealPerceiver
 from robot import FakeNavigator, RobotAgent
 from build_world_objects import (box_depth, find_pngs, frame_number, load_depth, load_poses,
-                                 main_noun, pixel_to_world)
+                                 main_noun, pixel_to_world, same_object_m)
 
 # Same settings as run_real.py
 path_finder.MATCH_MIN = 1.0
@@ -90,7 +90,7 @@ def answer_key_uid(frame, obj):
     if p is None:
         return None, None
     kind = main_noun(obj["label"])
-    best, best_d = None, SAME_OBJECT_M
+    best, best_d = None, same_object_m(obj["label"])
     for uid, k, xyz in WORLD_OBJECTS:
         d = float(np.linalg.norm(p - xyz))
         if k == kind and d < best_d:
@@ -104,7 +104,7 @@ def same_physical_object(fa, oa, fb, ob):
     if ua is not None and ua == ub:
         return True, ua
     if pa is not None and pb is not None and main_noun(oa["label"]) == main_noun(ob["label"]) \
-            and np.linalg.norm(pa - pb) < SAME_OBJECT_M:
+            and np.linalg.norm(pa - pb) < same_object_m(oa["label"]):
         return True, ua or ub            # same place, just not in the key (e.g. missed by the key's detector)
     return False, None
 
@@ -117,7 +117,7 @@ def run_case(case):
         bus.register(RobotAgent(name, get_perceiver(name, photo, case["target_label"]), FakeNavigator()))
     log = io.StringIO()
     with contextlib.redirect_stdout(log):
-        bus.agents[case["requester"]].request_homing(case["target_description"], task_id=case["case_id"],
+        bus.agents[case["requester"]].request_homing(f"a {case['target_label']}", task_id=case["case_id"],
                                                      target_label=case["target_label"])
         bus.run()
     return bus, log.getvalue()
@@ -157,7 +157,7 @@ def score_case(case, bus):
             uid, p = answer_key_uid(frames[h["via_robot"]], obj)
             if h.get("is_target"):
                 hit = uid == case["target_uid"] or (
-                    p is not None and np.linalg.norm(p - np.array(case["target_xyz"])) < SAME_OBJECT_M)
+                    p is not None and np.linalg.norm(p - np.array(case["target_xyz"])) < same_object_m(obj["label"]))
             else:
                 hit = uid is not None and uid in UIDS_IN[frames[previous]]
                 previous = h["via_robot"]
