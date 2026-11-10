@@ -1,0 +1,67 @@
+robot_A asks for: "orange and black circular target on black wall"
+
+  msg-001      robot_A -> path_finder homing_request         target="orange and black circular target on black wall"
+                [path_finder] robot_A wants to reach "orange and black circular target on black wall". Asking all 4 robots what they see.
+  msg-002  path_finder -> all         observation_request    
+  msg-003      robot_A -> path_finder observation_report     "gray padded wall made of polyester", "black pitching machine made of metal fabric", "gray light pole made of metal", "white stadium floodlight made of metal glass", "black metal fence made of steel"
+  msg-004      robot_B -> path_finder observation_report     "silver metal fence made of steel", "green hedge made of plastic", "green hedge made of hedges typically shrubs or", "gray pitching machine made of wood", "white light pole made of metal", "gray padded wall made of plastic", "gray concrete block made of concrete"
+  msg-005      robot_C -> path_finder observation_report     "black batting cage made of wood metal", "green hedge made of bamboo", "gray concrete block made of concrete", "brown weight sled made of metal rubber", "gray padded wall made of foam wood", "white light pole made of metal"
+  msg-006      robot_D -> path_finder observation_report     "black padded wall made of metal foam", "white light pole made of metal", "gray light pole made of metal", "white light pole made of metal", "orange black circular target made of plastic", "gray metal grate made of steel", "gray concrete block made of concrete", "black white metal grate made of steel", "white light pole made of metal"
+                [path_finder] All reports in. Looking for the target and for shared landmarks.
+                [path_finder] robot_D saw 1 object(s) of the target's kind (circular target). Asking robot_D whether one of them is the target.
+                [path_finder] Skipping robot_A <-> robot_D: "light pole" is too common (x0.25, confidence 0.15)
+                [path_finder] Link robot_B <-> robot_C: "white light pole made of metal" = "white light pole made of metal" (confidence 0.46)
+                [path_finder] Link robot_B <-> robot_C: "gray concrete block made of concrete" = "gray concrete block made of concrete" (confidence 0.47)
+                [path_finder] "white light pole made of metal" (robot_B) matches 3 objects in robot_D equally well (1.00 vs 1.00). Asking robot_D to clarify.
+                [path_finder] Link robot_B <-> robot_D: "gray concrete block made of concrete" = "gray concrete block made of concrete" (confidence 0.47)
+                [path_finder] "white light pole made of metal" (robot_C) matches 3 objects in robot_D equally well (1.00 vs 1.00). Asking robot_D to clarify.
+                [path_finder] Link robot_C <-> robot_D: "gray concrete block made of concrete" = "gray concrete block made of concrete" (confidence 0.55)
+  msg-007  path_finder -> robot_D     clarification_question Is one of these "orange and black circular target on black wall"?  options=['D-obj-5']
+  msg-008  path_finder -> robot_D     clarification_question Which of these is "white light pole made of metal"?  options=['D-obj-2', 'D-obj-4', 'D-obj-9']
+  msg-009  path_finder -> robot_D     clarification_question Which of these is "white light pole made of metal"?  options=['D-obj-2', 'D-obj-4', 'D-obj-9']
+  msg-010      robot_D -> path_finder clarification_answer   picked=D-obj-5 (0.73)
+                [path_finder] robot_D confirms D-obj-5 is the target: "orange black circular target made of plastic" (confidence 0.45)
+  msg-011      robot_D -> path_finder clarification_answer   picked=D-obj-4 (0.87)
+                [path_finder] robot_D picked one, but "light pole" is too common (x0.25, confidence 0.11). No link.
+  msg-012      robot_D -> path_finder clarification_answer   picked=D-obj-4 (0.87)
+                [path_finder] robot_D picked one, but "light pole" is too common (x0.25, confidence 0.10). No link.
+                [path_finder] No chain of shared landmarks reaches the target.
+  msg-013  path_finder -> robot_A     no_route_found         
+
+What each robot reported:
+  robot_A:
+    A-obj-1  [padded wall 0.73]  {'color': 'gray', 'material': 'polyester'}
+    A-obj-2  [pitching machine 0.62]  {'color': 'black', 'material': 'metal fabric'}
+    A-obj-3  [light pole 0.61]  {'color': 'gray', 'material': 'metal'}
+    A-obj-4  [stadium floodlight 0.52]  {'color': 'white', 'material': 'metal glass'}
+    A-obj-5  [metal fence 0.46]  {'color': 'black', 'material': 'steel'}
+  robot_B:
+    B-obj-1  [metal fence 0.65]  {'color': 'silver', 'material': 'steel'}
+    B-obj-2  [hedge 0.58]  {'color': 'green', 'material': 'plastic'}
+    B-obj-3  [hedge 0.58]  {'color': 'green', 'material': 'hedges typically shrubs or'}
+    B-obj-4  [pitching machine 0.54]  {'color': 'gray', 'material': 'wood'}
+    B-obj-5  [light pole 0.53]  {'color': 'white', 'material': 'metal'}
+    B-obj-6  [padded wall 0.49]  {'color': 'gray', 'material': 'plastic'}
+    B-obj-7  [concrete block 0.47]  {'color': 'gray', 'material': 'concrete'}
+  robot_C:
+    C-obj-1  [batting cage 0.68]  {'color': 'black', 'material': 'wood metal'}
+    C-obj-2  [hedge 0.67]  {'color': 'green', 'material': 'bamboo'}
+    C-obj-3  [concrete block 0.65]  {'color': 'gray', 'material': 'concrete'}
+    C-obj-4  [weight sled 0.58]  {'color': 'brown', 'material': 'metal rubber'}
+    C-obj-5  [padded wall 0.58]  {'color': 'gray', 'material': 'foam wood'}
+    C-obj-6  [light pole 0.46]  {'color': 'white', 'material': 'metal'}
+  robot_D:
+    D-obj-1  [padded wall 0.73]  {'color': 'black', 'material': 'metal foam'}
+    D-obj-2  [light pole 0.66]  {'color': 'white', 'material': 'metal'}
+    D-obj-3  [light pole 0.65]  {'color': 'gray', 'material': 'metal'}
+    D-obj-4  [light pole 0.64]  {'color': 'white', 'material': 'metal'}
+    D-obj-5  [circular target 0.61]  {'color': 'orange black', 'material': 'plastic'}
+    D-obj-6  [metal grate 0.60]  {'color': 'gray', 'material': 'steel'}
+    D-obj-7  [concrete block 0.55]  {'color': 'gray', 'material': 'concrete'}
+    D-obj-8  [metal grate 0.53]  {'color': 'black white', 'material': 'steel'}
+    D-obj-9  [light pole 0.47]  {'color': 'white', 'material': 'metal'}
+
+Crops saved in debug_crops/
+
+Final route:
+  none found

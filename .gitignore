@@ -6,3 +6,4 @@ weights/
 debug_crops/
 visual-homing/.venv/
 visual-homing/agent_poc_v2/debug_crops/
+visual-homing/agent_poc_v2/check_objects/

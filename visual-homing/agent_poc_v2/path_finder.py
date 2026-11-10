@@ -128,7 +128,7 @@ class PathFinderAgent(Agent):
             for obj in task.reports[asker]:
                 cands = sorted((p for p in pairs if p[side] is obj), key=lambda p: -p[2])
                 if len(cands) >= 2 and cands[0][2] - cands[1][2] < AMBIGUITY_MARGIN:
-                    if cands[0][2] * uniqueness(obj, task.reports[x], task.reports[y]) < LINK_MIN:
+                    if cands[0][2] * uniqueness(obj, task.reports[x], task.reports[y]) * obj["confidence"] < LINK_MIN:
                         continue      # even a perfect answer couldn't make this link strong enough
                     options = [p[1 - side] for p in cands]
                     self.think(f"\"{obj['description']}\" ({asker}) matches {len(options)} objects in {other} "

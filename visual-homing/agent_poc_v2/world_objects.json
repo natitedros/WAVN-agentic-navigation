@@ -1,0 +1,6752 @@
+{
+ "traj_dir": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000",
+ "settings": {
+  "spacing_m": 2.0,
+  "threshold": 0.35,
+  "same_object_m": 1.5,
+  "prompts": [
+   "column",
+   "statue",
+   "arch",
+   "stone wall",
+   "staircase",
+   "pedestal",
+   "fountain",
+   "doorway",
+   "tree",
+   "bench",
+   "vase",
+   "building",
+   "lion statue",
+   "pillar",
+   "carving"
+  ]
+ },
+ "frames": [
+  {
+   "frame": 0,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000000_lcam_front.png",
+   "position": [
+    12.0,
+    -30.01,
+    2.22
+   ]
+  },
+  {
+   "frame": 30,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000030_lcam_front.png",
+   "position": [
+    10.31,
+    -31.18,
+    2.24
+   ]
+  },
+  {
+   "frame": 62,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000062_lcam_front.png",
+   "position": [
+    8.28,
+    -31.37,
+    2.22
+   ]
+  },
+  {
+   "frame": 94,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000094_lcam_front.png",
+   "position": [
+    6.29,
+    -31.46,
+    2.24
+   ]
+  },
+  {
+   "frame": 125,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000125_lcam_front.png",
+   "position": [
+    4.28,
+    -31.63,
+    2.24
+   ]
+  },
+  {
+   "frame": 150,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000150_lcam_front.png",
+   "position": [
+    2.28,
+    -31.71,
+    2.19
+   ]
+  },
+  {
+   "frame": 176,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000176_lcam_front.png",
+   "position": [
+    0.3,
+    -31.36,
+    2.24
+   ]
+  },
+  {
+   "frame": 194,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000194_lcam_front.png",
+   "position": [
+    -1.26,
+    -30.04,
+    2.1
+   ]
+  },
+  {
+   "frame": 210,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000210_lcam_front.png",
+   "position": [
+    -2.87,
+    -28.71,
+    2.19
+   ]
+  },
+  {
+   "frame": 225,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000225_lcam_front.png",
+   "position": [
+    -4.06,
+    -26.97,
+    2.1
+   ]
+  },
+  {
+   "frame": 235,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000235_lcam_front.png",
+   "position": [
+    -5.64,
+    -25.52,
+    1.99
+   ]
+  },
+  {
+   "frame": 244,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000244_lcam_front.png",
+   "position": [
+    -7.69,
+    -24.79,
+    1.9
+   ]
+  },
+  {
+   "frame": 254,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000254_lcam_front.png",
+   "position": [
+    -9.8,
+    -24.81,
+    1.87
+   ]
+  },
+  {
+   "frame": 265,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000265_lcam_front.png",
+   "position": [
+    -11.91,
+    -25.08,
+    1.9
+   ]
+  },
+  {
+   "frame": 276,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000276_lcam_front.png",
+   "position": [
+    -14.02,
+    -25.26,
+    1.99
+   ]
+  },
+  {
+   "frame": 286,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000286_lcam_front.png",
+   "position": [
+    -16.06,
+    -25.2,
+    2.03
+   ]
+  },
+  {
+   "frame": 303,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000303_lcam_front.png",
+   "position": [
+    -18.21,
+    -24.98,
+    1.97
+   ]
+  },
+  {
+   "frame": 311,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000311_lcam_front.png",
+   "position": [
+    -20.48,
+    -24.69,
+    1.86
+   ]
+  },
+  {
+   "frame": 320,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000320_lcam_front.png",
+   "position": [
+    -22.4,
+    -24.13,
+    1.79
+   ]
+  },
+  {
+   "frame": 329,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000329_lcam_front.png",
+   "position": [
+    -24.06,
+    -22.65,
+    1.81
+   ]
+  },
+  {
+   "frame": 345,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000345_lcam_front.png",
+   "position": [
+    -24.89,
+    -20.75,
+    1.87
+   ]
+  },
+  {
+   "frame": 353,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000353_lcam_front.png",
+   "position": [
+    -24.64,
+    -18.43,
+    1.99
+   ]
+  },
+  {
+   "frame": 360,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000360_lcam_front.png",
+   "position": [
+    -24.45,
+    -16.13,
+    2.05
+   ]
+  },
+  {
+   "frame": 367,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000367_lcam_front.png",
+   "position": [
+    -24.39,
+    -14.09,
+    2.06
+   ]
+  },
+  {
+   "frame": 386,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000386_lcam_front.png",
+   "position": [
+    -23.05,
+    -12.58,
+    2.15
+   ]
+  },
+  {
+   "frame": 394,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000394_lcam_front.png",
+   "position": [
+    -21.05,
+    -11.93,
+    2.18
+   ]
+  },
+  {
+   "frame": 402,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000402_lcam_front.png",
+   "position": [
+    -19.48,
+    -10.43,
+    1.79
+   ]
+  },
+  {
+   "frame": 416,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000416_lcam_front.png",
+   "position": [
+    -19.09,
+    -8.46,
+    1.66
+   ]
+  },
+  {
+   "frame": 438,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000438_lcam_front.png",
+   "position": [
+    -18.18,
+    -6.62,
+    1.7
+   ]
+  },
+  {
+   "frame": 468,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000468_lcam_front.png",
+   "position": [
+    -17.64,
+    -4.73,
+    2.19
+   ]
+  },
+  {
+   "frame": 475,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000475_lcam_front.png",
+   "position": [
+    -19.22,
+    -3.31,
+    2.2
+   ]
+  },
+  {
+   "frame": 484,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000484_lcam_front.png",
+   "position": [
+    -20.91,
+    -2.24,
+    1.97
+   ]
+  },
+  {
+   "frame": 498,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000498_lcam_front.png",
+   "position": [
+    -22.9,
+    -1.91,
+    1.78
+   ]
+  },
+  {
+   "frame": 507,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000507_lcam_front.png",
+   "position": [
+    -24.41,
+    -0.57,
+    1.8
+   ]
+  },
+  {
+   "frame": 514,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000514_lcam_front.png",
+   "position": [
+    -25.77,
+    1.05,
+    1.84
+   ]
+  },
+  {
+   "frame": 521,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000521_lcam_front.png",
+   "position": [
+    -27.12,
+    2.63,
+    1.75
+   ]
+  },
+  {
+   "frame": 529,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000529_lcam_front.png",
+   "position": [
+    -28.57,
+    4.31,
+    2.08
+   ]
+  },
+  {
+   "frame": 539,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000539_lcam_front.png",
+   "position": [
+    -29.4,
+    6.28,
+    2.2
+   ]
+  },
+  {
+   "frame": 547,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000547_lcam_front.png",
+   "position": [
+    -29.44,
+    8.47,
+    2.22
+   ]
+  },
+  {
+   "frame": 554,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000554_lcam_front.png",
+   "position": [
+    -29.68,
+    10.49,
+    2.21
+   ]
+  },
+  {
+   "frame": 609,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000609_lcam_front.png",
+   "position": [
+    -29.74,
+    8.39,
+    2.26
+   ]
+  },
+  {
+   "frame": 626,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000626_lcam_front.png",
+   "position": [
+    -29.68,
+    6.34,
+    2.23
+   ]
+  },
+  {
+   "frame": 650,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000650_lcam_front.png",
+   "position": [
+    -29.65,
+    4.32,
+    2.26
+   ]
+  },
+  {
+   "frame": 666,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000666_lcam_front.png",
+   "position": [
+    -29.61,
+    2.24,
+    2.24
+   ]
+  },
+  {
+   "frame": 691,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000691_lcam_front.png",
+   "position": [
+    -29.6,
+    0.22,
+    2.21
+   ]
+  }
+ ],
+ "objects": [
+  {
+   "uid": "obj-1",
+   "label": "lion statue",
+   "xyz": [
+    -26.88,
+    4.12,
+    1.43
+   ],
+   "frames": [
+    498,
+    507,
+    514,
+    521,
+    609
+   ]
+  },
+  {
+   "uid": "obj-2",
+   "label": "lion statue",
+   "xyz": [
+    -4.62,
+    -21.47,
+    -0.6
+   ],
+   "frames": [
+    194,
+    210,
+    225
+   ]
+  },
+  {
+   "uid": "obj-3",
+   "label": "building",
+   "xyz": [
+    -16.13,
+    -21.35,
+    -1.09
+   ],
+   "frames": [
+    254
+   ]
+  },
+  {
+   "uid": "obj-4",
+   "label": "building",
+   "xyz": [
+    -20.18,
+    -13.7,
+    -1.69
+   ],
+   "frames": [
+    609,
+    650
+   ]
+  },
+  {
+   "uid": "obj-5",
+   "label": "building",
+   "xyz": [
+    -35.95,
+    -5.14,
+    -1.33
+   ],
+   "frames": [
+    484,
+    498
+   ]
+  },
+  {
+   "uid": "obj-6",
+   "label": "building",
+   "xyz": [
+    -19.89,
+    -21.31,
+    -0.4
+   ],
+   "frames": [
+    265,
+    276,
+    286
+   ]
+  },
+  {
+   "uid": "obj-7",
+   "label": "building",
+   "xyz": [
+    -13.04,
+    -21.1,
+    -0.65
+   ],
+   "frames": [
+    244
+   ]
+  },
+  {
+   "uid": "obj-8",
+   "label": "lion statue",
+   "xyz": [
+    0.1,
+    -33.57,
+    0.05
+   ],
+   "frames": [
+    30,
+    62,
+    94,
+    125,
+    150
+   ]
+  },
+  {
+   "uid": "obj-9",
+   "label": "lion statue",
+   "xyz": [
+    -5.26,
+    -1.84,
+    -1.92
+   ],
+   "frames": [
+    386,
+    394,
+    402,
+    438
+   ]
+  },
+  {
+   "uid": "obj-10",
+   "label": "arch",
+   "xyz": [
+    -8.85,
+    16.63,
+    -3.89
+   ],
+   "frames": [
+    402,
+    416
+   ]
+  },
+  {
+   "uid": "obj-11",
+   "label": "pedestal",
+   "xyz": [
+    -4.89,
+    -24.83,
+    2.2
+   ],
+   "frames": [
+    194,
+    210,
+    225
+   ]
+  },
+  {
+   "uid": "obj-12",
+   "label": "staircase",
+   "xyz": [
+    -14.45,
+    -26.19,
+    2.54
+   ],
+   "frames": [
+    265,
+    276
+   ]
+  },
+  {
+   "uid": "obj-13",
+   "label": "staircase",
+   "xyz": [
+    -4.14,
+    -28.1,
+    2.67
+   ],
+   "frames": [
+    210
+   ]
+  },
+  {
+   "uid": "obj-14",
+   "label": "building",
+   "xyz": [
+    -12.11,
+    -14.03,
+    -1.63
+   ],
+   "frames": [
+    394
+   ]
+  },
+  {
+   "uid": "obj-15",
+   "label": "lion statue",
+   "xyz": [
+    -31.54,
+    -5.39,
+    2.32
+   ],
+   "frames": [
+    691
+   ]
+  },
+  {
+   "uid": "obj-16",
+   "label": "staircase",
+   "xyz": [
+    5.15,
+    -32.89,
+    2.66
+   ],
+   "frames": [
+    62,
+    94
+   ]
+  },
+  {
+   "uid": "obj-17",
+   "label": "building",
+   "xyz": [
+    -35.67,
+    -2.69,
+    -1.22
+   ],
+   "frames": [
+    475
+   ]
+  },
+  {
+   "uid": "obj-18",
+   "label": "building",
+   "xyz": [
+    -23.29,
+    -5.61,
+    0.16
+   ],
+   "frames": [
+    626
+   ]
+  },
+  {
+   "uid": "obj-19",
+   "label": "lion statue",
+   "xyz": [
+    -19.77,
+    -22.22,
+    1.83
+   ],
+   "frames": [
+    254,
+    265,
+    276,
+    286
+   ]
+  },
+  {
+   "uid": "obj-20",
+   "label": "building",
+   "xyz": [
+    -10.62,
+    -21.04,
+    -2.53
+   ],
+   "frames": [
+    194,
+    210,
+    225
+   ]
+  },
+  {
+   "uid": "obj-21",
+   "label": "lion statue",
+   "xyz": [
+    -10.69,
+    -24.62,
+    2.43
+   ],
+   "frames": [
+    254
+   ]
+  },
+  {
+   "uid": "obj-22",
+   "label": "arch",
+   "xyz": [
+    -14.61,
+    -28.25,
+    -0.26
+   ],
+   "frames": [
+    254
+   ]
+  },
+  {
+   "uid": "obj-23",
+   "label": "staircase",
+   "xyz": [
+    8.33,
+    -32.89,
+    2.65
+   ],
+   "frames": [
+    30
+   ]
+  },
+  {
+   "uid": "obj-24",
+   "label": "lion statue",
+   "xyz": [
+    -23.85,
+    -21.64,
+    1.65
+   ],
+   "frames": [
+    276,
+    303,
+    311,
+    320
+   ]
+  },
+  {
+   "uid": "obj-25",
+   "label": "tree",
+   "xyz": [
+    -8.52,
+    -24.73,
+    2.52
+   ],
+   "frames": [
+    244
+   ]
+  },
+  {
+   "uid": "obj-26",
+   "label": "doorway",
+   "xyz": [
+    -6.08,
+    -29.67,
+    1.82
+   ],
+   "frames": [
+    150
+   ]
+  },
+  {
+   "uid": "obj-27",
+   "label": "pedestal",
+   "xyz": [
+    -23.68,
+    -21.7,
+    2.07
+   ],
+   "frames": [
+    303,
+    311,
+    320
+   ]
+  },
+  {
+   "uid": "obj-28",
+   "label": "lion statue",
+   "xyz": [
+    9.25,
+    -36.66,
+    1.04
+   ],
+   "frames": [
+    0
+   ]
+  },
+  {
+   "uid": "obj-29",
+   "label": "staircase",
+   "xyz": [
+    -29.1,
+    5.32,
+    2.74
+   ],
+   "frames": [
+    626
+   ]
+  },
+  {
+   "uid": "obj-30",
+   "label": "staircase",
+   "xyz": [
+    -19.88,
+    -2.54,
+    2.72
+   ],
+   "frames": [
+    475
+   ]
+  },
+  {
+   "uid": "obj-31",
+   "label": "pedestal",
+   "xyz": [
+    -27.26,
+    4.16,
+    2.37
+   ],
+   "frames": [
+    521
+   ]
+  },
+  {
+   "uid": "obj-32",
+   "label": "stone wall",
+   "xyz": [
+    -32.71,
+    11.35,
+    0.79
+   ],
+   "frames": [
+    539
+   ]
+  },
+  {
+   "uid": "obj-33",
+   "label": "staircase",
+   "xyz": [
+    10.32,
+    -32.87,
+    2.63
+   ],
+   "frames": [
+    0
+   ]
+  },
+  {
+   "uid": "obj-34",
+   "label": "stone wall",
+   "xyz": [
+    -36.51,
+    -9.61,
+    -2.0
+   ],
+   "frames": [
+    650,
+    666
+   ]
+  },
+  {
+   "uid": "obj-35",
+   "label": "building",
+   "xyz": [
+    -11.63,
+    -18.56,
+    -1.89
+   ],
+   "frames": [
+    235
+   ]
+  },
+  {
+   "uid": "obj-36",
+   "label": "pedestal",
+   "xyz": [
+    -22.17,
+    -1.14,
+    2.02
+   ],
+   "frames": [
+    484
+   ]
+  },
+  {
+   "uid": "obj-37",
+   "label": "building",
+   "xyz": [
+    -21.12,
+    -13.68,
+    -3.28
+   ],
+   "frames": [
+    666
+   ]
+  },
+  {
+   "uid": "obj-38",
+   "label": "doorway",
+   "xyz": [
+    -32.34,
+    10.9,
+    2.05
+   ],
+   "frames": [
+    529,
+    539
+   ]
+  },
+  {
+   "uid": "obj-39",
+   "label": "arch",
+   "xyz": [
+    -24.82,
+    -5.56,
+    1.27
+   ],
+   "frames": [
+    609,
+    626,
+    691
+   ]
+  },
+  {
+   "uid": "obj-40",
+   "label": "lion statue",
+   "xyz": [
+    -27.39,
+    -0.8,
+    1.96
+   ],
+   "frames": [
+    484,
+    650,
+    666
+   ]
+  },
+  {
+   "uid": "obj-41",
+   "label": "staircase",
+   "xyz": [
+    -29.11,
+    3.35,
+    2.75
+   ],
+   "frames": [
+    650
+   ]
+  },
+  {
+   "uid": "obj-42",
+   "label": "statue",
+   "xyz": [
+    -22.28,
+    -1.09,
+    1.56
+   ],
+   "frames": [
+    468,
+    475,
+    484,
+    626
+   ]
+  },
+  {
+   "uid": "obj-43",
+   "label": "building",
+   "xyz": [
+    -28.04,
+    -2.46,
+    0.81
+   ],
+   "frames": [
+    468,
+    691
+   ]
+  },
+  {
+   "uid": "obj-44",
+   "label": "fountain",
+   "xyz": [
+    -23.74,
+    -21.68,
+    1.71
+   ],
+   "frames": [
+    286,
+    303,
+    311
+   ]
+  },
+  {
+   "uid": "obj-45",
+   "label": "building",
+   "xyz": [
+    -17.74,
+    -13.83,
+    0.12
+   ],
+   "frames": [
+    386
+   ]
+  },
+  {
+   "uid": "obj-46",
+   "label": "doorway",
+   "xyz": [
+    -32.33,
+    17.07,
+    2.04
+   ],
+   "frames": [
+    547,
+    554
+   ]
+  },
+  {
+   "uid": "obj-47",
+   "label": "building",
+   "xyz": [
+    -22.07,
+    -16.26,
+    0.92
+   ],
+   "frames": [
+    345
+   ]
+  },
+  {
+   "uid": "obj-48",
+   "label": "column",
+   "xyz": [
+    -16.59,
+    -26.79,
+    1.12
+   ],
+   "frames": [
+    276
+   ]
+  },
+  {
+   "uid": "obj-49",
+   "label": "statue",
+   "xyz": [
+    -11.16,
+    -13.97,
+    -4.9
+   ],
+   "frames": [
+    626
+   ]
+  },
+  {
+   "uid": "obj-50",
+   "label": "statue",
+   "xyz": [
+    -26.92,
+    -13.57,
+    0.73
+   ],
+   "frames": [
+    345,
+    353
+   ]
+  },
+  {
+   "uid": "obj-51",
+   "label": "lion statue",
+   "xyz": [
+    -6.47,
+    -25.06,
+    2.55
+   ],
+   "frames": [
+    235
+   ]
+  },
+  {
+   "uid": "obj-52",
+   "label": "stone wall",
+   "xyz": [
+    -23.6,
+    -6.02,
+    1.35
+   ],
+   "frames": [
+    367
+   ]
+  },
+  {
+   "uid": "obj-53",
+   "label": "stone wall",
+   "xyz": [
+    -19.74,
+    -5.8,
+    1.23
+   ],
+   "frames": [
+    402,
+    416
+   ]
+  },
+  {
+   "uid": "obj-54",
+   "label": "column",
+   "xyz": [
+    -28.16,
+    -2.38,
+    0.99
+   ],
+   "frames": [
+    498,
+    609,
+    626,
+    650,
+    691
+   ]
+  },
+  {
+   "uid": "obj-55",
+   "label": "column",
+   "xyz": [
+    -27.42,
+    6.9,
+    -0.96
+   ],
+   "frames": [
+    484,
+    498,
+    514
+   ]
+  },
+  {
+   "uid": "obj-56",
+   "label": "lion statue",
+   "xyz": [
+    -26.52,
+    -8.7,
+    0.51
+   ],
+   "frames": [
+    329,
+    367
+   ]
+  },
+  {
+   "uid": "obj-57",
+   "label": "statue",
+   "xyz": [
+    -0.15,
+    -28.97,
+    -0.32
+   ],
+   "frames": [
+    62,
+    94,
+    125
+   ]
+  },
+  {
+   "uid": "obj-58",
+   "label": "building",
+   "xyz": [
+    8.69,
+    -40.43,
+    -0.86
+   ],
+   "frames": [
+    0
+   ]
+  },
+  {
+   "uid": "obj-59",
+   "label": "doorway",
+   "xyz": [
+    -20.81,
+    -26.6,
+    1.51
+   ],
+   "frames": [
+    244
+   ]
+  },
+  {
+   "uid": "obj-60",
+   "label": "lion statue",
+   "xyz": [
+    -27.39,
+    -15.52,
+    0.77
+   ],
+   "frames": [
+    320
+   ]
+  },
+  {
+   "uid": "obj-61",
+   "label": "column",
+   "xyz": [
+    1.06,
+    -33.64,
+    -0.93
+   ],
+   "frames": [
+    62,
+    94,
+    125
+   ]
+  },
+  {
+   "uid": "obj-62",
+   "label": "building",
+   "xyz": [
+    -8.83,
+    -26.33,
+    -0.47
+   ],
+   "frames": [
+    150,
+    176
+   ]
+  },
+  {
+   "uid": "obj-63",
+   "label": "pedestal",
+   "xyz": [
+    -26.91,
+    -1.32,
+    1.92
+   ],
+   "frames": [
+    498
+   ]
+  },
+  {
+   "uid": "obj-64",
+   "label": "doorway",
+   "xyz": [
+    -34.85,
+    -18.88,
+    1.85
+   ],
+   "frames": [
+    320
+   ]
+  },
+  {
+   "uid": "obj-65",
+   "label": "staircase",
+   "xyz": [
+    -28.81,
+    9.87,
+    2.56
+   ],
+   "frames": [
+    547
+   ]
+  },
+  {
+   "uid": "obj-66",
+   "label": "lion statue",
+   "xyz": [
+    -23.0,
+    -6.23,
+    1.44
+   ],
+   "frames": [
+    367
+   ]
+  },
+  {
+   "uid": "obj-67",
+   "label": "staircase",
+   "xyz": [
+    -28.99,
+    -0.79,
+    2.7
+   ],
+   "frames": [
+    691
+   ]
+  },
+  {
+   "uid": "obj-68",
+   "label": "staircase",
+   "xyz": [
+    2.65,
+    -33.0,
+    2.67
+   ],
+   "frames": [
+    125
+   ]
+  },
+  {
+   "uid": "obj-69",
+   "label": "lion statue",
+   "xyz": [
+    -27.91,
+    -26.96,
+    1.09
+   ],
+   "frames": [
+    303,
+    311
+   ]
+  },
+  {
+   "uid": "obj-70",
+   "label": "building",
+   "xyz": [
+    -27.57,
+    -15.99,
+    1.41
+   ],
+   "frames": [
+    311
+   ]
+  },
+  {
+   "uid": "obj-71",
+   "label": "column",
+   "xyz": [
+    -20.81,
+    -26.61,
+    1.67
+   ],
+   "frames": [
+    303
+   ]
+  },
+  {
+   "uid": "obj-72",
+   "label": "fountain",
+   "xyz": [
+    -22.19,
+    -1.14,
+    1.74
+   ],
+   "frames": [
+    468,
+    475,
+    484
+   ]
+  },
+  {
+   "uid": "obj-73",
+   "label": "stone wall",
+   "xyz": [
+    -35.64,
+    9.21,
+    -0.33
+   ],
+   "frames": [
+    521,
+    529
+   ]
+  },
+  {
+   "uid": "obj-74",
+   "label": "lion statue",
+   "xyz": [
+    -26.83,
+    -10.4,
+    0.31
+   ],
+   "frames": [
+    329
+   ]
+  },
+  {
+   "uid": "obj-75",
+   "label": "building",
+   "xyz": [
+    -10.03,
+    7.63,
+    -2.87
+   ],
+   "frames": [
+    438
+   ]
+  },
+  {
+   "uid": "obj-76",
+   "label": "bench",
+   "xyz": [
+    11.82,
+    -34.2,
+    2.01
+   ],
+   "frames": [
+    0
+   ]
+  },
+  {
+   "uid": "obj-77",
+   "label": "tree",
+   "xyz": [
+    -17.15,
+    -33.51,
+    1.48
+   ],
+   "frames": [
+    30,
+    62,
+    150
+   ]
+  },
+  {
+   "uid": "obj-78",
+   "label": "staircase",
+   "xyz": [
+    -24.99,
+    -22.7,
+    2.41
+   ],
+   "frames": [
+    320,
+    329
+   ]
+  },
+  {
+   "uid": "obj-79",
+   "label": "pedestal",
+   "xyz": [
+    -23.32,
+    -13.69,
+    2.39
+   ],
+   "frames": [
+    360
+   ]
+  },
+  {
+   "uid": "obj-80",
+   "label": "pedestal",
+   "xyz": [
+    2.35,
+    -29.79,
+    1.95
+   ],
+   "frames": [
+    62,
+    94
+   ]
+  },
+  {
+   "uid": "obj-81",
+   "label": "column",
+   "xyz": [
+    1.06,
+    -28.84,
+    -0.87
+   ],
+   "frames": [
+    94
+   ]
+  },
+  {
+   "uid": "obj-82",
+   "label": "stone wall",
+   "xyz": [
+    -35.95,
+    5.29,
+    -0.48
+   ],
+   "frames": [
+    507,
+    514
+   ]
+  },
+  {
+   "uid": "obj-83",
+   "label": "doorway",
+   "xyz": [
+    1.72,
+    -29.61,
+    2.01
+   ],
+   "frames": [
+    30
+   ]
+  },
+  {
+   "uid": "obj-84",
+   "label": "lion statue",
+   "xyz": [
+    -0.39,
+    -29.39,
+    2.09
+   ],
+   "frames": [
+    176
+   ]
+  },
+  {
+   "uid": "obj-85",
+   "label": "doorway",
+   "xyz": [
+    -23.02,
+    -28.63,
+    1.49
+   ],
+   "frames": [
+    303
+   ]
+  },
+  {
+   "uid": "obj-86",
+   "label": "arch",
+   "xyz": [
+    -11.78,
+    -26.79,
+    0.37
+   ],
+   "frames": [
+    244
+   ]
+  },
+  {
+   "uid": "obj-87",
+   "label": "column",
+   "xyz": [
+    -23.01,
+    6.8,
+    -1.27
+   ],
+   "frames": [
+    475
+   ]
+  },
+  {
+   "uid": "obj-88",
+   "label": "building",
+   "xyz": [
+    -24.09,
+    -12.43,
+    2.34
+   ],
+   "frames": [
+    353
+   ]
+  },
+  {
+   "uid": "obj-89",
+   "label": "column",
+   "xyz": [
+    -25.51,
+    6.88,
+    -0.89
+   ],
+   "frames": [
+    507,
+    514
+   ]
+  },
+  {
+   "uid": "obj-90",
+   "label": "fountain",
+   "xyz": [
+    -0.53,
+    -10.28,
+    -0.1
+   ],
+   "frames": [
+    394
+   ]
+  },
+  {
+   "uid": "obj-91",
+   "label": "lion statue",
+   "xyz": [
+    -21.25,
+    -5.85,
+    1.35
+   ],
+   "frames": [
+    353
+   ]
+  },
+  {
+   "uid": "obj-92",
+   "label": "column",
+   "xyz": [
+    -14.36,
+    -26.72,
+    1.1
+   ],
+   "frames": [
+    265
+   ]
+  },
+  {
+   "uid": "obj-93",
+   "label": "building",
+   "xyz": [
+    -12.44,
+    -26.73,
+    -0.22
+   ],
+   "frames": [
+    235
+   ]
+  },
+  {
+   "uid": "obj-94",
+   "label": "building",
+   "xyz": [
+    -33.26,
+    25.06,
+    0.17
+   ],
+   "frames": [
+    554
+   ]
+  },
+  {
+   "uid": "obj-95",
+   "label": "fountain",
+   "xyz": [
+    -23.37,
+    -13.61,
+    2.01
+   ],
+   "frames": [
+    360
+   ]
+  },
+  {
+   "uid": "obj-96",
+   "label": "lion statue",
+   "xyz": [
+    -21.34,
+    2.34,
+    2.0
+   ],
+   "frames": [
+    475
+   ]
+  },
+  {
+   "uid": "obj-97",
+   "label": "column",
+   "xyz": [
+    -27.74,
+    15.09,
+    -1.03
+   ],
+   "frames": [
+    539,
+    547,
+    554
+   ]
+  },
+  {
+   "uid": "obj-98",
+   "label": "column",
+   "xyz": [
+    -11.07,
+    -26.75,
+    1.21
+   ],
+   "frames": [
+    244,
+    254
+   ]
+  },
+  {
+   "uid": "obj-99",
+   "label": "building",
+   "xyz": [
+    -24.17,
+    -8.02,
+    2.19
+   ],
+   "frames": [
+    360
+   ]
+  },
+  {
+   "uid": "obj-100",
+   "label": "stone wall",
+   "xyz": [
+    -36.58,
+    -6.9,
+    -2.12
+   ],
+   "frames": [
+    626
+   ]
+  },
+  {
+   "uid": "obj-101",
+   "label": "stone wall",
+   "xyz": [
+    -3.76,
+    -27.91,
+    2.79
+   ],
+   "frames": [
+    210
+   ]
+  },
+  {
+   "uid": "obj-102",
+   "label": "column",
+   "xyz": [
+    -20.81,
+    6.83,
+    -1.57
+   ],
+   "frames": [
+    468
+   ]
+  },
+  {
+   "uid": "obj-103",
+   "label": "tree",
+   "xyz": [
+    -11.31,
+    -33.5,
+    1.0
+   ],
+   "frames": [
+    125
+   ]
+  },
+  {
+   "uid": "obj-104",
+   "label": "arch",
+   "xyz": [
+    -12.27,
+    6.49,
+    -1.65
+   ],
+   "frames": [
+    367
+   ]
+  },
+  {
+   "uid": "obj-105",
+   "label": "lion statue",
+   "xyz": [
+    -18.94,
+    -7.39,
+    2.18
+   ],
+   "frames": [
+    416
+   ]
+  },
+  {
+   "uid": "obj-106",
+   "label": "pedestal",
+   "xyz": [
+    -26.89,
+    -13.64,
+    2.23
+   ],
+   "frames": [
+    353
+   ]
+  },
+  {
+   "uid": "obj-107",
+   "label": "staircase",
+   "xyz": [
+    -10.25,
+    7.66,
+    -2.54
+   ],
+   "frames": [
+    386,
+    394
+   ]
+  },
+  {
+   "uid": "obj-108",
+   "label": "lion statue",
+   "xyz": [
+    -24.83,
+    4.1,
+    1.5
+   ],
+   "frames": [
+    468,
+    507
+   ]
+  },
+  {
+   "uid": "obj-109",
+   "label": "lion statue",
+   "xyz": [
+    -29.78,
+    9.13,
+    2.82
+   ],
+   "frames": [
+    547
+   ]
+  },
+  {
+   "uid": "obj-110",
+   "label": "arch",
+   "xyz": [
+    3.23,
+    -28.58,
+    -4.85
+   ],
+   "frames": [
+    650
+   ]
+  },
+  {
+   "uid": "obj-111",
+   "label": "arch",
+   "xyz": [
+    -6.51,
+    -29.66,
+    1.41
+   ],
+   "frames": [
+    62,
+    176
+   ]
+  },
+  {
+   "uid": "obj-112",
+   "label": "column",
+   "xyz": [
+    -5.08,
+    -26.86,
+    1.07
+   ],
+   "frames": [
+    176,
+    194,
+    210
+   ]
+  },
+  {
+   "uid": "obj-113",
+   "label": "stone wall",
+   "xyz": [
+    -26.25,
+    -28.32,
+    0.61
+   ],
+   "frames": [
+    303
+   ]
+  },
+  {
+   "uid": "obj-114",
+   "label": "stone wall",
+   "xyz": [
+    -32.51,
+    13.11,
+    0.83
+   ],
+   "frames": [
+    547
+   ]
+  },
+  {
+   "uid": "obj-115",
+   "label": "arch",
+   "xyz": [
+    -28.05,
+    21.58,
+    0.25
+   ],
+   "frames": [
+    554
+   ]
+  },
+  {
+   "uid": "obj-116",
+   "label": "column",
+   "xyz": [
+    -9.0,
+    -21.43,
+    -1.19
+   ],
+   "frames": [
+    235
+   ]
+  },
+  {
+   "uid": "obj-117",
+   "label": "column",
+   "xyz": [
+    4.71,
+    -28.95,
+    -0.28
+   ],
+   "frames": [
+    62
+   ]
+  },
+  {
+   "uid": "obj-118",
+   "label": "stone wall",
+   "xyz": [
+    -14.01,
+    -26.61,
+    1.24
+   ],
+   "frames": [
+    265
+   ]
+  },
+  {
+   "uid": "obj-119",
+   "label": "stone wall",
+   "xyz": [
+    -36.16,
+    -11.69,
+    -1.66
+   ],
+   "frames": [
+    691
+   ]
+  },
+  {
+   "uid": "obj-120",
+   "label": "arch",
+   "xyz": [
+    -20.41,
+    17.48,
+    -2.91
+   ],
+   "frames": [
+    468
+   ]
+  },
+  {
+   "uid": "obj-121",
+   "label": "stone wall",
+   "xyz": [
+    0.64,
+    -32.88,
+    1.76
+   ],
+   "frames": [
+    150
+   ]
+  },
+  {
+   "uid": "obj-122",
+   "label": "lion statue",
+   "xyz": [
+    -8.39,
+    -24.21,
+    2.52
+   ],
+   "frames": [
+    244
+   ]
+  },
+  {
+   "uid": "obj-123",
+   "label": "building",
+   "xyz": [
+    -21.83,
+    -21.26,
+    -0.06
+   ],
+   "frames": [
+    303
+   ]
+  },
+  {
+   "uid": "obj-124",
+   "label": "tree",
+   "xyz": [
+    -34.03,
+    -0.33,
+    1.97
+   ],
+   "frames": [
+    650
+   ]
+  },
+  {
+   "uid": "obj-125",
+   "label": "stone wall",
+   "xyz": [
+    -35.88,
+    -17.1,
+    -0.53
+   ],
+   "frames": [
+    329
+   ]
+  },
+  {
+   "uid": "obj-126",
+   "label": "staircase",
+   "xyz": [
+    -11.6,
+    -25.95,
+    2.54
+   ],
+   "frames": [
+    254
+   ]
+  },
+  {
+   "uid": "obj-127",
+   "label": "stone wall",
+   "xyz": [
+    -35.86,
+    3.66,
+    -0.24
+   ],
+   "frames": [
+    498
+   ]
+  },
+  {
+   "uid": "obj-128",
+   "label": "staircase",
+   "xyz": [
+    -11.86,
+    -21.77,
+    2.42
+   ],
+   "frames": [
+    244
+   ]
+  },
+  {
+   "uid": "obj-129",
+   "label": "building",
+   "xyz": [
+    -31.89,
+    7.71,
+    1.82
+   ],
+   "frames": [
+    507
+   ]
+  },
+  {
+   "uid": "obj-130",
+   "label": "statue",
+   "xyz": [
+    -26.49,
+    -11.43,
+    1.54
+   ],
+   "frames": [
+    360
+   ]
+  },
+  {
+   "uid": "obj-131",
+   "label": "building",
+   "xyz": [
+    -14.9,
+    -22.05,
+    -4.97
+   ],
+   "frames": [
+    125
+   ]
+  },
+  {
+   "uid": "obj-132",
+   "label": "staircase",
+   "xyz": [
+    -17.9,
+    -2.41,
+    2.7
+   ],
+   "frames": [
+    468
+   ]
+  }
+ ],
+ "detections": [
+  {
+   "frame": 0,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000000_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.504,
+   "box": [
+    366,
+    296,
+    426,
+    410
+   ],
+   "depth_m": 7.06,
+   "world_xyz": [
+    9.25,
+    -36.66,
+    1.03
+   ],
+   "object_uid": "obj-28"
+  },
+  {
+   "frame": 0,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000000_lcam_front.png",
+   "label": "building",
+   "score": 0.434,
+   "box": [
+    205,
+    215,
+    638,
+    414
+   ],
+   "depth_m": 10.83,
+   "world_xyz": [
+    8.69,
+    -40.43,
+    -0.86
+   ],
+   "object_uid": "obj-58"
+  },
+  {
+   "frame": 0,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000000_lcam_front.png",
+   "label": "bench",
+   "score": 0.409,
+   "box": [
+    495,
+    362,
+    578,
+    416
+   ],
+   "depth_m": 3.43,
+   "world_xyz": [
+    11.82,
+    -34.2,
+    2.01
+   ],
+   "object_uid": "obj-76"
+  },
+  {
+   "frame": 0,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000000_lcam_front.png",
+   "label": "staircase",
+   "score": 0.494,
+   "box": [
+    68,
+    404,
+    638,
+    504
+   ],
+   "depth_m": 3.07,
+   "world_xyz": [
+    10.32,
+    -32.87,
+    2.63
+   ],
+   "object_uid": "obj-33"
+  },
+  {
+   "frame": 0,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000000_lcam_front.png",
+   "label": "statue",
+   "score": 0.44,
+   "box": [
+    364,
+    296,
+    427,
+    412
+   ],
+   "depth_m": 7.05,
+   "world_xyz": [
+    9.24,
+    -36.65,
+    1.05
+   ],
+   "object_uid": "obj-28"
+  },
+  {
+   "frame": 30,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000030_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.569,
+   "box": [
+    291,
+    227,
+    342,
+    287
+   ],
+   "depth_m": 9.66,
+   "world_xyz": [
+    0.98,
+    -33.55,
+    0.16
+   ],
+   "object_uid": "obj-8"
+  },
+  {
+   "frame": 30,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000030_lcam_front.png",
+   "label": "doorway",
+   "score": 0.399,
+   "box": [
+    160,
+    295,
+    178,
+    338
+   ],
+   "depth_m": 7.9,
+   "world_xyz": [
+    1.72,
+    -29.61,
+    2.01
+   ],
+   "object_uid": "obj-83"
+  },
+  {
+   "frame": 30,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000030_lcam_front.png",
+   "label": "staircase",
+   "score": 0.511,
+   "box": [
+    314,
+    316,
+    638,
+    448
+   ],
+   "depth_m": 2.35,
+   "world_xyz": [
+    8.33,
+    -32.89,
+    2.65
+   ],
+   "object_uid": "obj-23"
+  },
+  {
+   "frame": 30,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000030_lcam_front.png",
+   "label": "tree",
+   "score": 0.4,
+   "box": [
+    254,
+    301,
+    272,
+    334
+   ],
+   "depth_m": 27.15,
+   "world_xyz": [
+    -17.16,
+    -33.48,
+    1.54
+   ],
+   "object_uid": "obj-77"
+  },
+  {
+   "frame": 62,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000062_lcam_front.png",
+   "label": "staircase",
+   "score": 0.549,
+   "box": [
+    406,
+    329,
+    639,
+    444
+   ],
+   "depth_m": 2.42,
+   "world_xyz": [
+    5.85,
+    -32.91,
+    2.65
+   ],
+   "object_uid": "obj-16"
+  },
+  {
+   "frame": 62,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000062_lcam_front.png",
+   "label": "column",
+   "score": 0.366,
+   "box": [
+    80,
+    1,
+    132,
+    217
+   ],
+   "depth_m": 3.64,
+   "world_xyz": [
+    4.71,
+    -28.95,
+    -0.28
+   ],
+   "object_uid": "obj-117"
+  },
+  {
+   "frame": 62,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000062_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.419,
+   "box": [
+    378,
+    208,
+    442,
+    279
+   ],
+   "depth_m": 8.26,
+   "world_xyz": [
+    0.09,
+    -33.72,
+    0.0
+   ],
+   "object_uid": "obj-8"
+  },
+  {
+   "frame": 62,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000062_lcam_front.png",
+   "label": "column",
+   "score": 0.372,
+   "box": [
+    398,
+    38,
+    436,
+    279
+   ],
+   "depth_m": 7.35,
+   "world_xyz": [
+    1.06,
+    -33.62,
+    -1.7
+   ],
+   "object_uid": "obj-61"
+  },
+  {
+   "frame": 62,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000062_lcam_front.png",
+   "label": "tree",
+   "score": 0.407,
+   "box": [
+    336,
+    302,
+    358,
+    339
+   ],
+   "depth_m": 25.43,
+   "world_xyz": [
+    -17.13,
+    -33.59,
+    1.51
+   ],
+   "object_uid": "obj-77"
+  },
+  {
+   "frame": 62,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000062_lcam_front.png",
+   "label": "arch",
+   "score": 0.357,
+   "box": [
+    261,
+    269,
+    305,
+    341
+   ],
+   "depth_m": 15.23,
+   "world_xyz": [
+    -6.93,
+    -29.65,
+    1.06
+   ],
+   "object_uid": "obj-111"
+  },
+  {
+   "frame": 62,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000062_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.367,
+   "box": [
+    214,
+    199,
+    242,
+    269
+   ],
+   "depth_m": 8.48,
+   "world_xyz": [
+    -0.14,
+    -28.96,
+    -0.31
+   ],
+   "object_uid": "obj-57"
+  },
+  {
+   "frame": 62,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000062_lcam_front.png",
+   "label": "statue",
+   "score": 0.367,
+   "box": [
+    214,
+    198,
+    243,
+    269
+   ],
+   "depth_m": 8.49,
+   "world_xyz": [
+    -0.14,
+    -28.97,
+    -0.32
+   ],
+   "object_uid": "obj-57"
+  },
+  {
+   "frame": 62,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000062_lcam_front.png",
+   "label": "pedestal",
+   "score": 0.405,
+   "box": [
+    201,
+    267,
+    262,
+    362
+   ],
+   "depth_m": 5.88,
+   "world_xyz": [
+    2.4,
+    -29.76,
+    1.95
+   ],
+   "object_uid": "obj-80"
+  },
+  {
+   "frame": 94,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000094_lcam_front.png",
+   "label": "column",
+   "score": 0.412,
+   "box": [
+    404,
+    1,
+    435,
+    239
+   ],
+   "depth_m": 5.36,
+   "world_xyz": [
+    1.07,
+    -33.67,
+    -1.0
+   ],
+   "object_uid": "obj-61"
+  },
+  {
+   "frame": 94,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000094_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.414,
+   "box": [
+    130,
+    131,
+    178,
+    218
+   ],
+   "depth_m": 6.08,
+   "world_xyz": [
+    -0.13,
+    -28.95,
+    -0.41
+   ],
+   "object_uid": "obj-57"
+  },
+  {
+   "frame": 94,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000094_lcam_front.png",
+   "label": "staircase",
+   "score": 0.481,
+   "box": [
+    396,
+    315,
+    639,
+    450
+   ],
+   "depth_m": 1.98,
+   "world_xyz": [
+    4.45,
+    -32.88,
+    2.67
+   ],
+   "object_uid": "obj-16"
+  },
+  {
+   "frame": 94,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000094_lcam_front.png",
+   "label": "column",
+   "score": 0.402,
+   "box": [
+    94,
+    1,
+    134,
+    218
+   ],
+   "depth_m": 4.88,
+   "world_xyz": [
+    1.06,
+    -28.84,
+    -0.87
+   ],
+   "object_uid": "obj-81"
+  },
+  {
+   "frame": 94,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000094_lcam_front.png",
+   "label": "statue",
+   "score": 0.436,
+   "box": [
+    130,
+    131,
+    178,
+    218
+   ],
+   "depth_m": 6.08,
+   "world_xyz": [
+    -0.13,
+    -28.95,
+    -0.41
+   ],
+   "object_uid": "obj-57"
+  },
+  {
+   "frame": 94,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000094_lcam_front.png",
+   "label": "pedestal",
+   "score": 0.389,
+   "box": [
+    88,
+    215,
+    208,
+    363
+   ],
+   "depth_m": 3.78,
+   "world_xyz": [
+    2.31,
+    -29.82,
+    1.95
+   ],
+   "object_uid": "obj-80"
+  },
+  {
+   "frame": 94,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000094_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.354,
+   "box": [
+    355,
+    156,
+    441,
+    247
+   ],
+   "depth_m": 6.4,
+   "world_xyz": [
+    0.04,
+    -33.67,
+    -0.01
+   ],
+   "object_uid": "obj-8"
+  },
+  {
+   "frame": 125,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000125_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.556,
+   "box": [
+    413,
+    92,
+    471,
+    215
+   ],
+   "depth_m": 4.41,
+   "world_xyz": [
+    -0.03,
+    -33.5,
+    -0.09
+   ],
+   "object_uid": "obj-8"
+  },
+  {
+   "frame": 125,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000125_lcam_front.png",
+   "label": "column",
+   "score": 0.43,
+   "box": [
+    474,
+    1,
+    524,
+    194
+   ],
+   "depth_m": 3.33,
+   "world_xyz": [
+    1.06,
+    -33.63,
+    -0.1
+   ],
+   "object_uid": "obj-61"
+  },
+  {
+   "frame": 125,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000125_lcam_front.png",
+   "label": "staircase",
+   "score": 0.42,
+   "box": [
+    494,
+    331,
+    639,
+    477
+   ],
+   "depth_m": 1.69,
+   "world_xyz": [
+    2.65,
+    -33.0,
+    2.67
+   ],
+   "object_uid": "obj-68"
+  },
+  {
+   "frame": 125,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000125_lcam_front.png",
+   "label": "statue",
+   "score": 0.384,
+   "box": [
+    77,
+    69,
+    149,
+    215
+   ],
+   "depth_m": 4.35,
+   "world_xyz": [
+    -0.17,
+    -29.01,
+    -0.22
+   ],
+   "object_uid": "obj-57"
+  },
+  {
+   "frame": 125,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000125_lcam_front.png",
+   "label": "tree",
+   "score": 0.374,
+   "box": [
+    338,
+    284,
+    350,
+    310
+   ],
+   "depth_m": 15.66,
+   "world_xyz": [
+    -11.31,
+    -33.5,
+    1.0
+   ],
+   "object_uid": "obj-103"
+  },
+  {
+   "frame": 125,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000125_lcam_front.png",
+   "label": "statue",
+   "score": 0.425,
+   "box": [
+    77,
+    68,
+    149,
+    215
+   ],
+   "depth_m": 4.35,
+   "world_xyz": [
+    -0.17,
+    -29.01,
+    -0.22
+   ],
+   "object_uid": "obj-57"
+  },
+  {
+   "frame": 125,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000125_lcam_front.png",
+   "label": "statue",
+   "score": 0.389,
+   "box": [
+    413,
+    91,
+    471,
+    215
+   ],
+   "depth_m": 4.41,
+   "world_xyz": [
+    -0.03,
+    -33.5,
+    -0.1
+   ],
+   "object_uid": "obj-8"
+  },
+  {
+   "frame": 125,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000125_lcam_front.png",
+   "label": "building",
+   "score": 0.35,
+   "box": [
+    1,
+    3,
+    284,
+    396
+   ],
+   "depth_m": 18.78,
+   "world_xyz": [
+    -14.9,
+    -22.05,
+    -4.97
+   ],
+   "object_uid": "obj-131"
+  },
+  {
+   "frame": 150,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000150_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.456,
+   "box": [
+    459,
+    1,
+    579,
+    147
+   ],
+   "depth_m": 2.58,
+   "world_xyz": [
+    -0.16,
+    -33.52,
+    0.21
+   ],
+   "object_uid": "obj-8"
+  },
+  {
+   "frame": 150,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000150_lcam_front.png",
+   "label": "statue",
+   "score": 0.395,
+   "box": [
+    459,
+    1,
+    579,
+    148
+   ],
+   "depth_m": 2.58,
+   "world_xyz": [
+    -0.16,
+    -33.52,
+    0.21
+   ],
+   "object_uid": "obj-8"
+  },
+  {
+   "frame": 150,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000150_lcam_front.png",
+   "label": "building",
+   "score": 0.419,
+   "box": [
+    2,
+    96,
+    272,
+    398
+   ],
+   "depth_m": 11.34,
+   "world_xyz": [
+    -9.55,
+    -26.17,
+    -0.4
+   ],
+   "object_uid": "obj-62"
+  },
+  {
+   "frame": 150,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000150_lcam_front.png",
+   "label": "doorway",
+   "score": 0.506,
+   "box": [
+    198,
+    275,
+    229,
+    336
+   ],
+   "depth_m": 8.16,
+   "world_xyz": [
+    -6.08,
+    -29.67,
+    1.82
+   ],
+   "object_uid": "obj-26"
+  },
+  {
+   "frame": 150,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000150_lcam_front.png",
+   "label": "tree",
+   "score": 0.358,
+   "box": [
+    316,
+    289,
+    329,
+    325
+   ],
+   "depth_m": 19.52,
+   "world_xyz": [
+    -17.16,
+    -33.45,
+    1.39
+   ],
+   "object_uid": "obj-77"
+  },
+  {
+   "frame": 150,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000150_lcam_front.png",
+   "label": "stone wall",
+   "score": 0.357,
+   "box": [
+    384,
+    4,
+    639,
+    474
+   ],
+   "depth_m": 1.72,
+   "world_xyz": [
+    0.64,
+    -32.88,
+    1.76
+   ],
+   "object_uid": "obj-121"
+  },
+  {
+   "frame": 176,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000176_lcam_front.png",
+   "label": "building",
+   "score": 0.429,
+   "box": [
+    191,
+    119,
+    566,
+    348
+   ],
+   "depth_m": 9.61,
+   "world_xyz": [
+    -8.11,
+    -26.48,
+    -0.53
+   ],
+   "object_uid": "obj-62"
+  },
+  {
+   "frame": 176,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000176_lcam_front.png",
+   "label": "column",
+   "score": 0.367,
+   "box": [
+    309,
+    210,
+    338,
+    335
+   ],
+   "depth_m": 7.04,
+   "world_xyz": [
+    -5.08,
+    -26.86,
+    1.07
+   ],
+   "object_uid": "obj-112"
+  },
+  {
+   "frame": 176,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000176_lcam_front.png",
+   "label": "arch",
+   "score": 0.37,
+   "box": [
+    449,
+    254,
+    499,
+    345
+   ],
+   "depth_m": 5.96,
+   "world_xyz": [
+    -6.09,
+    -29.67,
+    1.75
+   ],
+   "object_uid": "obj-111"
+  },
+  {
+   "frame": 176,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000176_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.399,
+   "box": [
+    54,
+    197,
+    215,
+    403
+   ],
+   "depth_m": 1.81,
+   "world_xyz": [
+    -0.39,
+    -29.39,
+    2.09
+   ],
+   "object_uid": "obj-84"
+  },
+  {
+   "frame": 176,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000176_lcam_front.png",
+   "label": "statue",
+   "score": 0.385,
+   "box": [
+    53,
+    197,
+    216,
+    404
+   ],
+   "depth_m": 1.81,
+   "world_xyz": [
+    -0.39,
+    -29.39,
+    2.1
+   ],
+   "object_uid": "obj-84"
+  },
+  {
+   "frame": 194,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000194_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.511,
+   "box": [
+    130,
+    219,
+    172,
+    331
+   ],
+   "depth_m": 8.39,
+   "world_xyz": [
+    -4.62,
+    -21.45,
+    -0.4
+   ],
+   "object_uid": "obj-2"
+  },
+  {
+   "frame": 194,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000194_lcam_front.png",
+   "label": "building",
+   "score": 0.422,
+   "box": [
+    127,
+    144,
+    491,
+    394
+   ],
+   "depth_m": 13.32,
+   "world_xyz": [
+    -10.79,
+    -21.47,
+    -2.12
+   ],
+   "object_uid": "obj-20"
+  },
+  {
+   "frame": 194,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000194_lcam_front.png",
+   "label": "column",
+   "score": 0.37,
+   "box": [
+    301,
+    225,
+    339,
+    393
+   ],
+   "depth_m": 5.07,
+   "world_xyz": [
+    -5.07,
+    -26.85,
+    1.12
+   ],
+   "object_uid": "obj-112"
+  },
+  {
+   "frame": 194,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000194_lcam_front.png",
+   "label": "pedestal",
+   "score": 0.484,
+   "box": [
+    204,
+    349,
+    256,
+    405
+   ],
+   "depth_m": 6.04,
+   "world_xyz": [
+    -4.87,
+    -24.81,
+    2.2
+   ],
+   "object_uid": "obj-11"
+  },
+  {
+   "frame": 210,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000210_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.638,
+   "box": [
+    63,
+    82,
+    138,
+    263
+   ],
+   "depth_m": 6.14,
+   "world_xyz": [
+    -4.63,
+    -21.48,
+    -0.64
+   ],
+   "object_uid": "obj-2"
+  },
+  {
+   "frame": 210,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000210_lcam_front.png",
+   "label": "staircase",
+   "score": 0.556,
+   "box": [
+    189,
+    337,
+    638,
+    529
+   ],
+   "depth_m": 1.35,
+   "world_xyz": [
+    -4.14,
+    -28.1,
+    2.67
+   ],
+   "object_uid": "obj-13"
+  },
+  {
+   "frame": 210,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000210_lcam_front.png",
+   "label": "statue",
+   "score": 0.404,
+   "box": [
+    62,
+    82,
+    139,
+    264
+   ],
+   "depth_m": 6.14,
+   "world_xyz": [
+    -4.63,
+    -21.48,
+    -0.64
+   ],
+   "object_uid": "obj-2"
+  },
+  {
+   "frame": 210,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000210_lcam_front.png",
+   "label": "building",
+   "score": 0.52,
+   "box": [
+    75,
+    3,
+    553,
+    342
+   ],
+   "depth_m": 10.52,
+   "world_xyz": [
+    -10.57,
+    -21.56,
+    -2.66
+   ],
+   "object_uid": "obj-20"
+  },
+  {
+   "frame": 210,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000210_lcam_front.png",
+   "label": "pedestal",
+   "score": 0.555,
+   "box": [
+    163,
+    282,
+    237,
+    358
+   ],
+   "depth_m": 4.1,
+   "world_xyz": [
+    -4.9,
+    -24.83,
+    2.19
+   ],
+   "object_uid": "obj-11"
+  },
+  {
+   "frame": 210,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000210_lcam_front.png",
+   "label": "stone wall",
+   "score": 0.375,
+   "box": [
+    2,
+    327,
+    638,
+    637
+   ],
+   "depth_m": 1.2,
+   "world_xyz": [
+    -3.76,
+    -27.91,
+    2.79
+   ],
+   "object_uid": "obj-101"
+  },
+  {
+   "frame": 210,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000210_lcam_front.png",
+   "label": "column",
+   "score": 0.359,
+   "box": [
+    298,
+    36,
+    364,
+    344
+   ],
+   "depth_m": 2.88,
+   "world_xyz": [
+    -5.08,
+    -26.86,
+    1.02
+   ],
+   "object_uid": "obj-112"
+  },
+  {
+   "frame": 225,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000225_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.603,
+   "box": [
+    102,
+    55,
+    184,
+    271
+   ],
+   "depth_m": 4.96,
+   "world_xyz": [
+    -4.62,
+    -21.47,
+    -0.65
+   ],
+   "object_uid": "obj-2"
+  },
+  {
+   "frame": 225,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000225_lcam_front.png",
+   "label": "statue",
+   "score": 0.357,
+   "box": [
+    101,
+    55,
+    185,
+    271
+   ],
+   "depth_m": 4.96,
+   "world_xyz": [
+    -4.62,
+    -21.47,
+    -0.65
+   ],
+   "object_uid": "obj-2"
+  },
+  {
+   "frame": 225,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000225_lcam_front.png",
+   "label": "building",
+   "score": 0.514,
+   "box": [
+    174,
+    2,
+    546,
+    354
+   ],
+   "depth_m": 9.65,
+   "world_xyz": [
+    -10.49,
+    -20.08,
+    -2.8
+   ],
+   "object_uid": "obj-20"
+  },
+  {
+   "frame": 225,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000225_lcam_front.png",
+   "label": "pedestal",
+   "score": 0.561,
+   "box": [
+    177,
+    286,
+    305,
+    426
+   ],
+   "depth_m": 2.22,
+   "world_xyz": [
+    -4.91,
+    -24.84,
+    2.2
+   ],
+   "object_uid": "obj-11"
+  },
+  {
+   "frame": 235,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000235_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.446,
+   "box": [
+    178,
+    473,
+    320,
+    591
+   ],
+   "depth_m": 0.9,
+   "world_xyz": [
+    -6.33,
+    -24.87,
+    2.54
+   ],
+   "object_uid": "obj-51"
+  },
+  {
+   "frame": 235,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000235_lcam_front.png",
+   "label": "building",
+   "score": 0.487,
+   "box": [
+    2,
+    1,
+    434,
+    391
+   ],
+   "depth_m": 8.91,
+   "world_xyz": [
+    -11.63,
+    -18.56,
+    -1.89
+   ],
+   "object_uid": "obj-35"
+  },
+  {
+   "frame": 235,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000235_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.367,
+   "box": [
+    384,
+    444,
+    592,
+    605
+   ],
+   "depth_m": 0.97,
+   "world_xyz": [
+    -6.76,
+    -25.44,
+    2.56
+   ],
+   "object_uid": "obj-51"
+  },
+  {
+   "frame": 235,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000235_lcam_front.png",
+   "label": "statue",
+   "score": 0.359,
+   "box": [
+    178,
+    472,
+    321,
+    591
+   ],
+   "depth_m": 0.9,
+   "world_xyz": [
+    -6.33,
+    -24.87,
+    2.54
+   ],
+   "object_uid": "obj-51"
+  },
+  {
+   "frame": 235,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000235_lcam_front.png",
+   "label": "column",
+   "score": 0.367,
+   "box": [
+    190,
+    2,
+    232,
+    273
+   ],
+   "depth_m": 5.14,
+   "world_xyz": [
+    -9.0,
+    -21.43,
+    -1.19
+   ],
+   "object_uid": "obj-116"
+  },
+  {
+   "frame": 235,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000235_lcam_front.png",
+   "label": "building",
+   "score": 0.385,
+   "box": [
+    554,
+    32,
+    639,
+    371
+   ],
+   "depth_m": 5.28,
+   "world_xyz": [
+    -12.44,
+    -26.73,
+    -0.22
+   ],
+   "object_uid": "obj-93"
+  },
+  {
+   "frame": 244,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000244_lcam_front.png",
+   "label": "building",
+   "score": 0.578,
+   "box": [
+    1,
+    1,
+    303,
+    351
+   ],
+   "depth_m": 5.74,
+   "world_xyz": [
+    -13.04,
+    -21.1,
+    -0.65
+   ],
+   "object_uid": "obj-7"
+  },
+  {
+   "frame": 244,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000244_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.357,
+   "box": [
+    2,
+    522,
+    222,
+    638
+   ],
+   "depth_m": 0.76,
+   "world_xyz": [
+    -8.39,
+    -24.21,
+    2.52
+   ],
+   "object_uid": "obj-122"
+  },
+  {
+   "frame": 244,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000244_lcam_front.png",
+   "label": "column",
+   "score": 0.381,
+   "box": [
+    569,
+    79,
+    634,
+    380
+   ],
+   "depth_m": 2.56,
+   "world_xyz": [
+    -10.51,
+    -26.71,
+    1.19
+   ],
+   "object_uid": "obj-98"
+  },
+  {
+   "frame": 244,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000244_lcam_front.png",
+   "label": "doorway",
+   "score": 0.433,
+   "box": [
+    396,
+    293,
+    414,
+    324
+   ],
+   "depth_m": 12.79,
+   "world_xyz": [
+    -20.81,
+    -26.6,
+    1.51
+   ],
+   "object_uid": "obj-59"
+  },
+  {
+   "frame": 244,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000244_lcam_front.png",
+   "label": "tree",
+   "score": 0.507,
+   "box": [
+    269,
+    484,
+    403,
+    637
+   ],
+   "depth_m": 0.83,
+   "world_xyz": [
+    -8.52,
+    -24.73,
+    2.52
+   ],
+   "object_uid": "obj-25"
+  },
+  {
+   "frame": 244,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000244_lcam_front.png",
+   "label": "staircase",
+   "score": 0.353,
+   "box": [
+    1,
+    320,
+    286,
+    391
+   ],
+   "depth_m": 4.51,
+   "world_xyz": [
+    -11.86,
+    -21.77,
+    2.42
+   ],
+   "object_uid": "obj-128"
+  },
+  {
+   "frame": 244,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000244_lcam_front.png",
+   "label": "arch",
+   "score": 0.397,
+   "box": [
+    420,
+    1,
+    638,
+    379
+   ],
+   "depth_m": 3.8,
+   "world_xyz": [
+    -11.78,
+    -26.79,
+    0.37
+   ],
+   "object_uid": "obj-86"
+  },
+  {
+   "frame": 254,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000254_lcam_front.png",
+   "label": "building",
+   "score": 0.618,
+   "box": [
+    1,
+    1,
+    223,
+    384
+   ],
+   "depth_m": 6.2,
+   "world_xyz": [
+    -16.13,
+    -21.35,
+    -1.09
+   ],
+   "object_uid": "obj-3"
+  },
+  {
+   "frame": 254,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000254_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.52,
+   "box": [
+    142,
+    521,
+    288,
+    608
+   ],
+   "depth_m": 0.82,
+   "world_xyz": [
+    -10.69,
+    -24.62,
+    2.43
+   ],
+   "object_uid": "obj-21"
+  },
+  {
+   "frame": 254,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000254_lcam_front.png",
+   "label": "arch",
+   "score": 0.517,
+   "box": [
+    363,
+    1,
+    639,
+    431
+   ],
+   "depth_m": 5.26,
+   "world_xyz": [
+    -14.61,
+    -28.25,
+    -0.26
+   ],
+   "object_uid": "obj-22"
+  },
+  {
+   "frame": 254,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000254_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.354,
+   "box": [
+    189,
+    320,
+    217,
+    370
+   ],
+   "depth_m": 9.6,
+   "world_xyz": [
+    -19.72,
+    -22.21,
+    1.85
+   ],
+   "object_uid": "obj-19"
+  },
+  {
+   "frame": 254,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000254_lcam_front.png",
+   "label": "column",
+   "score": 0.356,
+   "box": [
+    558,
+    66,
+    639,
+    431
+   ],
+   "depth_m": 2.05,
+   "world_xyz": [
+    -11.64,
+    -26.78,
+    1.24
+   ],
+   "object_uid": "obj-98"
+  },
+  {
+   "frame": 254,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000254_lcam_front.png",
+   "label": "statue",
+   "score": 0.357,
+   "box": [
+    189,
+    320,
+    217,
+    371
+   ],
+   "depth_m": 9.6,
+   "world_xyz": [
+    -19.72,
+    -22.21,
+    1.86
+   ],
+   "object_uid": "obj-19"
+  },
+  {
+   "frame": 254,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000254_lcam_front.png",
+   "label": "staircase",
+   "score": 0.355,
+   "box": [
+    341,
+    356,
+    638,
+    572
+   ],
+   "depth_m": 1.83,
+   "world_xyz": [
+    -11.6,
+    -25.95,
+    2.54
+   ],
+   "object_uid": "obj-126"
+  },
+  {
+   "frame": 265,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000265_lcam_front.png",
+   "label": "building",
+   "score": 0.566,
+   "box": [
+    1,
+    1,
+    176,
+    334
+   ],
+   "depth_m": 6.37,
+   "world_xyz": [
+    -19.05,
+    -21.35,
+    -0.54
+   ],
+   "object_uid": "obj-6"
+  },
+  {
+   "frame": 265,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000265_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.542,
+   "box": [
+    134,
+    254,
+    173,
+    320
+   ],
+   "depth_m": 7.38,
+   "world_xyz": [
+    -19.75,
+    -22.21,
+    1.82
+   ],
+   "object_uid": "obj-19"
+  },
+  {
+   "frame": 265,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000265_lcam_front.png",
+   "label": "column",
+   "score": 0.383,
+   "box": [
+    424,
+    49,
+    492,
+    340
+   ],
+   "depth_m": 3.04,
+   "world_xyz": [
+    -14.86,
+    -26.78,
+    0.99
+   ],
+   "object_uid": "obj-92"
+  },
+  {
+   "frame": 265,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000265_lcam_front.png",
+   "label": "staircase",
+   "score": 0.383,
+   "box": [
+    333,
+    305,
+    638,
+    454
+   ],
+   "depth_m": 2.05,
+   "world_xyz": [
+    -13.76,
+    -26.39,
+    2.46
+   ],
+   "object_uid": "obj-12"
+  },
+  {
+   "frame": 265,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000265_lcam_front.png",
+   "label": "column",
+   "score": 0.387,
+   "box": [
+    487,
+    2,
+    566,
+    363
+   ],
+   "depth_m": 2.05,
+   "world_xyz": [
+    -13.85,
+    -26.66,
+    1.21
+   ],
+   "object_uid": "obj-92"
+  },
+  {
+   "frame": 265,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000265_lcam_front.png",
+   "label": "stone wall",
+   "score": 0.365,
+   "box": [
+    365,
+    52,
+    638,
+    338
+   ],
+   "depth_m": 2.21,
+   "world_xyz": [
+    -14.01,
+    -26.61,
+    1.24
+   ],
+   "object_uid": "obj-118"
+  },
+  {
+   "frame": 276,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000276_lcam_front.png",
+   "label": "staircase",
+   "score": 0.559,
+   "box": [
+    372,
+    329,
+    638,
+    637
+   ],
+   "depth_m": 1.18,
+   "world_xyz": [
+    -15.14,
+    -25.99,
+    2.63
+   ],
+   "object_uid": "obj-12"
+  },
+  {
+   "frame": 276,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000276_lcam_front.png",
+   "label": "building",
+   "score": 0.58,
+   "box": [
+    1,
+    1,
+    183,
+    344
+   ],
+   "depth_m": 5.99,
+   "world_xyz": [
+    -20.29,
+    -21.27,
+    -0.55
+   ],
+   "object_uid": "obj-6"
+  },
+  {
+   "frame": 276,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000276_lcam_front.png",
+   "label": "column",
+   "score": 0.454,
+   "box": [
+    429,
+    75,
+    493,
+    348
+   ],
+   "depth_m": 3.19,
+   "world_xyz": [
+    -17.18,
+    -26.81,
+    1.03
+   ],
+   "object_uid": "obj-48"
+  },
+  {
+   "frame": 276,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000276_lcam_front.png",
+   "label": "column",
+   "score": 0.433,
+   "box": [
+    500,
+    1,
+    589,
+    370
+   ],
+   "depth_m": 2.02,
+   "world_xyz": [
+    -16.0,
+    -26.77,
+    1.22
+   ],
+   "object_uid": "obj-48"
+  },
+  {
+   "frame": 276,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000276_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.407,
+   "box": [
+    98,
+    257,
+    161,
+    341
+   ],
+   "depth_m": 5.57,
+   "world_xyz": [
+    -19.74,
+    -22.2,
+    1.83
+   ],
+   "object_uid": "obj-19"
+  },
+  {
+   "frame": 276,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000276_lcam_front.png",
+   "label": "statue",
+   "score": 0.367,
+   "box": [
+    173,
+    277,
+    197,
+    320
+   ],
+   "depth_m": 9.54,
+   "world_xyz": [
+    -23.74,
+    -21.68,
+    1.7
+   ],
+   "object_uid": "obj-24"
+  },
+  {
+   "frame": 286,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000286_lcam_front.png",
+   "label": "building",
+   "score": 0.525,
+   "box": [
+    1,
+    0,
+    236,
+    351
+   ],
+   "depth_m": 4.86,
+   "world_xyz": [
+    -20.33,
+    -21.31,
+    -0.1
+   ],
+   "object_uid": "obj-6"
+  },
+  {
+   "frame": 286,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000286_lcam_front.png",
+   "label": "fountain",
+   "score": 0.461,
+   "box": [
+    224,
+    278,
+    254,
+    325
+   ],
+   "depth_m": 8.22,
+   "world_xyz": [
+    -23.78,
+    -21.68,
+    1.67
+   ],
+   "object_uid": "obj-44"
+  },
+  {
+   "frame": 286,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000286_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.356,
+   "box": [
+    140,
+    247,
+    186,
+    345
+   ],
+   "depth_m": 4.4,
+   "world_xyz": [
+    -20.01,
+    -22.29,
+    1.76
+   ],
+   "object_uid": "obj-19"
+  },
+  {
+   "frame": 286,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000286_lcam_front.png",
+   "label": "statue",
+   "score": 0.466,
+   "box": [
+    91,
+    241,
+    187,
+    361
+   ],
+   "depth_m": 4.08,
+   "world_xyz": [
+    -19.67,
+    -22.19,
+    1.84
+   ],
+   "object_uid": "obj-19"
+  },
+  {
+   "frame": 303,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000303_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.409,
+   "box": [
+    148,
+    294,
+    192,
+    336
+   ],
+   "depth_m": 6.1,
+   "world_xyz": [
+    -24.0,
+    -21.55,
+    1.49
+   ],
+   "object_uid": "obj-24"
+  },
+  {
+   "frame": 303,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000303_lcam_front.png",
+   "label": "column",
+   "score": 0.414,
+   "box": [
+    534,
+    212,
+    596,
+    389
+   ],
+   "depth_m": 2.44,
+   "world_xyz": [
+    -20.81,
+    -26.61,
+    1.67
+   ],
+   "object_uid": "obj-71"
+  },
+  {
+   "frame": 303,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000303_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.417,
+   "box": [
+    388,
+    281,
+    449,
+    342
+   ],
+   "depth_m": 9.5,
+   "world_xyz": [
+    -27.91,
+    -26.98,
+    1.11
+   ],
+   "object_uid": "obj-69"
+  },
+  {
+   "frame": 303,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000303_lcam_front.png",
+   "label": "doorway",
+   "score": 0.399,
+   "box": [
+    590,
+    250,
+    638,
+    362
+   ],
+   "depth_m": 4.46,
+   "world_xyz": [
+    -23.02,
+    -28.63,
+    1.49
+   ],
+   "object_uid": "obj-85"
+  },
+  {
+   "frame": 303,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000303_lcam_front.png",
+   "label": "pedestal",
+   "score": 0.365,
+   "box": [
+    149,
+    333,
+    181,
+    359
+   ],
+   "depth_m": 5.7,
+   "world_xyz": [
+    -23.64,
+    -21.68,
+    2.07
+   ],
+   "object_uid": "obj-27"
+  },
+  {
+   "frame": 303,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000303_lcam_front.png",
+   "label": "stone wall",
+   "score": 0.368,
+   "box": [
+    340,
+    186,
+    638,
+    382
+   ],
+   "depth_m": 7.75,
+   "world_xyz": [
+    -26.25,
+    -28.32,
+    0.61
+   ],
+   "object_uid": "obj-113"
+  },
+  {
+   "frame": 303,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000303_lcam_front.png",
+   "label": "building",
+   "score": 0.357,
+   "box": [
+    1,
+    1,
+    112,
+    360
+   ],
+   "depth_m": 4.07,
+   "world_xyz": [
+    -21.83,
+    -21.26,
+    -0.06
+   ],
+   "object_uid": "obj-123"
+  },
+  {
+   "frame": 303,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000303_lcam_front.png",
+   "label": "statue",
+   "score": 0.373,
+   "box": [
+    146,
+    293,
+    193,
+    359
+   ],
+   "depth_m": 5.83,
+   "world_xyz": [
+    -23.75,
+    -21.69,
+    1.71
+   ],
+   "object_uid": "obj-24"
+  },
+  {
+   "frame": 303,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000303_lcam_front.png",
+   "label": "fountain",
+   "score": 0.378,
+   "box": [
+    131,
+    290,
+    200,
+    363
+   ],
+   "depth_m": 5.75,
+   "world_xyz": [
+    -23.67,
+    -21.66,
+    1.72
+   ],
+   "object_uid": "obj-44"
+  },
+  {
+   "frame": 311,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000311_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.51,
+   "box": [
+    72,
+    271,
+    153,
+    333
+   ],
+   "depth_m": 4.02,
+   "world_xyz": [
+    -24.03,
+    -21.48,
+    1.48
+   ],
+   "object_uid": "obj-24"
+  },
+  {
+   "frame": 311,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000311_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.408,
+   "box": [
+    429,
+    254,
+    521,
+    338
+   ],
+   "depth_m": 7.01,
+   "world_xyz": [
+    -27.91,
+    -26.94,
+    1.07
+   ],
+   "object_uid": "obj-69"
+  },
+  {
+   "frame": 311,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000311_lcam_front.png",
+   "label": "pedestal",
+   "score": 0.434,
+   "box": [
+    76,
+    329,
+    132,
+    369
+   ],
+   "depth_m": 3.62,
+   "world_xyz": [
+    -23.68,
+    -21.71,
+    2.05
+   ],
+   "object_uid": "obj-27"
+  },
+  {
+   "frame": 311,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000311_lcam_front.png",
+   "label": "building",
+   "score": 0.415,
+   "box": [
+    0,
+    259,
+    70,
+    371
+   ],
+   "depth_m": 8.39,
+   "world_xyz": [
+    -27.57,
+    -15.99,
+    1.41
+   ],
+   "object_uid": "obj-70"
+  },
+  {
+   "frame": 311,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000311_lcam_front.png",
+   "label": "fountain",
+   "score": 0.392,
+   "box": [
+    68,
+    268,
+    156,
+    377
+   ],
+   "depth_m": 3.74,
+   "world_xyz": [
+    -23.78,
+    -21.71,
+    1.75
+   ],
+   "object_uid": "obj-44"
+  },
+  {
+   "frame": 311,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000311_lcam_front.png",
+   "label": "statue",
+   "score": 0.433,
+   "box": [
+    69,
+    269,
+    155,
+    375
+   ],
+   "depth_m": 3.74,
+   "world_xyz": [
+    -23.78,
+    -21.71,
+    1.74
+   ],
+   "object_uid": "obj-24"
+  },
+  {
+   "frame": 320,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000320_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.432,
+   "box": [
+    87,
+    240,
+    218,
+    332
+   ],
+   "depth_m": 8.83,
+   "world_xyz": [
+    -27.39,
+    -15.52,
+    0.77
+   ],
+   "object_uid": "obj-60"
+  },
+  {
+   "frame": 320,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000320_lcam_front.png",
+   "label": "pedestal",
+   "score": 0.506,
+   "box": [
+    96,
+    327,
+    186,
+    402
+   ],
+   "depth_m": 2.39,
+   "world_xyz": [
+    -23.71,
+    -21.72,
+    2.1
+   ],
+   "object_uid": "obj-27"
+  },
+  {
+   "frame": 320,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000320_lcam_front.png",
+   "label": "doorway",
+   "score": 0.428,
+   "box": [
+    362,
+    306,
+    384,
+    343
+   ],
+   "depth_m": 13.33,
+   "world_xyz": [
+    -34.85,
+    -18.88,
+    1.85
+   ],
+   "object_uid": "obj-64"
+  },
+  {
+   "frame": 320,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000320_lcam_front.png",
+   "label": "staircase",
+   "score": 0.373,
+   "box": [
+    189,
+    354,
+    638,
+    458
+   ],
+   "depth_m": 2.46,
+   "world_xyz": [
+    -24.88,
+    -23.42,
+    2.43
+   ],
+   "object_uid": "obj-78"
+  },
+  {
+   "frame": 320,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000320_lcam_front.png",
+   "label": "statue",
+   "score": 0.477,
+   "box": [
+    86,
+    239,
+    219,
+    402
+   ],
+   "depth_m": 2.47,
+   "world_xyz": [
+    -23.8,
+    -21.72,
+    1.77
+   ],
+   "object_uid": "obj-24"
+  },
+  {
+   "frame": 329,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000329_lcam_front.png",
+   "label": "stone wall",
+   "score": 0.356,
+   "box": [
+    252,
+    165,
+    638,
+    348
+   ],
+   "depth_m": 12.15,
+   "world_xyz": [
+    -35.88,
+    -17.1,
+    -0.53
+   ],
+   "object_uid": "obj-125"
+  },
+  {
+   "frame": 329,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000329_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.41,
+   "box": [
+    106,
+    244,
+    152,
+    303
+   ],
+   "depth_m": 10.77,
+   "world_xyz": [
+    -26.83,
+    -10.4,
+    0.31
+   ],
+   "object_uid": "obj-74"
+  },
+  {
+   "frame": 329,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000329_lcam_front.png",
+   "label": "staircase",
+   "score": 0.407,
+   "box": [
+    164,
+    354,
+    637,
+    591
+   ],
+   "depth_m": 1.2,
+   "world_xyz": [
+    -25.11,
+    -21.99,
+    2.39
+   ],
+   "object_uid": "obj-78"
+  },
+  {
+   "frame": 329,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000329_lcam_front.png",
+   "label": "statue",
+   "score": 0.424,
+   "box": [
+    1,
+    1,
+    189,
+    585
+   ],
+   "depth_m": 11.73,
+   "world_xyz": [
+    -26.17,
+    -8.47,
+    0.89
+   ],
+   "object_uid": "obj-56"
+  },
+  {
+   "frame": 345,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000345_lcam_front.png",
+   "label": "building",
+   "score": 0.455,
+   "box": [
+    1,
+    1,
+    248,
+    489
+   ],
+   "depth_m": 4.51,
+   "world_xyz": [
+    -22.07,
+    -16.26,
+    0.92
+   ],
+   "object_uid": "obj-47"
+  },
+  {
+   "frame": 345,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000345_lcam_front.png",
+   "label": "statue",
+   "score": 0.358,
+   "box": [
+    400,
+    219,
+    432,
+    303
+   ],
+   "depth_m": 7.12,
+   "world_xyz": [
+    -26.93,
+    -13.58,
+    0.72
+   ],
+   "object_uid": "obj-50"
+  },
+  {
+   "frame": 353,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000353_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.388,
+   "box": [
+    230,
+    258,
+    297,
+    313
+   ],
+   "depth_m": 12.77,
+   "world_xyz": [
+    -21.25,
+    -5.85,
+    1.35
+   ],
+   "object_uid": "obj-91"
+  },
+  {
+   "frame": 353,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000353_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.421,
+   "box": [
+    484,
+    149,
+    533,
+    279
+   ],
+   "depth_m": 4.57,
+   "world_xyz": [
+    -26.91,
+    -13.56,
+    0.74
+   ],
+   "object_uid": "obj-50"
+  },
+  {
+   "frame": 353,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000353_lcam_front.png",
+   "label": "statue",
+   "score": 0.448,
+   "box": [
+    484,
+    149,
+    533,
+    279
+   ],
+   "depth_m": 4.57,
+   "world_xyz": [
+    -26.91,
+    -13.56,
+    0.74
+   ],
+   "object_uid": "obj-50"
+  },
+  {
+   "frame": 353,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000353_lcam_front.png",
+   "label": "building",
+   "score": 0.394,
+   "box": [
+    2,
+    4,
+    637,
+    636
+   ],
+   "depth_m": 6.03,
+   "world_xyz": [
+    -24.09,
+    -12.43,
+    2.34
+   ],
+   "object_uid": "obj-88"
+  },
+  {
+   "frame": 353,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000353_lcam_front.png",
+   "label": "pedestal",
+   "score": 0.372,
+   "box": [
+    438,
+    275,
+    576,
+    362
+   ],
+   "depth_m": 4.57,
+   "world_xyz": [
+    -26.89,
+    -13.64,
+    2.23
+   ],
+   "object_uid": "obj-106"
+  },
+  {
+   "frame": 360,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000360_lcam_front.png",
+   "label": "building",
+   "score": 0.38,
+   "box": [
+    2,
+    7,
+    637,
+    636
+   ],
+   "depth_m": 8.12,
+   "world_xyz": [
+    -24.17,
+    -8.02,
+    2.19
+   ],
+   "object_uid": "obj-99"
+  },
+  {
+   "frame": 360,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000360_lcam_front.png",
+   "label": "pedestal",
+   "score": 0.406,
+   "box": [
+    142,
+    324,
+    227,
+    397
+   ],
+   "depth_m": 2.48,
+   "world_xyz": [
+    -23.32,
+    -13.69,
+    2.39
+   ],
+   "object_uid": "obj-79"
+  },
+  {
+   "frame": 360,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000360_lcam_front.png",
+   "label": "fountain",
+   "score": 0.383,
+   "box": [
+    129,
+    225,
+    261,
+    398
+   ],
+   "depth_m": 2.56,
+   "world_xyz": [
+    -23.37,
+    -13.61,
+    2.01
+   ],
+   "object_uid": "obj-95"
+  },
+  {
+   "frame": 360,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000360_lcam_front.png",
+   "label": "statue",
+   "score": 0.351,
+   "box": [
+    412,
+    166,
+    531,
+    396
+   ],
+   "depth_m": 4.63,
+   "world_xyz": [
+    -26.49,
+    -11.43,
+    1.54
+   ],
+   "object_uid": "obj-130"
+  },
+  {
+   "frame": 367,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000367_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.438,
+   "box": [
+    532,
+    109,
+    577,
+    252
+   ],
+   "depth_m": 4.59,
+   "world_xyz": [
+    -26.86,
+    -8.93,
+    0.13
+   ],
+   "object_uid": "obj-56"
+  },
+  {
+   "frame": 367,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000367_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.423,
+   "box": [
+    306,
+    256,
+    338,
+    324
+   ],
+   "depth_m": 7.97,
+   "world_xyz": [
+    -23.0,
+    -6.23,
+    1.44
+   ],
+   "object_uid": "obj-66"
+  },
+  {
+   "frame": 367,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000367_lcam_front.png",
+   "label": "stone wall",
+   "score": 0.443,
+   "box": [
+    160,
+    229,
+    534,
+    345
+   ],
+   "depth_m": 8.06,
+   "world_xyz": [
+    -23.6,
+    -6.02,
+    1.35
+   ],
+   "object_uid": "obj-52"
+  },
+  {
+   "frame": 367,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000367_lcam_front.png",
+   "label": "arch",
+   "score": 0.374,
+   "box": [
+    100,
+    208,
+    305,
+    316
+   ],
+   "depth_m": 22.36,
+   "world_xyz": [
+    -12.27,
+    6.49,
+    -1.65
+   ],
+   "object_uid": "obj-104"
+  },
+  {
+   "frame": 386,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000386_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.542,
+   "box": [
+    358,
+    222,
+    377,
+    269
+   ],
+   "depth_m": 20.38,
+   "world_xyz": [
+    -5.28,
+    -1.88,
+    -1.9
+   ],
+   "object_uid": "obj-9"
+  },
+  {
+   "frame": 386,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000386_lcam_front.png",
+   "label": "building",
+   "score": 0.459,
+   "box": [
+    1,
+    1,
+    168,
+    318
+   ],
+   "depth_m": 4.35,
+   "world_xyz": [
+    -17.74,
+    -13.83,
+    0.12
+   ],
+   "object_uid": "obj-45"
+  },
+  {
+   "frame": 386,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000386_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.404,
+   "box": [
+    358,
+    222,
+    377,
+    269
+   ],
+   "depth_m": 20.38,
+   "world_xyz": [
+    -5.28,
+    -1.88,
+    -1.9
+   ],
+   "object_uid": "obj-9"
+  },
+  {
+   "frame": 386,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000386_lcam_front.png",
+   "label": "staircase",
+   "score": 0.37,
+   "box": [
+    452,
+    155,
+    639,
+    312
+   ],
+   "depth_m": 19.31,
+   "world_xyz": [
+    -10.33,
+    7.48,
+    -2.41
+   ],
+   "object_uid": "obj-107"
+  },
+  {
+   "frame": 394,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000394_lcam_front.png",
+   "label": "building",
+   "score": 0.553,
+   "box": [
+    1,
+    1,
+    132,
+    364
+   ],
+   "depth_m": 7.38,
+   "world_xyz": [
+    -12.11,
+    -14.03,
+    -1.63
+   ],
+   "object_uid": "obj-14"
+  },
+  {
+   "frame": 394,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000394_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.522,
+   "box": [
+    343,
+    253,
+    365,
+    303
+   ],
+   "depth_m": 18.88,
+   "world_xyz": [
+    -5.28,
+    -1.88,
+    -1.94
+   ],
+   "object_uid": "obj-9"
+  },
+  {
+   "frame": 394,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000394_lcam_front.png",
+   "label": "statue",
+   "score": 0.399,
+   "box": [
+    343,
+    253,
+    365,
+    303
+   ],
+   "depth_m": 18.88,
+   "world_xyz": [
+    -5.28,
+    -1.88,
+    -1.94
+   ],
+   "object_uid": "obj-9"
+  },
+  {
+   "frame": 394,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000394_lcam_front.png",
+   "label": "staircase",
+   "score": 0.372,
+   "box": [
+    439,
+    186,
+    638,
+    345
+   ],
+   "depth_m": 18.88,
+   "world_xyz": [
+    -10.18,
+    7.84,
+    -2.67
+   ],
+   "object_uid": "obj-107"
+  },
+  {
+   "frame": 394,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000394_lcam_front.png",
+   "label": "fountain",
+   "score": 0.389,
+   "box": [
+    162,
+    261,
+    224,
+    359
+   ],
+   "depth_m": 19.25,
+   "world_xyz": [
+    -0.53,
+    -10.28,
+    -0.1
+   ],
+   "object_uid": "obj-90"
+  },
+  {
+   "frame": 402,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000402_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.552,
+   "box": [
+    138,
+    270,
+    163,
+    332
+   ],
+   "depth_m": 14.98,
+   "world_xyz": [
+    -5.28,
+    -1.87,
+    -1.87
+   ],
+   "object_uid": "obj-9"
+  },
+  {
+   "frame": 402,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000402_lcam_front.png",
+   "label": "arch",
+   "score": 0.563,
+   "box": [
+    252,
+    242,
+    495,
+    392
+   ],
+   "depth_m": 29.05,
+   "world_xyz": [
+    -9.3,
+    16.61,
+    -3.88
+   ],
+   "object_uid": "obj-10"
+  },
+  {
+   "frame": 402,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000402_lcam_front.png",
+   "label": "stone wall",
+   "score": 0.402,
+   "box": [
+    401,
+    223,
+    639,
+    432
+   ],
+   "depth_m": 3.97,
+   "world_xyz": [
+    -19.65,
+    -5.8,
+    1.15
+   ],
+   "object_uid": "obj-53"
+  },
+  {
+   "frame": 402,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000402_lcam_front.png",
+   "label": "statue",
+   "score": 0.436,
+   "box": [
+    138,
+    270,
+    163,
+    332
+   ],
+   "depth_m": 14.98,
+   "world_xyz": [
+    -5.28,
+    -1.87,
+    -1.87
+   ],
+   "object_uid": "obj-9"
+  },
+  {
+   "frame": 402,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000402_lcam_front.png",
+   "label": "stone wall",
+   "score": 0.423,
+   "box": [
+    405,
+    268,
+    638,
+    431
+   ],
+   "depth_m": 3.92,
+   "world_xyz": [
+    -19.64,
+    -5.8,
+    1.42
+   ],
+   "object_uid": "obj-53"
+  },
+  {
+   "frame": 416,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000416_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.374,
+   "box": [
+    172,
+    417,
+    327,
+    501
+   ],
+   "depth_m": 1.08,
+   "world_xyz": [
+    -18.94,
+    -7.39,
+    2.18
+   ],
+   "object_uid": "obj-105"
+  },
+  {
+   "frame": 416,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000416_lcam_front.png",
+   "label": "stone wall",
+   "score": 0.443,
+   "box": [
+    151,
+    80,
+    638,
+    407
+   ],
+   "depth_m": 2.7,
+   "world_xyz": [
+    -19.94,
+    -5.8,
+    1.13
+   ],
+   "object_uid": "obj-53"
+  },
+  {
+   "frame": 416,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000416_lcam_front.png",
+   "label": "arch",
+   "score": 0.399,
+   "box": [
+    1,
+    148,
+    298,
+    316
+   ],
+   "depth_m": 23.9,
+   "world_xyz": [
+    -8.39,
+    16.65,
+    -3.9
+   ],
+   "object_uid": "obj-10"
+  },
+  {
+   "frame": 438,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000438_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.569,
+   "box": [
+    256,
+    171,
+    286,
+    243
+   ],
+   "depth_m": 13.4,
+   "world_xyz": [
+    -5.18,
+    -1.75,
+    -1.96
+   ],
+   "object_uid": "obj-9"
+  },
+  {
+   "frame": 438,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000438_lcam_front.png",
+   "label": "statue",
+   "score": 0.461,
+   "box": [
+    256,
+    171,
+    286,
+    242
+   ],
+   "depth_m": 13.39,
+   "world_xyz": [
+    -5.19,
+    -1.75,
+    -1.98
+   ],
+   "object_uid": "obj-9"
+  },
+  {
+   "frame": 438,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000438_lcam_front.png",
+   "label": "building",
+   "score": 0.41,
+   "box": [
+    400,
+    66,
+    639,
+    308
+   ],
+   "depth_m": 13.63,
+   "world_xyz": [
+    -10.03,
+    7.63,
+    -2.87
+   ],
+   "object_uid": "obj-75"
+  },
+  {
+   "frame": 468,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000468_lcam_front.png",
+   "label": "arch",
+   "score": 0.363,
+   "box": [
+    16,
+    141,
+    233,
+    263
+   ],
+   "depth_m": 18.69,
+   "world_xyz": [
+    -20.41,
+    17.48,
+    -2.91
+   ],
+   "object_uid": "obj-120"
+  },
+  {
+   "frame": 468,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000468_lcam_front.png",
+   "label": "fountain",
+   "score": 0.376,
+   "box": [
+    372,
+    219,
+    432,
+    305
+   ],
+   "depth_m": 5.56,
+   "world_xyz": [
+    -22.21,
+    -1.15,
+    1.71
+   ],
+   "object_uid": "obj-72"
+  },
+  {
+   "frame": 468,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000468_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.368,
+   "box": [
+    305,
+    244,
+    349,
+    298
+   ],
+   "depth_m": 11.24,
+   "world_xyz": [
+    -24.79,
+    4.09,
+    1.54
+   ],
+   "object_uid": "obj-108"
+  },
+  {
+   "frame": 468,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000468_lcam_front.png",
+   "label": "column",
+   "score": 0.375,
+   "box": [
+    155,
+    96,
+    211,
+    257
+   ],
+   "depth_m": 10.68,
+   "world_xyz": [
+    -20.81,
+    6.83,
+    -1.57
+   ],
+   "object_uid": "obj-102"
+  },
+  {
+   "frame": 468,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000468_lcam_front.png",
+   "label": "statue",
+   "score": 0.371,
+   "box": [
+    374,
+    219,
+    431,
+    304
+   ],
+   "depth_m": 5.57,
+   "world_xyz": [
+    -22.22,
+    -1.16,
+    1.71
+   ],
+   "object_uid": "obj-42"
+  },
+  {
+   "frame": 468,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000468_lcam_front.png",
+   "label": "staircase",
+   "score": 0.35,
+   "box": [
+    1,
+    307,
+    256,
+    431
+   ],
+   "depth_m": 2.04,
+   "world_xyz": [
+    -17.9,
+    -2.41,
+    2.7
+   ],
+   "object_uid": "obj-132"
+  },
+  {
+   "frame": 468,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000468_lcam_front.png",
+   "label": "building",
+   "score": 0.398,
+   "box": [
+    556,
+    137,
+    639,
+    308
+   ],
+   "depth_m": 7.78,
+   "world_xyz": [
+    -27.85,
+    -2.57,
+    0.57
+   ],
+   "object_uid": "obj-43"
+  },
+  {
+   "frame": 475,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000475_lcam_front.png",
+   "label": "building",
+   "score": 0.548,
+   "box": [
+    499,
+    119,
+    639,
+    334
+   ],
+   "depth_m": 12.93,
+   "world_xyz": [
+    -35.67,
+    -2.69,
+    -1.22
+   ],
+   "object_uid": "obj-17"
+  },
+  {
+   "frame": 475,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000475_lcam_front.png",
+   "label": "staircase",
+   "score": 0.501,
+   "box": [
+    2,
+    318,
+    531,
+    637
+   ],
+   "depth_m": 1.01,
+   "world_xyz": [
+    -19.88,
+    -2.54,
+    2.72
+   ],
+   "object_uid": "obj-30"
+  },
+  {
+   "frame": 475,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000475_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.382,
+   "box": [
+    109,
+    280,
+    166,
+    318
+   ],
+   "depth_m": 5.23,
+   "world_xyz": [
+    -21.34,
+    2.34,
+    2.0
+   ],
+   "object_uid": "obj-96"
+  },
+  {
+   "frame": 475,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000475_lcam_front.png",
+   "label": "column",
+   "score": 0.396,
+   "box": [
+    101,
+    90,
+    171,
+    293
+   ],
+   "depth_m": 9.28,
+   "world_xyz": [
+    -23.01,
+    6.8,
+    -1.27
+   ],
+   "object_uid": "obj-87"
+  },
+  {
+   "frame": 475,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000475_lcam_front.png",
+   "label": "fountain",
+   "score": 0.384,
+   "box": [
+    296,
+    207,
+    386,
+    334
+   ],
+   "depth_m": 3.65,
+   "world_xyz": [
+    -22.19,
+    -1.14,
+    1.73
+   ],
+   "object_uid": "obj-72"
+  },
+  {
+   "frame": 475,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000475_lcam_front.png",
+   "label": "statue",
+   "score": 0.46,
+   "box": [
+    297,
+    207,
+    385,
+    334
+   ],
+   "depth_m": 3.65,
+   "world_xyz": [
+    -22.19,
+    -1.14,
+    1.73
+   ],
+   "object_uid": "obj-42"
+  },
+  {
+   "frame": 484,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000484_lcam_front.png",
+   "label": "building",
+   "score": 0.592,
+   "box": [
+    400,
+    138,
+    638,
+    360
+   ],
+   "depth_m": 13.29,
+   "world_xyz": [
+    -36.13,
+    -5.78,
+    -1.08
+   ],
+   "object_uid": "obj-5"
+  },
+  {
+   "frame": 484,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000484_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.423,
+   "box": [
+    350,
+    287,
+    403,
+    344
+   ],
+   "depth_m": 5.97,
+   "world_xyz": [
+    -26.9,
+    -1.31,
+    1.84
+   ],
+   "object_uid": "obj-40"
+  },
+  {
+   "frame": 484,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000484_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.416,
+   "box": [
+    159,
+    142,
+    239,
+    253
+   ],
+   "depth_m": 1.73,
+   "world_xyz": [
+    -22.33,
+    -1.07,
+    1.29
+   ],
+   "object_uid": "obj-42"
+  },
+  {
+   "frame": 484,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000484_lcam_front.png",
+   "label": "pedestal",
+   "score": 0.485,
+   "box": [
+    92,
+    238,
+    285,
+    428
+   ],
+   "depth_m": 1.55,
+   "world_xyz": [
+    -22.17,
+    -1.14,
+    2.02
+   ],
+   "object_uid": "obj-36"
+  },
+  {
+   "frame": 484,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000484_lcam_front.png",
+   "label": "fountain",
+   "score": 0.414,
+   "box": [
+    91,
+    141,
+    287,
+    429
+   ],
+   "depth_m": 1.55,
+   "world_xyz": [
+    -22.17,
+    -1.14,
+    1.79
+   ],
+   "object_uid": "obj-72"
+  },
+  {
+   "frame": 484,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000484_lcam_front.png",
+   "label": "column",
+   "score": 0.382,
+   "box": [
+    44,
+    106,
+    126,
+    313
+   ],
+   "depth_m": 9.06,
+   "world_xyz": [
+    -27.31,
+    6.97,
+    -1.23
+   ],
+   "object_uid": "obj-55"
+  },
+  {
+   "frame": 484,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000484_lcam_front.png",
+   "label": "statue",
+   "score": 0.465,
+   "box": [
+    92,
+    141,
+    286,
+    428
+   ],
+   "depth_m": 1.55,
+   "world_xyz": [
+    -22.17,
+    -1.14,
+    1.78
+   ],
+   "object_uid": "obj-42"
+  },
+  {
+   "frame": 498,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000498_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.485,
+   "box": [
+    31,
+    276,
+    89,
+    392
+   ],
+   "depth_m": 5.31,
+   "world_xyz": [
+    -26.05,
+    4.16,
+    1.52
+   ],
+   "object_uid": "obj-1"
+  },
+  {
+   "frame": 498,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000498_lcam_front.png",
+   "label": "column",
+   "score": 0.364,
+   "box": [
+    480,
+    230,
+    542,
+    423
+   ],
+   "depth_m": 4.29,
+   "world_xyz": [
+    -27.84,
+    -2.56,
+    1.47
+   ],
+   "object_uid": "obj-54"
+  },
+  {
+   "frame": 498,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000498_lcam_front.png",
+   "label": "statue",
+   "score": 0.353,
+   "box": [
+    107,
+    277,
+    163,
+    381
+   ],
+   "depth_m": 6.42,
+   "world_xyz": [
+    -27.3,
+    4.05,
+    1.36
+   ],
+   "object_uid": "obj-1"
+  },
+  {
+   "frame": 498,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000498_lcam_front.png",
+   "label": "statue",
+   "score": 0.521,
+   "box": [
+    106,
+    277,
+    163,
+    382
+   ],
+   "depth_m": 6.41,
+   "world_xyz": [
+    -27.29,
+    4.04,
+    1.37
+   ],
+   "object_uid": "obj-1"
+  },
+  {
+   "frame": 498,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000498_lcam_front.png",
+   "label": "pedestal",
+   "score": 0.429,
+   "box": [
+    362,
+    315,
+    451,
+    408
+   ],
+   "depth_m": 3.88,
+   "world_xyz": [
+    -26.91,
+    -1.32,
+    1.92
+   ],
+   "object_uid": "obj-63"
+  },
+  {
+   "frame": 498,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000498_lcam_front.png",
+   "label": "statue",
+   "score": 0.353,
+   "box": [
+    30,
+    276,
+    89,
+    392
+   ],
+   "depth_m": 5.3,
+   "world_xyz": [
+    -26.04,
+    4.16,
+    1.52
+   ],
+   "object_uid": "obj-1"
+  },
+  {
+   "frame": 498,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000498_lcam_front.png",
+   "label": "building",
+   "score": 0.436,
+   "box": [
+    435,
+    90,
+    639,
+    415
+   ],
+   "depth_m": 11.05,
+   "world_xyz": [
+    -35.77,
+    -4.5,
+    -1.57
+   ],
+   "object_uid": "obj-5"
+  },
+  {
+   "frame": 498,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000498_lcam_front.png",
+   "label": "column",
+   "score": 0.399,
+   "box": [
+    22,
+    113,
+    115,
+    390
+   ],
+   "depth_m": 7.89,
+   "world_xyz": [
+    -27.5,
+    6.85,
+    -0.64
+   ],
+   "object_uid": "obj-55"
+  },
+  {
+   "frame": 498,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000498_lcam_front.png",
+   "label": "stone wall",
+   "score": 0.354,
+   "box": [
+    4,
+    224,
+    638,
+    385
+   ],
+   "depth_m": 14.24,
+   "world_xyz": [
+    -35.86,
+    3.66,
+    -0.24
+   ],
+   "object_uid": "obj-127"
+  },
+  {
+   "frame": 507,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000507_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.44,
+   "box": [
+    158,
+    232,
+    215,
+    364
+   ],
+   "depth_m": 4.61,
+   "world_xyz": [
+    -26.08,
+    4.14,
+    1.49
+   ],
+   "object_uid": "obj-1"
+  },
+  {
+   "frame": 507,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000507_lcam_front.png",
+   "label": "statue",
+   "score": 0.408,
+   "box": [
+    233,
+    225,
+    292,
+    355
+   ],
+   "depth_m": 5.35,
+   "world_xyz": [
+    -27.29,
+    4.04,
+    1.31
+   ],
+   "object_uid": "obj-1"
+  },
+  {
+   "frame": 507,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000507_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.371,
+   "box": [
+    39,
+    207,
+    125,
+    375
+   ],
+   "depth_m": 3.77,
+   "world_xyz": [
+    -24.87,
+    4.11,
+    1.46
+   ],
+   "object_uid": "obj-108"
+  },
+  {
+   "frame": 507,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000507_lcam_front.png",
+   "label": "stone wall",
+   "score": 0.367,
+   "box": [
+    284,
+    161,
+    638,
+    355
+   ],
+   "depth_m": 11.55,
+   "world_xyz": [
+    -35.95,
+    4.58,
+    -0.41
+   ],
+   "object_uid": "obj-82"
+  },
+  {
+   "frame": 507,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000507_lcam_front.png",
+   "label": "column",
+   "score": 0.38,
+   "box": [
+    48,
+    2,
+    143,
+    311
+   ],
+   "depth_m": 6.14,
+   "world_xyz": [
+    -25.35,
+    6.88,
+    -1.33
+   ],
+   "object_uid": "obj-89"
+  },
+  {
+   "frame": 507,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000507_lcam_front.png",
+   "label": "building",
+   "score": 0.353,
+   "box": [
+    2,
+    4,
+    637,
+    636
+   ],
+   "depth_m": 11.15,
+   "world_xyz": [
+    -31.89,
+    7.71,
+    1.82
+   ],
+   "object_uid": "obj-129"
+  },
+  {
+   "frame": 514,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000514_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.57,
+   "box": [
+    38,
+    159,
+    152,
+    400
+   ],
+   "depth_m": 2.54,
+   "world_xyz": [
+    -26.08,
+    4.15,
+    1.52
+   ],
+   "object_uid": "obj-1"
+  },
+  {
+   "frame": 514,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000514_lcam_front.png",
+   "label": "column",
+   "score": 0.44,
+   "box": [
+    116,
+    1,
+    226,
+    306
+   ],
+   "depth_m": 5.5,
+   "world_xyz": [
+    -27.44,
+    6.89,
+    -1.02
+   ],
+   "object_uid": "obj-55"
+  },
+  {
+   "frame": 514,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000514_lcam_front.png",
+   "label": "column",
+   "score": 0.391,
+   "box": [
+    1,
+    1,
+    65,
+    303
+   ],
+   "depth_m": 4.35,
+   "world_xyz": [
+    -25.67,
+    6.89,
+    -0.44
+   ],
+   "object_uid": "obj-89"
+  },
+  {
+   "frame": 514,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000514_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.43,
+   "box": [
+    194,
+    162,
+    288,
+    373
+   ],
+   "depth_m": 3.26,
+   "world_xyz": [
+    -27.3,
+    4.05,
+    1.31
+   ],
+   "object_uid": "obj-1"
+  },
+  {
+   "frame": 514,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000514_lcam_front.png",
+   "label": "statue",
+   "score": 0.399,
+   "box": [
+    38,
+    158,
+    153,
+    401
+   ],
+   "depth_m": 2.55,
+   "world_xyz": [
+    -26.09,
+    4.15,
+    1.52
+   ],
+   "object_uid": "obj-1"
+  },
+  {
+   "frame": 514,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000514_lcam_front.png",
+   "label": "statue",
+   "score": 0.463,
+   "box": [
+    193,
+    160,
+    288,
+    379
+   ],
+   "depth_m": 3.26,
+   "world_xyz": [
+    -27.29,
+    4.05,
+    1.33
+   ],
+   "object_uid": "obj-1"
+  },
+  {
+   "frame": 514,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000514_lcam_front.png",
+   "label": "stone wall",
+   "score": 0.401,
+   "box": [
+    276,
+    129,
+    638,
+    363
+   ],
+   "depth_m": 10.41,
+   "world_xyz": [
+    -35.95,
+    6.0,
+    -0.56
+   ],
+   "object_uid": "obj-82"
+  },
+  {
+   "frame": 521,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000521_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.646,
+   "box": [
+    1,
+    2,
+    232,
+    481
+   ],
+   "depth_m": 1.22,
+   "world_xyz": [
+    -27.34,
+    4.07,
+    1.51
+   ],
+   "object_uid": "obj-1"
+  },
+  {
+   "frame": 521,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000521_lcam_front.png",
+   "label": "pedestal",
+   "score": 0.498,
+   "box": [
+    1,
+    411,
+    187,
+    512
+   ],
+   "depth_m": 1.27,
+   "world_xyz": [
+    -27.26,
+    4.16,
+    2.37
+   ],
+   "object_uid": "obj-31"
+  },
+  {
+   "frame": 521,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000521_lcam_front.png",
+   "label": "statue",
+   "score": 0.477,
+   "box": [
+    1,
+    2,
+    234,
+    500
+   ],
+   "depth_m": 1.23,
+   "world_xyz": [
+    -27.35,
+    4.08,
+    1.54
+   ],
+   "object_uid": "obj-1"
+  },
+  {
+   "frame": 521,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000521_lcam_front.png",
+   "label": "stone wall",
+   "score": 0.412,
+   "box": [
+    177,
+    87,
+    638,
+    390
+   ],
+   "depth_m": 10.06,
+   "world_xyz": [
+    -35.85,
+    8.51,
+    -0.39
+   ],
+   "object_uid": "obj-73"
+  },
+  {
+   "frame": 529,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000529_lcam_front.png",
+   "label": "doorway",
+   "score": 0.482,
+   "box": [
+    269,
+    257,
+    292,
+    311
+   ],
+   "depth_m": 7.5,
+   "world_xyz": [
+    -32.36,
+    10.9,
+    2.01
+   ],
+   "object_uid": "obj-38"
+  },
+  {
+   "frame": 529,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000529_lcam_front.png",
+   "label": "stone wall",
+   "score": 0.368,
+   "box": [
+    165,
+    14,
+    638,
+    379
+   ],
+   "depth_m": 8.3,
+   "world_xyz": [
+    -35.42,
+    9.91,
+    -0.26
+   ],
+   "object_uid": "obj-73"
+  },
+  {
+   "frame": 539,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000539_lcam_front.png",
+   "label": "doorway",
+   "score": 0.472,
+   "box": [
+    472,
+    276,
+    501,
+    349
+   ],
+   "depth_m": 4.86,
+   "world_xyz": [
+    -32.33,
+    10.9,
+    2.09
+   ],
+   "object_uid": "obj-38"
+  },
+  {
+   "frame": 539,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000539_lcam_front.png",
+   "label": "stone wall",
+   "score": 0.495,
+   "box": [
+    347,
+    73,
+    638,
+    397
+   ],
+   "depth_m": 5.34,
+   "world_xyz": [
+    -32.71,
+    11.35,
+    0.79
+   ],
+   "object_uid": "obj-32"
+  },
+  {
+   "frame": 539,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000539_lcam_front.png",
+   "label": "column",
+   "score": 0.361,
+   "box": [
+    197,
+    86,
+    263,
+    287
+   ],
+   "depth_m": 8.65,
+   "world_xyz": [
+    -27.7,
+    15.1,
+    -1.4
+   ],
+   "object_uid": "obj-97"
+  },
+  {
+   "frame": 547,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000547_lcam_front.png",
+   "label": "doorway",
+   "score": 0.456,
+   "box": [
+    391,
+    291,
+    404,
+    337
+   ],
+   "depth_m": 8.82,
+   "world_xyz": [
+    -32.32,
+    17.07,
+    2.05
+   ],
+   "object_uid": "obj-46"
+  },
+  {
+   "frame": 547,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000547_lcam_front.png",
+   "label": "column",
+   "score": 0.366,
+   "box": [
+    162,
+    4,
+    254,
+    283
+   ],
+   "depth_m": 6.47,
+   "world_xyz": [
+    -27.74,
+    15.1,
+    -1.35
+   ],
+   "object_uid": "obj-97"
+  },
+  {
+   "frame": 547,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000547_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.371,
+   "box": [
+    389,
+    551,
+    506,
+    638
+   ],
+   "depth_m": 0.69,
+   "world_xyz": [
+    -29.78,
+    9.13,
+    2.82
+   ],
+   "object_uid": "obj-109"
+  },
+  {
+   "frame": 547,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000547_lcam_front.png",
+   "label": "stone wall",
+   "score": 0.368,
+   "box": [
+    350,
+    86,
+    638,
+    372
+   ],
+   "depth_m": 4.89,
+   "world_xyz": [
+    -32.51,
+    13.11,
+    0.83
+   ],
+   "object_uid": "obj-114"
+  },
+  {
+   "frame": 547,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000547_lcam_front.png",
+   "label": "staircase",
+   "score": 0.426,
+   "box": [
+    2,
+    167,
+    278,
+    636
+   ],
+   "depth_m": 1.34,
+   "world_xyz": [
+    -28.81,
+    9.87,
+    2.56
+   ],
+   "object_uid": "obj-65"
+  },
+  {
+   "frame": 554,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000554_lcam_front.png",
+   "label": "doorway",
+   "score": 0.453,
+   "box": [
+    398,
+    287,
+    416,
+    346
+   ],
+   "depth_m": 6.86,
+   "world_xyz": [
+    -32.34,
+    17.08,
+    2.03
+   ],
+   "object_uid": "obj-46"
+  },
+  {
+   "frame": 554,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000554_lcam_front.png",
+   "label": "column",
+   "score": 0.382,
+   "box": [
+    98,
+    2,
+    185,
+    273
+   ],
+   "depth_m": 4.37,
+   "world_xyz": [
+    -27.77,
+    15.08,
+    -0.35
+   ],
+   "object_uid": "obj-97"
+  },
+  {
+   "frame": 554,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000554_lcam_front.png",
+   "label": "building",
+   "score": 0.384,
+   "box": [
+    297,
+    221,
+    422,
+    341
+   ],
+   "depth_m": 14.92,
+   "world_xyz": [
+    -33.26,
+    25.06,
+    0.17
+   ],
+   "object_uid": "obj-94"
+  },
+  {
+   "frame": 554,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000554_lcam_front.png",
+   "label": "arch",
+   "score": 0.368,
+   "box": [
+    208,
+    195,
+    260,
+    339
+   ],
+   "depth_m": 10.86,
+   "world_xyz": [
+    -28.05,
+    21.58,
+    0.25
+   ],
+   "object_uid": "obj-115"
+  },
+  {
+   "frame": 609,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000609_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.544,
+   "box": [
+    452,
+    185,
+    530,
+    331
+   ],
+   "depth_m": 4.2,
+   "world_xyz": [
+    -27.39,
+    4.26,
+    1.38
+   ],
+   "object_uid": "obj-1"
+  },
+  {
+   "frame": 609,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000609_lcam_front.png",
+   "label": "arch",
+   "score": 0.481,
+   "box": [
+    410,
+    289,
+    437,
+    315
+   ],
+   "depth_m": 14.08,
+   "world_xyz": [
+    -24.83,
+    -5.56,
+    1.25
+   ],
+   "object_uid": "obj-39"
+  },
+  {
+   "frame": 609,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000609_lcam_front.png",
+   "label": "column",
+   "score": 0.414,
+   "box": [
+    328,
+    226,
+    380,
+    337
+   ],
+   "depth_m": 10.85,
+   "world_xyz": [
+    -28.32,
+    -2.41,
+    0.79
+   ],
+   "object_uid": "obj-54"
+  },
+  {
+   "frame": 609,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000609_lcam_front.png",
+   "label": "building",
+   "score": 0.607,
+   "box": [
+    324,
+    208,
+    569,
+    336
+   ],
+   "depth_m": 22.39,
+   "world_xyz": [
+    -20.33,
+    -13.72,
+    -1.45
+   ],
+   "object_uid": "obj-4"
+  },
+  {
+   "frame": 609,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000609_lcam_front.png",
+   "label": "statue",
+   "score": 0.472,
+   "box": [
+    451,
+    185,
+    530,
+    332
+   ],
+   "depth_m": 4.2,
+   "world_xyz": [
+    -27.4,
+    4.26,
+    1.39
+   ],
+   "object_uid": "obj-1"
+  },
+  {
+   "frame": 626,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000626_lcam_front.png",
+   "label": "statue",
+   "score": 0.45,
+   "box": [
+    560,
+    67,
+    639,
+    345
+   ],
+   "depth_m": 20.66,
+   "world_xyz": [
+    -11.16,
+    -13.97,
+    -4.9
+   ],
+   "object_uid": "obj-49"
+  },
+  {
+   "frame": 626,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000626_lcam_front.png",
+   "label": "building",
+   "score": 0.547,
+   "box": [
+    326,
+    193,
+    638,
+    330
+   ],
+   "depth_m": 12.07,
+   "world_xyz": [
+    -23.29,
+    -5.61,
+    0.16
+   ],
+   "object_uid": "obj-18"
+  },
+  {
+   "frame": 626,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000626_lcam_front.png",
+   "label": "staircase",
+   "score": 0.504,
+   "box": [
+    344,
+    318,
+    639,
+    630
+   ],
+   "depth_m": 1.04,
+   "world_xyz": [
+    -29.1,
+    5.32,
+    2.74
+   ],
+   "object_uid": "obj-29"
+  },
+  {
+   "frame": 626,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000626_lcam_front.png",
+   "label": "arch",
+   "score": 0.391,
+   "box": [
+    429,
+    276,
+    457,
+    305
+   ],
+   "depth_m": 11.99,
+   "world_xyz": [
+    -24.8,
+    -5.55,
+    1.26
+   ],
+   "object_uid": "obj-39"
+  },
+  {
+   "frame": 626,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000626_lcam_front.png",
+   "label": "stone wall",
+   "score": 0.38,
+   "box": [
+    1,
+    96,
+    285,
+    323
+   ],
+   "depth_m": 13.02,
+   "world_xyz": [
+    -36.58,
+    -6.9,
+    -2.12
+   ],
+   "object_uid": "obj-100"
+  },
+  {
+   "frame": 626,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000626_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.375,
+   "box": [
+    609,
+    261,
+    636,
+    289
+   ],
+   "depth_m": 7.42,
+   "world_xyz": [
+    -22.5,
+    -0.93,
+    1.27
+   ],
+   "object_uid": "obj-42"
+  },
+  {
+   "frame": 626,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000626_lcam_front.png",
+   "label": "column",
+   "score": 0.418,
+   "box": [
+    335,
+    194,
+    395,
+    331
+   ],
+   "depth_m": 8.68,
+   "world_xyz": [
+    -28.26,
+    -2.33,
+    0.77
+   ],
+   "object_uid": "obj-54"
+  },
+  {
+   "frame": 650,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000650_lcam_front.png",
+   "label": "building",
+   "score": 0.5,
+   "box": [
+    329,
+    160,
+    638,
+    336
+   ],
+   "depth_m": 18.19,
+   "world_xyz": [
+    -20.03,
+    -13.67,
+    -1.93
+   ],
+   "object_uid": "obj-4"
+  },
+  {
+   "frame": 650,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000650_lcam_front.png",
+   "label": "staircase",
+   "score": 0.467,
+   "box": [
+    342,
+    326,
+    638,
+    635
+   ],
+   "depth_m": 0.98,
+   "world_xyz": [
+    -29.11,
+    3.35,
+    2.75
+   ],
+   "object_uid": "obj-41"
+  },
+  {
+   "frame": 650,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000650_lcam_front.png",
+   "label": "stone wall",
+   "score": 0.366,
+   "box": [
+    1,
+    98,
+    286,
+    329
+   ],
+   "depth_m": 13.23,
+   "world_xyz": [
+    -36.71,
+    -9.02,
+    -2.22
+   ],
+   "object_uid": "obj-34"
+  },
+  {
+   "frame": 650,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000650_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.479,
+   "box": [
+    420,
+    265,
+    488,
+    332
+   ],
+   "depth_m": 5.18,
+   "world_xyz": [
+    -27.38,
+    -0.82,
+    1.89
+   ],
+   "object_uid": "obj-40"
+  },
+  {
+   "frame": 650,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000650_lcam_front.png",
+   "label": "statue",
+   "score": 0.362,
+   "box": [
+    420,
+    265,
+    488,
+    333
+   ],
+   "depth_m": 5.18,
+   "world_xyz": [
+    -27.38,
+    -0.82,
+    1.89
+   ],
+   "object_uid": "obj-40"
+  },
+  {
+   "frame": 650,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000650_lcam_front.png",
+   "label": "tree",
+   "score": 0.357,
+   "box": [
+    0,
+    286,
+    15,
+    316
+   ],
+   "depth_m": 4.57,
+   "world_xyz": [
+    -34.03,
+    -0.33,
+    1.97
+   ],
+   "object_uid": "obj-124"
+  },
+  {
+   "frame": 650,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000650_lcam_front.png",
+   "label": "arch",
+   "score": 0.371,
+   "box": [
+    620,
+    233,
+    636,
+    275
+   ],
+   "depth_m": 33.53,
+   "world_xyz": [
+    3.23,
+    -28.58,
+    -4.85
+   ],
+   "object_uid": "obj-110"
+  },
+  {
+   "frame": 650,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000650_lcam_front.png",
+   "label": "column",
+   "score": 0.404,
+   "box": [
+    341,
+    160,
+    423,
+    338
+   ],
+   "depth_m": 6.68,
+   "world_xyz": [
+    -28.23,
+    -2.33,
+    0.74
+   ],
+   "object_uid": "obj-54"
+  },
+  {
+   "frame": 666,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000666_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.409,
+   "box": [
+    502,
+    301,
+    593,
+    349
+   ],
+   "depth_m": 2.48,
+   "world_xyz": [
+    -27.82,
+    -0.22,
+    2.26
+   ],
+   "object_uid": "obj-40"
+  },
+  {
+   "frame": 666,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000666_lcam_front.png",
+   "label": "stone wall",
+   "score": 0.489,
+   "box": [
+    1,
+    104,
+    286,
+    332
+   ],
+   "depth_m": 12.38,
+   "world_xyz": [
+    -36.31,
+    -10.19,
+    -1.79
+   ],
+   "object_uid": "obj-34"
+  },
+  {
+   "frame": 666,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000666_lcam_front.png",
+   "label": "building",
+   "score": 0.485,
+   "box": [
+    334,
+    79,
+    638,
+    345
+   ],
+   "depth_m": 16.05,
+   "world_xyz": [
+    -21.12,
+    -13.68,
+    -3.28
+   ],
+   "object_uid": "obj-37"
+  },
+  {
+   "frame": 666,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000666_lcam_front.png",
+   "label": "statue",
+   "score": 0.394,
+   "box": [
+    475,
+    235,
+    595,
+    348
+   ],
+   "depth_m": 3.11,
+   "world_xyz": [
+    -27.49,
+    -0.84,
+    1.94
+   ],
+   "object_uid": "obj-40"
+  },
+  {
+   "frame": 691,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000691_lcam_front.png",
+   "label": "lion statue",
+   "score": 0.55,
+   "box": [
+    187,
+    311,
+    231,
+    352
+   ],
+   "depth_m": 5.61,
+   "world_xyz": [
+    -31.54,
+    -5.39,
+    2.32
+   ],
+   "object_uid": "obj-15"
+  },
+  {
+   "frame": 691,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000691_lcam_front.png",
+   "label": "staircase",
+   "score": 0.422,
+   "box": [
+    416,
+    347,
+    638,
+    624
+   ],
+   "depth_m": 0.97,
+   "world_xyz": [
+    -28.98,
+    -0.75,
+    2.69
+   ],
+   "object_uid": "obj-67"
+  },
+  {
+   "frame": 691,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000691_lcam_front.png",
+   "label": "arch",
+   "score": 0.451,
+   "box": [
+    554,
+    245,
+    612,
+    304
+   ],
+   "depth_m": 5.8,
+   "world_xyz": [
+    -24.83,
+    -5.56,
+    1.3
+   ],
+   "object_uid": "obj-39"
+  },
+  {
+   "frame": 691,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000691_lcam_front.png",
+   "label": "column",
+   "score": 0.441,
+   "box": [
+    426,
+    10,
+    578,
+    383
+   ],
+   "depth_m": 2.53,
+   "world_xyz": [
+    -28.16,
+    -2.29,
+    1.19
+   ],
+   "object_uid": "obj-54"
+  },
+  {
+   "frame": 691,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000691_lcam_front.png",
+   "label": "stone wall",
+   "score": 0.365,
+   "box": [
+    1,
+    107,
+    288,
+    336
+   ],
+   "depth_m": 11.97,
+   "world_xyz": [
+    -36.16,
+    -11.69,
+    -1.66
+   ],
+   "object_uid": "obj-119"
+  },
+  {
+   "frame": 691,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000691_lcam_front.png",
+   "label": "building",
+   "score": 0.463,
+   "box": [
+    342,
+    2,
+    638,
+    363
+   ],
+   "depth_m": 2.59,
+   "world_xyz": [
+    -28.22,
+    -2.35,
+    1.06
+   ],
+   "object_uid": "obj-43"
+  },
+  {
+   "frame": 691,
+   "image": "../../Datasets/Antiquity3D/Antiquity3D/Data_diff/P1000/image_lcam_front/000691_lcam_front.png",
+   "label": "staircase",
+   "score": 0.363,
+   "box": [
+    368,
+    322,
+    638,
+    629
+   ],
+   "depth_m": 1.06,
+   "world_xyz": [
+    -29.0,
+    -0.84,
+    2.71
+   ],
+   "object_uid": "obj-67"
+  }
+ ]
+}
